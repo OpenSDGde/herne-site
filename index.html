@@ -1,5 +1,10 @@
+<head>
+    <script src="https://kit.fontawesome.com/7ee11bdcfb.js" crossorigin="anonymous"></script>
+</head>
+
+<html>
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="de" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +16,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/en',
+  remoteDataBaseUrl: 'https://hui00.github.io/data-test-2/de',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -42,7 +47,7 @@ var opensdg = {
   // Disaggregations which should be ignored on indicator pages.
   ignoredDisaggregations: null,
 
-  language: 'en',
+  language: 'de',
 
   mapColors: {
     "default": [
@@ -117,7 +122,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Indicators For The Sustainable Development Goals</title>
+    <title>Indikatoren für die nachhaltigen Entwicklungsziele</title>
 
 
 
@@ -140,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/herne-site/assets/css/style.css?v=20241029220710">
+        <link rel="stylesheet" href="/herne-site/assets/css/style.css?v=20241112071958">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -161,134 +166,170 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-de
 layout-frontpage
 ">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_contacts.suggestions\">feedback</a>.","enable_high_contrast":"Enable high contrast","hide_menu":"Hide navigation menu","high_contrast":"High contrast","internet_explorer_message":"We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.","internet_explorer_message_title":"This internet browser is no longer supported","logo_title":"Go to homepage","show_menu":"Show navigation menu","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<!-- custom header. Design specified in _sass/custom.scss -->
+<script>translations['header'] = {"alpha":"Alpha-Version","default_contrast":"Standard kontrast","disable_high_contrast":"Hoher Kontrast deaktivieren","disclaimer":"Diese Seite befindet sich im Entwicklungsstadium.Wir freuen uns über Ihre <a href=\"mailto:%email_contacts.suggestions\">Kommentare</a>.","enable_high_contrast":"Aktivieren Sie hohen Kontrast","hide_menu":"Navigationsmenü ausblenden","high_contrast":"Hoher kontrast","internet_explorer_message":"Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari. Wenn Sie Schwierigkeiten haben, einen anderen Browser zu installieren oder darauf zuzugreifen, wenden Sie sich bitte an Ihr IT-Supportteam.","internet_explorer_message_title":"Der Internet-Browser wird nicht mehr unterstützt","logo_title":"Zur Homepage gehen","show_menu":"Navigationsmenü anzeigen","skip_link":"Zum Hauptinhalt springen","tag_line":"17 Ziele, um unsere Welt zu verändern","toggle_menu":"Menü umschalten. Klicken Sie darauf, um das Menü zu erweitern oder zu reduzieren.","toggle_search":"Umschalten der Suche. Klicken Sie darauf, um die Suchleiste ein- oder auszublenden."};</script>
 
-<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Zum Hauptinhalt springen</a>
 <div class="container internet-explorer-message">
-    <h2 class="internet-explorer-message-title">This internet browser is no longer supported</h2>
-    <p class="internet-explorer-message-body">We have detected that you are using Internet Explorer to visit this website. Internet Explorer is now being phased out by Microsoft. As a result, this website no longer supports any version of Internet Explorer. Some features on this site will not work. You should use a modern browser such as Edge, Chrome, Firefox, or Safari. If you have difficulty installing or accessing a different browser, please contact your IT support team.</p>
-</div>
-<div id="disclaimer">
-    
-<div class="container">
-  <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
-    
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
-    
-  </div>
+    <h2 class="internet-explorer-message-title">Der Internet-Browser wird nicht mehr unterstützt</h2>
+    <p class="internet-explorer-message-body">Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari. Wenn Sie Schwierigkeiten haben, einen anderen Browser zu installieren oder darauf zuzugreifen, wenden Sie sich bitte an Ihr IT-Supportteam.</p>
 </div>
 
-</div>
+<header>
+    <div id="color-bar-background"></div>
 
-<header role="banner" class="">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light flex-wrap align-items-start">
-            <a class="navbar-brand" href="/herne-site/" id="home" aria-label="Go to homepage" title="Go to homepage">
-    <img src="/herne-site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
-</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Show navigation menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="d-flex flex-wrap w-100 justify-content-between">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav" id="menu"><li class="nav-item active">
-    <a class="nav-link" href="/herne-site/">Home</a>
+    <div class="header-container justify-content-between"> 
+      
+        <!-- header logo and lower navbar -->
+        <div class="row g-0 w-100">
+            <div class="col align-self-center">
+                <a href="https://nachhaltigkeitsagenda-ingolstadt.de/" id="home" aria-label="Zur Homepage gehen" title="Zur Homepage gehen" target="_blank">
+                    <img src="/herne-site/assets/img/SDG_logo.png" alt="Nachhaltigkeitsagenda Ingolstadt" style="width: 100%">      
+                </a>
+            </div>
+            <div class="col align-self-center">
+
+                <!-- header page-top navbar -->
+                <div class="row justify-content-end header-navigation-top">
+                    <li class="page-top-navbar" style="width:fit-content; list-style-type: none; padding-bottom: 20px;">
+    <a id="page-top-navbar-item" href="/herne-site/leichte-sprache"  target="">Leichtes Deutsch</a>
+</li><li class="page-top-navbar" style="width:fit-content; list-style-type: none; padding-bottom: 20px;">
+    <a id="page-top-navbar-item" href="/herne-site/reiter-english"  target="">English</a>
+</li>
+                </div>
+
+                <div class="navbar navbar-expand-lg navbar-dark align-items-center" id="narbar-container">
+                    <button class="navbar-toggler" id="navbar-hamburger-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Navigationsmenü anzeigen">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav" id="menu"><li class="nav-item active">
+    <a class="container nav-link" href="/herne-site/"  target="">Startseite</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/herne-site/goals">Goals</a>
+    <a class="container nav-link" href="/herne-site/goals"  target="">Ziele</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/herne-site/reporting-status">Reporting Status</a>
+    <a class="container nav-link" href="/herne-site/reporting-status"  target="">Berichtsstatus</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/herne-site/news">Updates</a>
+    <a class="container nav-link" href="/herne-site/about"  target="">Über uns</a>
 </li><li class="nav-item ">
-    <a class="nav-link" href="/herne-site/faq">FAQ</a>
-</li><li class="nav-item ">
-    <a class="nav-link" href="/herne-site/about">About</a>
+    <a class="container nav-link" href="/herne-site/faq"  target="">FAQ</a>
 </li></ul>
     
-                </div>
-                <div class="header-search-bar">
-                    <form class="align-self-lg-end" id="search" action="/herne-site/search/">
-    <div class="input-group">
-        <label class="visually-hidden" for="indicator_search">Search</label>
-        <input class="form-control" type="search" name="q" id="indicator_search" title="Search">
-        <span class="input-group-append">
-            <button class="btn btn-outline-secondary ms-n5" aria-label="Site search" id="search-btn" type="submit">
-                <i class="fa fa-search"></i>
+                    </div>
+                    <span class="d-flex justify-content-end">
+                        <div class="align-items-center" id="navbar-search-md">
+    <button class="btn hide-btn" id="search-btn-collapse" onclick="showSearchField()" aria-label="Navigationsmenü anzeigen">
+        <i class="fa fa-search"></i>
+    </button>
+    <div class="overlay header-container" id="search-field-input">
+        <form class="search-field float-start" id="search-md" action="/herne-site/search/">
+            <div class="input-group">
+                <label class="visually-hidden" for="indicator_search">Suche</label>
+                <input class="form-control" type="search" placeholder="Indikatoren suchen" name="q" id="indicator_search" title="Suche">
+            </div>
+        </form>
+        <span class="float-end" >
+            <button id="search-field-close" onclick="hideSearchField()">
+                <i class="fa fa-close" style="padding: 0.45em; background-color: white;"></i>
             </button>
         </span>
     </div>
-</form>
-
-                </div>
-                <div class="header-toggles d-flex">
-
-
-
-
-
-  <div class="language-toggle-container">
-  
-  <div class="btn-group language-toggle-dropdown  dropdown">
-    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fa fa-globe"></i>
-      English
-    </button>
-    <ul class="dropdown-menu"><li>
-            <a class="dropdown-item" href="/herne-site/es/">
-              Español
-            </a>
-          </li></ul>
-  </div>
 </div>
 
 
-
-                    <span class="no-js-language-toggle"><div class="language-toggle-container d-flex">
-    <i class="fa fa-globe language-toggle-globe-links"></i>
-    <ul class="language-toggle-links list-unstyled list-inline"><li class="language-option-es list-inline-item">
-            <a class="language-toggle-link" href="/herne-site/es/">
-                Español
-            </a>
-        </li></ul>
-</div></span><a title="Enable high contrast" aria-label="Enable high contrast"
-    data-contrast-switch-to="" role="button" href="javascript:void(0)" data-on="click"
-data-event-category="Accessibility"
-data-event-action="Change contrast setting"
-data-event-label="high"
->A</a>
+<script>
+    function showSearchField() {
+        $("#search-field-input").slideDown(500);
+        // document.getElementById( "search-field-input" ).style.display = "unset";
+        // document.getElementById( "search-field-input" ).style.top="45px";
+    }
+    function hideSearchField() {
+        $("#search-field-input").slideUp(500);
+        // document.getElementById( "search-field-input" ).style.top="0px";
+        // document.getElementById( "search-field-input" ).style.display = "none";  
+    }
+</script>
+                    </span>
                 </div>
             </div>
-        </nav>
+        </div>
+        
     </div>
 </header>
+
+<div class="header-navigation-dropdown">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="menu"><li class="nav-item active">
+    <a class="container nav-link" href="/herne-site/"  target="">Startseite</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/goals"  target="">Ziele</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/reporting-status"  target="">Berichtsstatus</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/about"  target="">Über uns</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/faq"  target="">FAQ</a>
+</li></ul>
+    
+        <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/leichte-sprache"  target="">Leichtes Deutsch</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/reiter-english"  target="">English</a>
+</li></ul>
+    </div>
+</div>
+
+
+<!--
 <div id="top" tabindex=-1></div>
+
+ -->
+
+
+<div class ="main-image">
+    <a><img src="/herne-site/assets/img/HEADER_DashKon_ohne Schrift_Neu.png"></a>
+</div>
 
 
 <div id="main-content" class="container" role="main">
-
     
-    <div class="site-intro">
-        <h1>17 goals to transform our world</h1>
-        <div class="lead-copy"><p>The <a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/">Sustainable Development Goals (SDGs)</a> are a universal call to action to end poverty, protect the planet and improve the lives and prospects of everyone, everywhere. The 17 Goals were adopted by all UN Member States in 2015, as part of the <a href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/70/1&amp;Lang=E">2030 Agenda for Sustainable Development</a>.</p>
-</div>
-    </div>
+        <div class="site-intro">
+            <h1 style="font-weight: 700;">Zukunft gemeinsam gestalten - Monitoring der Nachhaltigkeitsstrategie Ingolstadt</h1>
+            <div class="lead-copy"><p> <br><b>Unsere Vision</b><br>
+<i>"Im Jahr 2045 ist Ingolstadt eine nachhaltige, klimaangepasste Stadt, die durch emissionsarme Energieversorgung und Kreislaufwirtschaft 
+sowohl die Lebensgrundlagen schützt als auch das Gemeinwohl stärkt. Die Bürgerinnen und Bürger genießen vielfältige Mobilitätsangebote 
+und eine hohe Lebensqualität in urbanen und grünen, familien- und kinderfreundlichen Stadtvierteln. Bildungs- und Kultureinrichtungen 
+stehen allen offen und fördern Teilhabe. Respekt für Verschiedenheit prägt das gesellschaftliche Leben. Ein wirtschaftlich starkes Ingolstadt zeigt Weltoffenheit und globale Verantwortung."</i><br>
+<br>
+Basierend auf dem Leitbild der 17 globalen Ziele für nachhaltige Entwicklung (Sustainable Development Goals, SDGs) 
+hat die Stadt Ingolstadt in einem Gemeinschaftsprojekt mit der Stadtgesellschaft eine Nachhaltigkeitsstrategie entwickelt.
+In diesem Prozess wurden fünf Handlungsfelder und insgesamt 15 dazu passende Schwerpunktthemen für Ingolstadts Zukunft identifiziert und mit 
+Ingolstadt-spezifischen Zielen und Indikatoren hinterlegt. <br>
+<br>
+Mit den sogenannten Indikatoren wird die Erreichung der formulierten Ziele mit konkreten Zahlen gemessen. Das digitale Monitoring, welches Sie hier finden gibt 
+Auskunft darüber, in welchen Handlungsfeldern bereits viel für die Zielerreichung beigetragen wird und in welchen Handlungsfeldern noch Optimierungsbedarf besteht. 
+Anhand der Zahlen lässt sich die Entwicklung der vergangenen Jahre erkennen und wirkt somit als Steuerungsinstrument für die Stadtspitze. Um eine landesweite und 
+internationale Vergleichbarkeit herstellen zu können, wurden die Indikatoren den 17 SDGs zugeordnet. Welches SDG in welchem Handlungsfeld steckt, finden Sie weiter 
+unten auf dieser Seite.
+</p></div>
+        </div>
     
 
     
     <div class="frontpage-goals-grid">
 
         
-        <h2 class="frontpage-goals-grid-title">Australia data for the Sustainable Development Goals</h2>
+        <h2 class="frontpage-goals-grid-title" style="font-size: 32px; font-weight: 700;">Daten für die nachhaltigen Entwicklungsziele (SDGs) in Ingolstadt</h2>
         
 
         
-        <div class="frontpage-goals-grid-description"><p>Select each goal for indicator data.</p>
+        <div class="frontpage-goals-grid-description"  style="font-size: 22px;"><p>Klicken Sie auf die einzelnen Ziele, um die Daten unserer lokalen Indikatoren für nachhaltige Entwicklung anzuzeigen.</p>
 </div>
         
 
@@ -297,103 +338,103 @@ data-event-label="high"
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/1/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/1.png" id="goal-1" alt="Goal 1 - No poverty" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/1.png" id="goal-1" alt="Ziel 1 - Keine Armut" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/2/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/2.png" id="goal-2" alt="Goal 2 - Zero hunger" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/2.png" id="goal-2" alt="Ziel 2 - Kein Hunger" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/3/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/3.png" id="goal-3" alt="Goal 3 - Good health and well-being" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/3.png" id="goal-3" alt="Ziel 3 - Gesundheit und Wohlergehen" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/4/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/4.png" id="goal-4" alt="Goal 4 - Quality education" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/4.png" id="goal-4" alt="Ziel 4 - Hochwertige Bildung" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/5/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/5.png" id="goal-5" alt="Goal 5 - Gender equality" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/5.png" id="goal-5" alt="Ziel 5 - Geschlechtergleichstellung" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/6/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/6.png" id="goal-6" alt="Goal 6 - Clean water and sanitation" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/6.png" id="goal-6" alt="Ziel 6 - Sauberes Wasser und Sanitärversorgung" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/7/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/7.png" id="goal-7" alt="Goal 7 - Affordable and clean energy" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/7.png" id="goal-7" alt="Ziel 7 - Bezahlbare und saubere Energie" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/8/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/8.png" id="goal-8" alt="Goal 8 - Decent work and economic growth" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/8.png" id="goal-8" alt="Ziel 8 - Menschenwürdige Arbeit und Wirtschaftswachstum" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/9/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/9.png" id="goal-9" alt="Goal 9 - Industry, innovation and infrastructure" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/9.png" id="goal-9" alt="Ziel 9 - Industrie, Innovationen und Infrastruktur" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/10/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/10.png" id="goal-10" alt="Goal 10 - Reduced inequalities" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/10.png" id="goal-10" alt="Ziel 10 - Weniger Ungleichheiten" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/11/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/11.png" id="goal-11" alt="Goal 11 - Sustainable cities and communities" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/11.png" id="goal-11" alt="Ziel 11 - Nachhaltige Städte und Gemeinden" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/12/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/12.png" id="goal-12" alt="Goal 12 - Responsible consumption and production" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/12.png" id="goal-12" alt="Ziel 12 - Verantwortungsvolle Konsum- und Produktionsmuster" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/13/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/13.png" id="goal-13" alt="Goal 13 - Climate action" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/13.png" id="goal-13" alt="Ziel 13 - Maßnahmen zum Klimaschutz" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/14/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/14.png" id="goal-14" alt="Goal 14 - Life below water" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/14.png" id="goal-14" alt="Ziel 14 - Leben unter Wasser" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/15/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/15.png" id="goal-15" alt="Goal 15 - Life on land" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/15.png" id="goal-15" alt="Ziel 15 - Leben an Land" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/16/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/16.png" id="goal-16" alt="Goal 16 - Peace, justice and strong institutions" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/16.png" id="goal-16" alt="Ziel 16 - Frieden, Gerechtigkeit und starke Institutionen" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
         <div class="col-4 col-md-2 col-lg-1 goal-tile">
             <a href="/herne-site/17/">
-                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/17.png" id="goal-17" alt="Goal 17 - Partnerships for the goals" class="goal-icon-image goal-icon-image-"/>
+                <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/17.png" id="goal-17" alt="Ziel 17 - Partnerschaften zur Erreichung der Ziele" class="goal-icon-image goal-icon-image-"/>
             </a>
         </div>
         
@@ -402,190 +443,658 @@ data-event-label="high"
     </div>
     
 
-    
-    <div class="frontpage-cards">
-    
-        
+</div>
 
-        
-        <div class="row">
-        
 
-        <div class="col-sm-6 col-md-4">
-    <div class="card">
-    <div class="card-body">
-
+<!-- Handlungsfelder - title -->
+<div style="background-color:#efeeeb;">
+    <div class="container" style="margin-top: 3rem; padding-top: 3rem; padding-bottom: 1rem;">
+        <!-- <hr style="border: 1px solid black; margin-top: 5rem;"> -->
+        <h2 class="frontpage-goals-grid-title" style="font-size: 32px; font-weight: 700;">Handlungsfelder entdecken</h2>
+        <div class="frontpage-goals-grid-description"  style="font-size: 22px;">Die Handlungsfelder der Nachhaltigkeitsagenda Ingolstadt</div>
+    </div>
     
-    <h2 class="card-title"
-        
-        style="border-color: ;"
-        
-    >Download all data (.zip)</h2>
-    
-  
-    
-  
-    
-      <div class="zip-download-container">
-    <a href="https://open-sdg.org/open-sdg-data-starter/en/zip/all_indicators.zip"
-       role="button"
-       class="btn btn-primary btn-download" aria-describedby="zip-download-info">
-        Download all data (.zip)
-    </a>
-    <div id="zip-download-info">
-        Size: 22 Bytes
-        
-            <br>
-            Data last updated - Mar 06, 2024
-        
+    <!-- Handlungsfelder - expandable tabs -->
+    <div class="tab container" style="margin-top:1rem;">
+        <div class="row g-0 align-items-center justify-content-start">
+            <button class="tablinks active" id="tabbtn-1" onclick="openTab(event, 'frontpage-handlungsfelder-Wirtschaft')">
+                <i class="fa fa-gear" style="font-size:  calc(10px + 0.75vw);"></i>
+                <span class="tabs-text">Wirtschaft</span>
+            </button>
+            <button class="tablinks" id="tabbtn-2" onclick="openTab(event, 'frontpage-handlungsfelder-Umwelt')">
+                <i class='fas fa-solar-panel'style="font-size:  calc(10px + 0.75vw);"></i>
+                <span class="tabs-text">Umwelt</span>
+            </button>
+            <button class="tablinks" id="tabbtn-3" onclick="openTab(event, 'frontpage-handlungsfelder-Leben')">
+                <i class="fa fa-tree" style="font-size:  calc(10px + 0.75vw);"></i>
+                <span class="tabs-text">Leben</span>
+            </button>
+            <button class="tablinks" id="tabbtn-4" onclick="openTab(event, 'frontpage-handlungsfelder-Vielfalt')">
+                <i class="fa fa-globe" style="font-size:  calc(10px + 0.75vw);"></i>
+                <span class="tabs-text">Vielfalt</span>
+            </button>
+            <button class="tablinks" id="tabbtn-5" onclick="openTab(event, 'frontpage-handlungsfelder-Bildung')">            
+                <i class="fa fa-pencil" style="font-size:  calc(10px + 0.75vw);"></i>
+                <span class="tabs-text">Bildung</span>
+            </button>
+        </div>
     </div>
 </div>
 
-    
-  
-    
 
-    </div>
-  
-  </div>
-  
-  </div>
 
-        
-
-    
-        
-
-        
-
-        <div class="col-sm-6 col-md-4">
-    <div class="card">
-    <div class="card-body">
-
-    
-    <h2 class="card-title"
-        
-        style="border-color: ;"
-        
-    >Lorem ipsum</h2>
-    
-  
-    
-    <div class="card-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-cursus est sed dapibus.</p>
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Wirtschaft"  style="background-color: #007ebe;">
+    <!-- import contents of Handlungsfelder from _config.yml -->
+    <div class="tab container">
+    <div class="row justify-content-start">
+        <div class="col" style="margin-bottom: 3vm;">
+            
+            <h3 class="hf-subtitle">Wirtschaft</h3>
+            
+            
+            
+            <div class="hf-thema-title">Leitsatz</div>
+            <div class="hf-thema-text">Wir schaffen die Rahmenbedingungen für eine nachhaltige Entwicklung der Wirtschaft. 
+Als vernetzte, zukunftsorientierte und attraktive Stadt sichern wir mit technologischem 
+und gesellschaftlichem Fortschritt den Wohlstand für alle Menschen in Ingolstadt.
 </div>
-    
-  
-    
-  
-    
-    
-    
-    
-    <a class="btn btn-primary btn-download" href="https://example.com">
-      Read more
-    </a>
-    
-
+            
+        </div>
     </div>
-  
-  </div>
-  
-  </div>
-
-        
+    
+    <hr style="border: 1px solid white;">
 
     
-        
-
-        
-
-        <div class="col-sm-6 col-md-4">
-    <div class="card">
-    <div class="card-body">
-
+    <div class="row justify-content-start">
+        <div class="col hf-goal-tiles">
+            <div class="hf-subtitle" style="font-size: 1.5rem; margin-top: 4vh;">SDGs zu dem Handlungsfeld</div>
+            <div class="flex-grid">
+                
+                
+                
+                <div>
+                    <a href="/herne-site/4">
+                        <img src="/herne-site/assets/img/goals/de/4.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 4" id="goal4"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/5">
+                        <img src="/herne-site/assets/img/goals/de/5.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 5" id="goal5"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/8">
+                        <img src="/herne-site/assets/img/goals/de/8.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 8" id="goal8"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/9">
+                        <img src="/herne-site/assets/img/goals/de/9.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 9" id="goal9"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/10">
+                        <img src="/herne-site/assets/img/goals/de/10.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 10" id="goal10"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/11">
+                        <img src="/herne-site/assets/img/goals/de/11.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 11" id="goal11"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/12">
+                        <img src="/herne-site/assets/img/goals/de/12.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 12" id="goal12"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/13">
+                        <img src="/herne-site/assets/img/goals/de/13.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 13" id="goal13"/>
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </div>
     
-    <h2 class="card-title"
-        
-        style="border-color: ;"
-        
-    >Nam vestibulum</h2>
-    
-  
-    
-    <div class="card-text"><p>Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.</p>
+</div> 
+
 </div>
-    
-  
-    
-  
-    
-    
-    
-    
-    <a class="btn btn-primary btn-download" href="https://example.com">
-      Read more
-    </a>
-    
 
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Umwelt"  style="background-color: #65b448;">
+    <!-- import contents of Handlungsfelder from _config.yml -->
+    <div class="tab container">
+    <div class="row justify-content-start">
+        <div class="col" style="margin-bottom: 3vm;">
+            
+            <h3 class="hf-subtitle">Umwelt</h3>
+            
+            
+            
+            <div class="hf-thema-title">Leitsatz</div>
+            <div class="hf-thema-text">Wir fördern Klimaneutralität und Umweltschutz auch durch technische und digitale Lösungen. 
+Ökologische und regionale Landwirtschaft sowie der Erhalt der Biodiversität werden unterstützt. 
+Wir schaffen Bewusstsein für den Erhalt unserer natürlichen Lebensgrundlagen und sichern diese durch ressourcenschonendes Planen und Handeln.
+</div>
+            
+        </div>
     </div>
-  
-  </div>
-  
-  </div>
+    
+    <hr style="border: 1px solid white;">
 
+    
+    <div class="row justify-content-start">
+        <div class="col hf-goal-tiles">
+            <div class="hf-subtitle" style="font-size: 1.5rem; margin-top: 4vh;">SDGs zu dem Handlungsfeld</div>
+            <div class="flex-grid">
+                
+                
+                
+                <div>
+                    <a href="/herne-site/2">
+                        <img src="/herne-site/assets/img/goals/de/2.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 2" id="goal2"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/6">
+                        <img src="/herne-site/assets/img/goals/de/6.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 6" id="goal6"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/7">
+                        <img src="/herne-site/assets/img/goals/de/7.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 7" id="goal7"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/9">
+                        <img src="/herne-site/assets/img/goals/de/9.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 9" id="goal9"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/11">
+                        <img src="/herne-site/assets/img/goals/de/11.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 11" id="goal11"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/12">
+                        <img src="/herne-site/assets/img/goals/de/12.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 12" id="goal12"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/13">
+                        <img src="/herne-site/assets/img/goals/de/13.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 13" id="goal13"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/14">
+                        <img src="/herne-site/assets/img/goals/de/14.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 14" id="goal14"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/15">
+                        <img src="/herne-site/assets/img/goals/de/15.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 15" id="goal15"/>
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+</div> 
+
+</div>
+
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Leben"  style="background-color: #f8b715;">
+    <!-- import contents of Handlungsfelder from _config.yml -->
+    <div class="tab container">
+    <div class="row justify-content-start">
+        <div class="col" style="margin-bottom: 3vm;">
+            
+            <h3 class="hf-subtitle">Leben</h3>
+            
+            
+            
+            <div class="hf-thema-title">Leitsatz</div>
+            <div class="hf-thema-text">Wir ermöglichen gesundes und sicheres Miteinander, Wohnen und Arbeiten für alle Menschen in Ingolstadt. 
+Wir planen unsere Stadt mit ihren öffentlichen Räumen nachhaltig, generationsgerecht und inklusiv. 
+Wir sichern bedarfsgerechten Wohnbau, soziale Einrichtungen und eine gute Infrastruktur.
+</div>
+            
+        </div>
+    </div>
+    
+    <hr style="border: 1px solid white;">
+
+    
+    <div class="row justify-content-start">
+        <div class="col hf-goal-tiles">
+            <div class="hf-subtitle" style="font-size: 1.5rem; margin-top: 4vh;">SDGs zu dem Handlungsfeld</div>
+            <div class="flex-grid">
+                
+                
+                
+                <div>
+                    <a href="/herne-site/2">
+                        <img src="/herne-site/assets/img/goals/de/2.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 2" id="goal2"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/3">
+                        <img src="/herne-site/assets/img/goals/de/3.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 3" id="goal3"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/6">
+                        <img src="/herne-site/assets/img/goals/de/6.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 6" id="goal6"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/9">
+                        <img src="/herne-site/assets/img/goals/de/9.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 9" id="goal9"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/10">
+                        <img src="/herne-site/assets/img/goals/de/10.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 10" id="goal10"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/11">
+                        <img src="/herne-site/assets/img/goals/de/11.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 11" id="goal11"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/12">
+                        <img src="/herne-site/assets/img/goals/de/12.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 12" id="goal12"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/13">
+                        <img src="/herne-site/assets/img/goals/de/13.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 13" id="goal13"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/15">
+                        <img src="/herne-site/assets/img/goals/de/15.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 15" id="goal15"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/16">
+                        <img src="/herne-site/assets/img/goals/de/16.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 16" id="goal16"/>
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+</div> 
+
+</div>
+
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Vielfalt"  style="background-color: #ed6d29;">
+    <!-- import contents of Handlungsfelder from _config.yml -->
+    <div class="tab container">
+    <div class="row justify-content-start">
+        <div class="col" style="margin-bottom: 3vm;">
+            
+            <h3 class="hf-subtitle">Vielfalt</h3>
+            
+            
+            
+            <div class="hf-thema-title">Leitsatz</div>
+            <div class="hf-thema-text">Wir arbeiten aktiv an einer Stadtgesellschaft, die für Vielfalt und Respekt steht. 
+Unser Ziel sind Teilhabe und Chancengleichheit aller. 
+Wir fördern bürgerschaftliches Engagement für ein gutes Miteinander – lokal und global.
+</div>
+            
+        </div>
+    </div>
+    
+    <hr style="border: 1px solid white;">
+
+    
+    <div class="row justify-content-start">
+        <div class="col hf-goal-tiles">
+            <div class="hf-subtitle" style="font-size: 1.5rem; margin-top: 4vh;">SDGs zu dem Handlungsfeld</div>
+            <div class="flex-grid">
+                
+                
+                
+                <div>
+                    <a href="/herne-site/1">
+                        <img src="/herne-site/assets/img/goals/de/1.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 1" id="goal1"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/2">
+                        <img src="/herne-site/assets/img/goals/de/2.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 2" id="goal2"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/3">
+                        <img src="/herne-site/assets/img/goals/de/3.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 3" id="goal3"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/4">
+                        <img src="/herne-site/assets/img/goals/de/4.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 4" id="goal4"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/5">
+                        <img src="/herne-site/assets/img/goals/de/5.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 5" id="goal5"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/6">
+                        <img src="/herne-site/assets/img/goals/de/6.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 6" id="goal6"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/10">
+                        <img src="/herne-site/assets/img/goals/de/10.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 10" id="goal10"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/11">
+                        <img src="/herne-site/assets/img/goals/de/11.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 11" id="goal11"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/15">
+                        <img src="/herne-site/assets/img/goals/de/15.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 15" id="goal15"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/16">
+                        <img src="/herne-site/assets/img/goals/de/16.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 16" id="goal16"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/17">
+                        <img src="/herne-site/assets/img/goals/de/17.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 17" id="goal17"/>
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+</div> 
+
+</div>
+
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Bildung"  style="background-color: #05afda;">
+    <!-- import contents of Handlungsfelder from _config.yml -->
+    <div class="tab container">
+    <div class="row justify-content-start">
+        <div class="col" style="margin-bottom: 3vm;">
+            
+            <h3 class="hf-subtitle">Bildung</h3>
+            
+            
+            
+            <div class="hf-thema-title">Leitsatz</div>
+            <div class="hf-thema-text">Wir fördern Bildung, Kunst und Kultur für alle Menschen in unserer Stadt. 
+Besondere Aufmerksamkeit verdienen dabei Kreativität und freie individuelle Entfaltung und Entwicklung. 
+</div>
+            
+        </div>
+    </div>
+    
+    <hr style="border: 1px solid white;">
+
+    
+    <div class="row justify-content-start">
+        <div class="col hf-goal-tiles">
+            <div class="hf-subtitle" style="font-size: 1.5rem; margin-top: 4vh;">SDGs zu dem Handlungsfeld</div>
+            <div class="flex-grid">
+                
+                
+                
+                <div>
+                    <a href="/herne-site/4">
+                        <img src="/herne-site/assets/img/goals/de/4.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 4" id="goal4"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/9">
+                        <img src="/herne-site/assets/img/goals/de/9.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 9" id="goal9"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/10">
+                        <img src="/herne-site/assets/img/goals/de/10.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 10" id="goal10"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/11">
+                        <img src="/herne-site/assets/img/goals/de/11.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 11" id="goal11"/>
+                    </a>
+                </div>
+                <div>
+                    <a href="/herne-site/16">
+                        <img src="/herne-site/assets/img/goals/de/16.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 16" id="goal16"/>
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+</div> 
+
+</div>
+
+
+
+
+<!-- cards (imported from separate file) -->
+
+<div class="container">
+    <div class="row g-0 frontpage-card">
+        <!-- cards for publication etc-->
+<h2 style="font-size: 32px; font-weight: 700; color: #444444; padding-top: 5rem;">Veröffentlichungen</h2>
+<h4 style="font-size: 22px; color: #444444; margin-bottom: 20px;">Bleibe auf dem Laufenden...</h4>
+<br>
+
+
+<div id="carouselCard" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+    
+    <div class="carousel-inner" style="margin-right: -10px;">
         
+        <div class="carousel-item active card-gap" style="overflow:visible">
+            <div class="col">
+                <div class="card border">
+                    <a href="https://nachhaltigkeitsagenda-ingolstadt.de/wp-content/uploads/2023/01/221208_BNK_final_web.pdf" target="_blank" style="text-decoration: none;">
+                        <img class="card-img-top" src='/herne-site/assets/img/BNK_Titelbild_1_1.jpg' alt="include.card.title">
+                        <div class="cont">
+                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Nachhaltigkeitsbericht - Stadt Ingolstadt 2021</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
         
-
-    
-    </div>
-    
-
-</div>
-<footer role="contentinfo">
-    <div class="container">
-        <div class="row">
+        <div class="carousel-item  card-gap" style="overflow:visible">
             <div class="col">
-                <div id="footerLinks">
-                    <ul>
-                        <li>
-                            <a href="https://open-sdg.org">Built using Open SDG</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/herne-site/contact-us">Contact us</a>
-                            
-                        </li>
-                        <li>
-                            
-                            <a href="https://twitter.com/MyTwitterAccount" target="_blank">Twitter</a>
-                            
-                        </li>
-                        <li>
-                            
-                            <a href="https://facebook.com/MyFacebookAccount" target="_blank">Facebook</a>
-                            
-                        </li>
-                        <li>
-                            <a href="/herne-site/about/cookies-and-privacy/">Cookies</a>
-                            
-                        </li>
-                        
-                        
-                        
-                        <li>
-                            <a href="/herne-site/config">Configuration</a>
-                        </li>
-                        </ul>
+                <div class="card border">
+                    <a href="https://nachhaltigkeitsagenda-ingolstadt.de/wp-content/uploads/2023/01/IN_Magazin_dpa-CC_FINAL_DIGTAL.pdf" target="_blank" style="text-decoration: none;">
+                        <img class="card-img-top" src='/herne-site/assets/img/IN_Magazin_Titelbild_1_1.jpg' alt="include.card.title">
+                        <div class="cont">
+                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Magazin - "Ingolstadt Nachhaltig" - Ausgabe 2022</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-item  card-gap" style="overflow:visible">
+            <div class="col">
+                <div class="card border">
+                    <a href="https://www.youtube.com/watch?v=LnqFFrIGQQQ" target="_blank" style="text-decoration: none;">
+                        <img class="card-img-top" src='/herne-site/assets/img/Logo N-Agenda_1_1.png' alt="include.card.title">
+                        <div class="cont">
+                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Nachhaltigkeitsfilm - Stadt Ingolstadt</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-item  card-gap" style="overflow:visible">
+            <div class="col">
+                <div class="card border">
+                    <a href="https://www.youtube.com/watch?v=VDQF-RdU0nc" target="_blank" style="text-decoration: none;">
+                        <img class="card-img-top" src='/herne-site/assets/img/Logo N-Agenda_1_1.png' alt="include.card.title">
+                        <div class="cont">
+                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Video Rückblick - Visionen 2045 Ingolstadt</h4>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
         
     </div>
-</footer>
 
+    <a class="carousel-card-prev float-start" role="button" data-bs-target="#carouselCard" data-bs-slide="prev" style="color:white">
+        <span class="fa fa-chevron-left" id="nav-arrow" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-card-next float-end" role="button" data-bs-target="#carouselCard" data-bs-slide="next" style="color:white">
+        <span class="fa fa-chevron-right" id="nav-arrow" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+
+</div>
+
+    </div>
+</div>
+
+
+<!-- footer incl. binder logos -->
+
+<footer class="wide-background " style="width: 100%; margin-top: 6rem; padding-top: 5rem; padding-bottom: 0px;">
+    <div class="container">
+        <div class="row g-0" style="padding: 0px;">
+            <div class="col-xs-12">
+                <div id="kooperation" >
+                    <p>Unsere Projektpartner</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-0 flexdirection justify-content-around">
+            <div class="col-xs-3" id="footer-binder">
+                <div id="bilder" style="background-color:white; padding-top: 1.4rem;">
+                    <a href="https://www.htw-berlin.de" id="footer-binder-href" target="_blank"><img src="/herne-site/assets/img/logo_htw.png" alt="htw_berlin" id="footer-binder-image" class="img-responsive"></a>
+                </div>
+            </div>
+            <div class="col-xs-3" id="footer-binder">
+                <div id="bilder" style="background-color:white;">
+                    <h5 style="margin-top: 3%; margin-bottom: 2%;">In Koorperation mit</h5>
+                    <a href="https://www.engagement-global.de/" id="footer-binder-href" target="_blank" ><img src="/herne-site/assets/img/logo_eg.png" alt="engagement_global1" id="footer-binder-image" class="img-responsive"></a>
+                </div>
+            </div>
+            <div class="col-xs-3" id="footer-binder">
+                <div id="bilder" style="background-color:white;">
+                    <h5 style="margin-top: 3%; margin-bottom: 2%;">mit ihrer</h5>
+                    <a href="https://skew.engagement-global.de/" id="footer-binder-href" target="_blank" ><img src="/herne-site/assets/img/logo_skew_de.png" alt="engagement_global2" id="footer-binder-image" class="img-responsive"></a>
+                </div>
+            </div>
+            <div class="col-xs-3" id="footer-binder">
+                <div id="bilder" style="background-color:white;">
+                    <h5 style="margin-top: 2.5%; margin-bottom: 0%">mit Mitteln des</h5>
+                    <a href="https://www.bmz.de/de" id="footer-binder-href" target="_blank" ><img src="/herne-site/assets/img/logo_BMZ.png" alt="bmz" id="footer-binder-image" class="img-responsive"></a>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div class="container">
+        <div class="row g-0" style="padding: 0px;text-align: center;">
+            <div class="col-xs-12">
+                <div id="footerLinks" style="background-color:#003E59;color:white;padding: 10px;margin-bottom: 1px;">
+                    <ul style="text-align: center;">
+                        
+                            <li style="color:white;margin: 15px;font-weight: bold;">
+                                    
+                                        <a href="https://StadtIngolstadt.github.io/sdg-data/de/zip/all_indicators.zip" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Download</a>
+                                        
+                                    </li>
+                            <li style="color:white;margin: 15px;font-weight: bold;">
+                                    
+                                        <a href="mailto:nachhaltigkeit@ingolstadt.de" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Kontakt</a>
+                                    
+                                    </li>
+                            <li style="color:white;margin: 15px;font-weight: bold;">
+                                    <a href="/herne-site/about/cookies-and-privacy/" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Impressum & Datenschutz</a>
+                                    
+                                    </li>
+                            <li style="color:white;margin: 15px;font-weight: bold;">
+                                    <a href="/herne-site/guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
+                                    
+                                    </li>
+                            
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-0" style="padding: 0px;text-align:center">
+            <div class="col-xs-12">
+                <div id="footerende" style="background-color:#003E59;color:white;padding: 10px;margin-bottom:1px; text-align: center;">
+                    <ul style="text-align: center;">
+                        <li style="color:white;margin: 15px;font-weight: bold; list-style-type: none;">
+                            <a href="https://open-sdg.org/" id="footerende-href" target="_blank" style="text-decoration: none; color:white; margin:10px; font-size:15px;">Diese Webseite wurde mit Open SDG erstellt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
@@ -600,27 +1109,203 @@ interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.</p>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 
 
+<script>
+  
+
+
+var klaroConfig = {
+    version: 1,
+    elementID: 'klaro',
+    styling: {
+        theme: ['light', 'top', 'wide'],
+    },
+    noAutoLoad: false,
+    htmlTexts: false,
+    embedded: false,
+    groupByPurpose: true,
+    storageMethod: 'cookie',
+    cookieName: 'cookie_settings',
+    cookieExpiresAfterDays: 365,
+    default: false,
+    mustConsent: false,
+    acceptAll: true,
+    hideDeclineAll: false,
+    hideLearnMore: false,
+    noticeAsModal: false,
+    services: [
+        {
+            name: 'Borlabs cookie',
+            default: true,
+            purposes: ['functional'],
+            cookies: ['cookie_settings'],
+            description: 'Speichert die Einstellungen der Besucher, die in der Cookie Box von Borlabs Cookie ausgewählt wurden.',
+            required: true,
+            optOut: false,
+            onlyOnce: true,
+        },
+        {
+            name: 'cookie_settings',
+            default: true,
+            purposes: ['functional'],
+            cookies: ['cookie_settings'],
+            required: true,
+            optOut: false,
+            onlyOnce: true,
+        },
+        {
+            name: 'contrast',
+            default: true,
+            purposes: ['functional'],
+            cookies: ['contrast'],
+            required: false,
+            optOut: false,
+            onlyOnce: true,
+        },
+        
+    ],
+};
+  klaroConfig.lang = 'de';
+klaroConfig.translations = {
+    de: {
+        acceptAll: "Alle akzeptieren",
+        acceptSelected: "Speichern",
+        close: "Close",
+        consentModal: {
+            description: "Hier finden Sie eine Übersicht über alle verwendeten Cookies. Sie können Ihre Zustimmung zu ganzen Kategorien geben oder sich weitere Informationen anzeigen lassen und so nur bestimmte Cookies auswählen.",
+            title: "Individuelle Datenschutzeinstellungen",
+        },
+        consentNotice: {
+            changeDescription: "The cookies used on this site have changed since you last visited, please renew your consent.",
+            description: "Wir nutzen Cookies auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern. \nWenn Sie unter 16 Jahre alt sind und Ihre Zustimmung zu freiwilligen Diensten geben möchten, müssen Sie Ihre Erziehungsberechtigten um Erlaubnis bitten. \nWir verwenden Cookies und andere Technologien auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern. Personenbezogene Daten können verarbeitet werden (z. B. IP-Adressen), z. B. für personalisierte Anzeigen und Inhalte oder Anzeigen- und Inhaltsmessung. Weitere Informationen über die Verwendung Ihrer Daten finden Sie in unserer Datenschutzerklärung. Sie können Ihre Auswahl jederzeit unter Einstellungen widerrufen oder anpassen.\n",
+            learnMore: "Cookies einstellen",
+            testing: "Testing mode!",
+        },
+        contextualConsent: {
+            acceptAlways: "Always",
+            acceptOnce: "Yes",
+            description: "Do you want to load external content supplied by {title}?",
+        },
+        decline: "Nur essenzielle Cookies akzeptieren",
+        ok: "Akzeptieren",
+        poweredBy: "Realisiert mit Klaro",
+        privacyPolicy: {
+            name: "privacy policy",
+            text: "To learn more, please read our privacy policy.",
+        },
+        purposeItem: {
+            service: "Weitere Informationen",
+            services: "Weitere Informationen",
+        },
+        purposes: {
+            functional: {
+                description: "Essenzielle Cookies ermöglichen grundlegende Funktionen und sind für die einwandfreie Funktion der Website erforderlich.",
+                title: "Funktional",
+            },
+            analytics: {
+                description: "Statistik- und Optimierungscookies Cookies erfassen Informationen anonym. Diese Informationen helfen uns zu verstehen, wie unsere Besucher unsere Website nutzen.",
+                title: "Statistiken und Optimierung",
+            },
+        },
+        save: "Save",
+        service: {
+            disableAll: {
+                description: "Use this switch to enable or disable all services.",
+                title: "Enable or disable all services",
+            },
+            optOut: {
+                description: "This services is loaded by default (but you can opt out)",
+                title: "(opt-out)",
+            },
+            purpose: "Zweck",
+            purposes: "Zweck",
+            required: {
+                description: "This service is always required",
+                title: "(technisch notwendig)",
+            },
+        },
+    },
+};
+var allRequired = true;
+klaroConfig.services.forEach(function(service) {
+    if (!service.required) {
+        allRequired = false;
+    }
+    if (service.name === 'contrast') {
+        service.translations = {
+            de: {
+                description: "Speichert die Benutzereinstellungen für den Hochkontrastmodus",
+                title: "Contrast cookie",
+            },
+        }
+    }
+    else if (service.name === 'cookie_settings') {
+        service.translations = {
+            de: {
+                description: "Speichert die Cookie-Einstellungen der Besucher",
+                title: "Cookie settings",
+            },
+        }
+    }
+    else if (service.name === 'google-analytics') {
+        service.translations = {
+            de: {
+                description: "Collects information about page visits using Google Analytics",
+                title: "Google Analytics",
+            },
+        }
+    }
+});
+
+if (allRequired) {
+    klaroConfig.translations['de'].consentNotice.description = "Wir nutzen Cookies auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern. \nWenn Sie unter 16 Jahre alt sind und Ihre Zustimmung zu freiwilligen Diensten geben möchten, müssen Sie Ihre Erziehungsberechtigten um Erlaubnis bitten. \nWir verwenden Cookies und andere Technologien auf unserer Website. Einige von ihnen sind essenziell, während andere uns helfen, diese Website und Ihre Erfahrung zu verbessern. Personenbezogene Daten können verarbeitet werden (z. B. IP-Adressen), z. B. für personalisierte Anzeigen und Inhalte oder Anzeigen- und Inhaltsmessung. Weitere Informationen über die Verwendung Ihrer Daten finden Sie in unserer Datenschutzerklärung. Sie können Ihre Auswahl jederzeit unter Einstellungen widerrufen oder anpassen.\n";
+    klaroConfig.translations['de'].ok = "OK";
+    klaroConfig.hideDeclineAll = true;
+    klaroConfig.hideLearnMore = true;
+}
+
+</script>
+<script src="https://cdn.kiprotect.com/klaro/v0.7/klaro-no-css.js"></script>
+<script>translations['cookies'] = translations['cookies'] || {};
+    translations['cookies']['cookie_settings'] = 'Cookie settings';</script>
+
+
 
 
 
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ausblenden';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Suche';</script>
 
-<script src='/herne-site/assets/js/sdg.js?v=20241029220710'></script>
+<script src='/herne-site/assets/js/sdg.js?v=20241112071958'></script>
 
 
     
     
-    <script src="/herne-site/assets/js/custom.js?v=20241029220710"></script><script>
+    <script src="/herne-site/assets/js/custom.js?v=20241112071958"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
 
 
-</body>
 </html>
+
+<!-- onclick expand tab for Handlungsfelder -->
+<script>
+    function openTab(evt, hf_id) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(hf_id).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
