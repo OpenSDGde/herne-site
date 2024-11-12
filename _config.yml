@@ -1,10 +1,8 @@
 # Jekyll configuration for Open SDG platform
 
 # primary settings:
-baseurl: "/sdg-in-staging-site" # change here!
-# remote_data_prefix: "https://open-sdg.org/open-sdg-data-starter"
-remote_data_prefix: https://hui00.github.io/data-test-2
-repository_url_site: https://hui00.github.io/data-test-2
+baseurl: "" # change here!
+remote_data_prefix: https://opensdgde.github.io/herne-data/
 
 # URL for the "Edit Data" and "Edit Metadata" button on indicators.
 data_edit_url: http://prose.io/#StabsstelleNachhaltigkeit/sdg-in-staging-data/edit/develop/data/indicator_[id].csv
