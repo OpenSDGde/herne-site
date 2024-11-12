@@ -10,7 +10,7 @@ layout: page
 Leichte Sprache<br>
 <br>
 <h1>Über uns</h1>
-Wir wollen die 17 welt-weiten Nachhaltigkeits-Ziele in Ingolstadt umsetzen.<br>
+Wir wollen die 17 welt-weiten Nachhaltigkeits-Ziele in Herne umsetzen.<br>
 Diese Ziele nennt man auch SDGs.<br>
 Das ist die englische Abkürzung für: nachhaltige Entwicklungs-Ziele.<br>
 Die Ziele wurden 2015 von den Vereinten Nationen fest-gelegt.<br>
@@ -22,7 +22,7 @@ Die Nachhaltigkeits-Agenda ist ein Arbeits-Plan für die Zukunft der Stadt.<br>
 Nachhaltigkeit bedeutet zum Beispiel:<br> 
 Wir müssen die Umwelt schützen.<br>
 Damit Menschen in der Zukunft noch gut auf der Erde leben können.<br> 
-Folgende Gruppen und Personen haben in Ingolstadt mit-gearbeitet:<br>
+Folgende Gruppen und Personen haben in Herne mit-gearbeitet:<br>
 <br>
 <ul>
   <li>Bürgerinnen und Bürger</li>
@@ -34,7 +34,7 @@ Folgende Gruppen und Personen haben in Ingolstadt mit-gearbeitet:<br>
   <li>Umwelt-Verbände</li>
   </ul> <br>
 <br>
-Im Jahr 2020 hat die Stadt die Ziele für Ingolstadt festgelegt.<br>
+Im Jahr 2020 hat die Stadt die Ziele für Herne festgelegt.<br>
 Ab 2021 haben dann Arbeits-Gruppen neue Ideen entwickelt:<br> 
 Die Frage war: Wie wollen wir leben?<br>
 <br>
@@ -93,7 +93,7 @@ Offene Hilfen<br>
 Caritas-Zentrum St. Vinzenz<br>
 Büro für Leichte Sprache<br>
 Frühlingstr. 15<br>
-85055 Ingolstadt<br>
+85055 Herne<br>
 <br>
 Bilder:<br>
 Lebenshilfe für Menschen<br>

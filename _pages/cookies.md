@@ -8,7 +8,7 @@ permalink: /about/cookies-and-privacy/
 
 ## Herausgeber
 
-Herausgeber dieser Webseite ist die Stadt Ingolstadt. 
+Herausgeber dieser Webseite ist die Stadt Herne. 
 
 ### Vertretungsberechtigt
 
@@ -18,44 +18,44 @@ Oberbürgermeister Dr. Christian Scharpf
 Behörde, Organ der juristischen Person des öffentlichen Rechts
 
 ### Anschrift:
-Stadt Ingolstadt <br>
+Stadt Herne <br>
 Direktorium - Stabsstelle Nachhaltigkeit <br>
 Rathausplatz 2 <br>
-85049 Ingolstadt <br>
+85049 Herne <br>
 
 ### Kontakt
 Telefon: +49 (841) 305 – 2004 <br>
-E-Mail: nachhaltigkeit@ingolstadt.de 
+E-Mail: nachhaltigkeit@herne.de 
 
 ### Redaktion:
-E-Mail: nachhaltigkeit@ingolstadt.de  
+E-Mail: nachhaltigkeit@herne.de  
 
 ### Inhalte/Produktion:
-Stadt Ingolstadt und HTW 
+Stadt Herne und HTW 
 
-### Datenschutzbeauftragter der Stadt Ingolstadt
+### Datenschutzbeauftragter der Stadt Herne
 Rechtsamt<br>
 Ludwigstraße 9<br>
-85049 Ingolstadt <br>
+85049 Herne <br>
 Tel.: 0841 305 1373<br>
-<a href="mailto:datenschutz@ingolstadt.de">datenschutz@ingolstadt.de</a>
+<a href="mailto:datenschutz@herne.de">datenschutz@herne.de</a>
 
 ### Umsatzsteuer-Identifikationsnummer            						     
-Die Umsatzsteueridentifikationsnummer (abgekürzt USt-IdNr. oder UID) der Stadt Ingolstadt gemäß § 27a UStG lautet: DE 128 601 333 	
+Die Umsatzsteueridentifikationsnummer (abgekürzt USt-IdNr. oder UID) der Stadt Herne gemäß § 27a UStG lautet: DE 128 601 333 	
 
 ### Hosting:
 GitHub 
 
 ### Hosting Subdomain:
-Diese Seite läuft über eine Subdomain der Webseite <a href="https://nachhaltigkeitsagenda-ingolstadt.de/">https://nachhaltigkeitsagenda-ingolstadt.de/</a> der Stadt Ingolstadt. Diese Seite wird über den Anbieter 1 & 1 IONOS SE gehostet. Die Datenschutzhinweise zu dieser Webseite finden Sie auf der Webseite der Nachhaltigkeitsagenda Ingolstadt: <a href="https://nachhaltigkeitsagenda-ingolstadt.de/">https://nachhaltigkeitsagenda-ingolstadt.de/</a> 
+Diese Seite läuft über eine Subdomain der Webseite <a href="https://nachhaltigkeitsagenda-herne.de/">https://nachhaltigkeitsagenda-herne.de/</a> der Stadt Herne. Diese Seite wird über den Anbieter 1 & 1 IONOS SE gehostet. Die Datenschutzhinweise zu dieser Webseite finden Sie auf der Webseite der Nachhaltigkeitsagenda Herne: <a href="https://nachhaltigkeitsagenda-herne.de/">https://nachhaltigkeitsagenda-herne.de/</a> 
 
 ## Haftungsausschluss
-Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt recherchiert und implementiert. Fehler im Bearbeitungsvorgang sind dennoch nicht auszuschließen. Hinweise und Korrekturen senden Sie bitte an unsere E-Mail-Adresse: <a href="mailto:nachhaltigkeit@ingolstadt.de">nachhaltigkeit@ingolstadt.de</a>.
-Eine Haftung für die Richtigkeit, Vollständigkeit und Aktualität dieser Website kann trotz sorgfältiger Prüfung nicht übernommen werden. Die Stadt Ingolstadt übernimmt insbesondere keinerlei Haftung für eventuelle Schäden oder Konsequenzen, die durch die direkte oder indirekte Nutzung der angebotenen Inhalte entstehen.
-Neben den eigenen Inhalten bietet die Stadt Ingolstadt Querverweise („externe Links“) auf die von anderen Anbietern bereitgehaltenen Inhalte. Die fremden Inhalte stammen weder von der Stadt Ingolstadt noch hat es die Möglichkeit, den Inhalt von Seiten Dritter zu beeinflussen. Die Inhalte fremder Seiten, auf die die Stadt Ingolstadt mittels Links hinweist, spiegeln nicht die Meinung der Stadt Ingolstadt wider, sondern dienen lediglich der Information und der Darstellung von Zusammenhängen. Die Stadt Ingolstadt haftet nicht für fremde Inhalte, auf die es lediglich im oben genannten Sinne hinweist. Die Verantwortlichkeit liegt alleine bei dem Anbieter der Inhalte. Bei Nutzungsausfällen der Website wegen technischer oder organisatorischer Störungen bestehen keinerlei Ansprüche - gleich welcher Art - gegen die Stadt Ingolstadt.
+Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt recherchiert und implementiert. Fehler im Bearbeitungsvorgang sind dennoch nicht auszuschließen. Hinweise und Korrekturen senden Sie bitte an unsere E-Mail-Adresse: <a href="mailto:nachhaltigkeit@herne.de">nachhaltigkeit@herne.de</a>.
+Eine Haftung für die Richtigkeit, Vollständigkeit und Aktualität dieser Website kann trotz sorgfältiger Prüfung nicht übernommen werden. Die Stadt Herne übernimmt insbesondere keinerlei Haftung für eventuelle Schäden oder Konsequenzen, die durch die direkte oder indirekte Nutzung der angebotenen Inhalte entstehen.
+Neben den eigenen Inhalten bietet die Stadt Herne Querverweise („externe Links“) auf die von anderen Anbietern bereitgehaltenen Inhalte. Die fremden Inhalte stammen weder von der Stadt Herne noch hat es die Möglichkeit, den Inhalt von Seiten Dritter zu beeinflussen. Die Inhalte fremder Seiten, auf die die Stadt Herne mittels Links hinweist, spiegeln nicht die Meinung der Stadt Herne wider, sondern dienen lediglich der Information und der Darstellung von Zusammenhängen. Die Stadt Herne haftet nicht für fremde Inhalte, auf die es lediglich im oben genannten Sinne hinweist. Die Verantwortlichkeit liegt alleine bei dem Anbieter der Inhalte. Bei Nutzungsausfällen der Website wegen technischer oder organisatorischer Störungen bestehen keinerlei Ansprüche - gleich welcher Art - gegen die Stadt Herne.
 
 ## Zweck der Datenverarbeitung
-Zweck der Datenverarbeitung auf dieser Website ist, der interessierten Öffentlichkeit aktuelle Informationen über die Erreichung der Nachhaltigkeitsziele der Stadt Ingolstadt zur Verfügung zu Stellen.
+Zweck der Datenverarbeitung auf dieser Website ist, der interessierten Öffentlichkeit aktuelle Informationen über die Erreichung der Nachhaltigkeitsziele der Stadt Herne zur Verfügung zu Stellen.
 
 ## Wie erfassen wir Daten?
 Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Diese nutzen wir dann nur zum Zwecke der Kommunikation.<br>
@@ -68,8 +68,8 @@ Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger
 Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
 
 ## Datenschutz
-Die Stadt Ingolstadt nimmt den Schutz Ihrer Privat- und Persönlichkeitssphäre ernst und beachtet die datenschutzrechtlichen Bestimmungen.
-Mit diesen Hinweisen kommen wir unseren Informationspflichten nach Artikel 13 der Datenschutz-Grundverordnung (DS-GVO) bei der Erhebung personenbezogener Daten nach. Beim Zugriff auf die SDG-Online Plattform werden von der Stadt Ingolstadt keine personenbezogenen Daten erhoben.
+Die Stadt Herne nimmt den Schutz Ihrer Privat- und Persönlichkeitssphäre ernst und beachtet die datenschutzrechtlichen Bestimmungen.
+Mit diesen Hinweisen kommen wir unseren Informationspflichten nach Artikel 13 der Datenschutz-Grundverordnung (DS-GVO) bei der Erhebung personenbezogener Daten nach. Beim Zugriff auf die SDG-Online Plattform werden von der Stadt Herne keine personenbezogenen Daten erhoben.
 Sie nutzen allerdings die Dienste des Anbieters GitHub. Die Datenschutzerklärung von GitHub finden Sie unter <a href="https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement">https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement</a>.
 Wir haben technische und organisatorische Maßnahmen getroffen, die sicherstellen, dass die Vorschriften über den Datenschutz sowohl von uns als auch von unserem Dienstleister beachtet werden. In diesem Zusammenhang weisen wir daraufhin, dass die Daten von GitHub in den USA verarbeitet werden können.
 Als Website-Besucher werden technische Informationen, auch die IP-Adresse, erfasst: diese kann ggf. ein personenbezogenes Datum sein.
@@ -83,7 +83,7 @@ Auf diesen Seiten kommen Cookies zum Einsatz. Diese sind zur optimalen Bereitste
 Die meisten Internetbrowser sind so eingestellt, dass sie Cookies automatisch akzeptieren. Sie können das Speichern von Cookies jedoch deaktivieren oder Ihren Browser so einstellen, dass Cookies nur für die Dauer der jeweiligen Verbindung zum Internet gespeichert werden. Sollten Sie eine Browsererweiterung nutzen, die die Ablage unserer Cookies verhindert, respektieren wir dies selbstverständlich. Cookies werden in diesem Fall nicht abgelegt. Wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können.
 
 ## Weitergabe personenbezogener Daten an Dritte
-Daten, die beim Zugriff auf das Internet-Angebot von der Stadt Ingolstadt protokolliert worden sind, werden an Dritte nur übermittelt, soweit wir gesetzlich oder durch Gerichtsentscheidung dazu verpflichtet sind oder die Weitergabe im Falle von Angriffen auf die Internet-Infrastruktur der Stadt Ingolstadt zu Rechts- oder Strafverfolgung erforderlich ist. Eine Weitergabe zu anderen nichtkommerziellen oder zu kommerziellen Zwecken erfolgt nicht.
+Daten, die beim Zugriff auf das Internet-Angebot von der Stadt Herne protokolliert worden sind, werden an Dritte nur übermittelt, soweit wir gesetzlich oder durch Gerichtsentscheidung dazu verpflichtet sind oder die Weitergabe im Falle von Angriffen auf die Internet-Infrastruktur der Stadt Herne zu Rechts- oder Strafverfolgung erforderlich ist. Eine Weitergabe zu anderen nichtkommerziellen oder zu kommerziellen Zwecken erfolgt nicht.
 
 ## Minderjährigenschutz
 Personen unter 18 Jahren sollten ohne Zustimmung der Eltern oder Erziehungsberechtigten keine personenbezogenen Daten an uns übermitteln. Wir fordern keine personenbezogenen Daten von Kindern und Jugendlichen an. Wissentlich sammeln wir solche Daten nicht und geben sie auch nicht weiter.

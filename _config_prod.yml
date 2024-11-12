@@ -14,7 +14,7 @@
 baseurl: ""
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
-remote_data_prefix: "https://sdg.nachhaltigkeitsagenda-ingolstadt.de/sdg-data"
+remote_data_prefix: "https://opensdgde.github.io/herne-data/"
 
 
 analytics:

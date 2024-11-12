@@ -15,7 +15,7 @@ frontpage_handlungsfelder:
     leitsatz: |
       Wir schaffen die Rahmenbedingungen für eine nachhaltige Entwicklung der Wirtschaft. 
       Als vernetzte, zukunftsorientierte und attraktive Stadt sichern wir mit technologischem 
-      und gesellschaftlichem Fortschritt den Wohlstand für alle Menschen in Ingolstadt.
+      und gesellschaftlichem Fortschritt den Wohlstand für alle Menschen in Herne.
     hf-goals: "4,5,8,9,10,11,12,13"
     hf-color: '#007ebe'
 
@@ -29,7 +29,7 @@ frontpage_handlungsfelder:
 
   - title: Leben
     leitsatz: |
-        Wir ermöglichen gesundes und sicheres Miteinander, Wohnen und Arbeiten für alle Menschen in Ingolstadt. 
+        Wir ermöglichen gesundes und sicheres Miteinander, Wohnen und Arbeiten für alle Menschen in Herne. 
         Wir planen unsere Stadt mit ihren öffentlichen Räumen nachhaltig, generationsgerecht und inklusiv. 
         Wir sichern bedarfsgerechten Wohnbau, soziale Einrichtungen und eine gute Infrastruktur.
     hf-goals: "2,3,6,9,10,11,12,13,15,16"
@@ -52,9 +52,9 @@ frontpage_handlungsfelder:
 
 
 email_contacts:
-  questions: nachhaltigkeit@ingolstadt.de
-  suggestions: nachhaltigkeit@ingolstadt.de
-  functional: nachhaltigkeit@ingolstadt.de
+  questions: nachhaltigkeit@herne.de
+  suggestions: nachhaltigkeit@herne.de
+  functional: nachhaltigkeit@herne.de
 
 
 # 
@@ -76,8 +76,8 @@ cookie_consent_form:
   enabled: true
 
 country:
-  name: Ingolstadt
-  adjective: Ingolstadt
+  name: Herne
+  adjective: Herne
   
 create_indicators:
   layout: indicator
@@ -116,7 +116,7 @@ footer_language_toggle: none
 footer_menu:
   - path: https://StadtIngolstadt.github.io/sdg-data/de/zip/all_indicators.zip
     translation_key: Download
-  - path: mailto:nachhaltigkeit@ingolstadt.de
+  - path: mailto:nachhaltigkeit@herne.de
     translation_key: menu.contact_us
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
@@ -138,16 +138,16 @@ frontpage_handlungsfelder_title:
 
 
 frontpage_cards:
-  - title: Nachhaltigkeitsbericht - Stadt Ingolstadt 2021
-    href: "https://nachhaltigkeitsagenda-ingolstadt.de/wp-content/uploads/2023/01/221208_BNK_final_web.pdf" 
+  - title: Nachhaltigkeitsbericht - Stadt Herne 2021
+    href: "https://nachhaltigkeitsagenda-herne.de/wp-content/uploads/2023/01/221208_BNK_final_web.pdf" 
     thumbnail_src: /BNK_Titelbild_1_1.jpg
-  - title: Magazin - "Ingolstadt Nachhaltig" - Ausgabe 2022
-    href: "https://nachhaltigkeitsagenda-ingolstadt.de/wp-content/uploads/2023/01/IN_Magazin_dpa-CC_FINAL_DIGTAL.pdf"
+  - title: Magazin - "Herne Nachhaltig" - Ausgabe 2022
+    href: "https://nachhaltigkeitsagenda-herne.de/wp-content/uploads/2023/01/IN_Magazin_dpa-CC_FINAL_DIGTAL.pdf"
     thumbnail_src: /IN_Magazin_Titelbild_1_1.jpg
-  - title: Nachhaltigkeitsfilm - Stadt Ingolstadt
+  - title: Nachhaltigkeitsfilm - Stadt Herne
     href: "https://www.youtube.com/watch?v=LnqFFrIGQQQ"
     thumbnail_src: /Logo N-Agenda_1_1.png
-  - title: Video Rückblick - Visionen 2045 Ingolstadt
+  - title: Video Rückblick - Visionen 2045 Herne
     href: "https://www.youtube.com/watch?v=VDQF-RdU0nc"
     thumbnail_src: /Logo N-Agenda_1_1.png
 

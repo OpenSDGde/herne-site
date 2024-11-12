@@ -345,8 +345,8 @@ h1.header {
 }
 
 // change tab color with colors of hf
-@for $i from 1 through length($ingolstadt-hf-tab-colors) {
-  $hf-bg-color: nth($ingolstadt-hf-tab-colors, $i);
+@for $i from 1 through length($herne-hf-tab-colors) {
+  $hf-bg-color: nth($herne-hf-tab-colors, $i);
 
   /* goal-navigation-top */
   #tabbtn-#{$i} {
