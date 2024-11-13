@@ -5,8 +5,8 @@ baseurl: "" # change here!
 remote_data_prefix: https://opensdgde.github.io/herne-data/
 
 # URL for the "Edit Data" and "Edit Metadata" button on indicators.
-data_edit_url: http://prose.io/#StabsstelleNachhaltigkeit/sdg-in-staging-data/edit/develop/data/indicator_[id].csv
-metadata_edit_url: http://prose.io/#StabsstelleNachhaltigkeit/sdg-in-staging-data/edit/develop/meta/[id].md
+data_edit_url: http://prose.io/#OpenSDGde/herne-data/edit/develop/data/indicator_[id].csv
+metadata_edit_url: http://prose.io/#OpenSDGde/herne-data/edit/develop/meta/[id].md
 
 # Text zu Handlungsfelder 
 # fields to change: title, leitsatz, hf-goals
