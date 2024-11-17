@@ -126,6 +126,14 @@
       "indicators": [
         
         {
+          "id": "5-1",
+          "title": "Verhältnis der Beschäftigungsquoten von Frauen und Männern",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/5-1/",
+          "status": "complete"
+        },
+        {
           "id": "5-2",
           "title": "Verhältnis der Medianeinkommen von Frauen und Männern",
           "description": "",

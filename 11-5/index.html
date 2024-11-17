@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/herne-site/assets/css/style.css?v=20241117172322">
+        <link rel="stylesheet" href="/herne-site/assets/css/style.css?v=20241117183412">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -440,6 +440,13 @@ layout-indicator
 
     
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <!--Die Stadt Herne ist durch die Ordnungs- und Polizeigesetze der Länder verpflichtet, unfreiwillig obdachlosen Menschen eine Unterbringung zu gewähren: die sogenannte ordnungsrechtliche Unterbringung. Der Indikator für Herne ist die Wohnungslosigkeit. Diese Angabe ist eine Stichtagszahl. Sie gibt nicht an, wie viele Menschen innerhalb eines Jahres eine Notunterkunft in Anspruch genommen haben, sondern lediglich, wie viele Menschen jeweils zum 31. Dezember in einer kommunalen Notunterkunft eingewiesen waren (Fallzahlen jeweils nach Stichtag 31. Dezember). <br>-->
+
+  </div>
+</div>
+
 
       <!-- add statistic data as image for indicators if its "data_non_statistical" in meta data is set to "true" -->
 
@@ -454,10 +461,10 @@ layout-indicator
   data-country="Herne"
   data-charttitle="Verunglückte im Verkehr"
   data-charttitles="null"
-  data-measurementunit=""
+  data-measurementunit="Verunglückte je 1.000 Einwohner:innen"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="line"
+  data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
@@ -581,6 +588,10 @@ layout-indicator
   <div id="datatableFooter">
     
     
+    <p>Geographische Abdeckung: Herne</p>
+    
+    
+    <p>Einheit: Verunglückte je 1.000 Einwohner:innen</p>
     
     
   </div>
@@ -689,6 +700,9 @@ data-event-label="Change to Table tab"
         
 
         
+        <dt>Geographische Abdeckung:</dt>
+        <dd>Herne</dd>
+        
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
         <dd class="data-controlled-footer-field unit-from-data"></dd>
@@ -758,6 +772,9 @@ data-event-label="Change to Table tab"
     <dl>
         
 
+        
+        <dt>Geographische Abdeckung:</dt>
+        <dd>Herne</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -920,19 +937,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Einheit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Für diesen Indikator nicht verfügbar</span></p>
+            <p>Verunglückte je 1.000 Einwohner:innen</p>
 
           
         </td>
@@ -942,20 +952,13 @@ data-event-label="Change to Metadaten tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Geographische Abdeckung </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Für diesen Indikator nicht verfügbar</span></p>
+            <p>Herne</p>
 
           
         </td>
@@ -965,20 +968,13 @@ data-event-label="Change to Metadaten tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Periodizität </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Für diesen Indikator nicht verfügbar</span></p>
+            <p>Jährlich</p>
 
           
         </td>
@@ -988,20 +984,13 @@ data-event-label="Change to Metadaten tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Für diesen Indikator nicht verfügbar</span></p>
+            <p>2019</p>
 
           
         </td>
@@ -1012,19 +1001,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Für diesen Indikator nicht verfügbar</span></p>
+            <p>SDG-Portal</p>
 
           
         </td>
@@ -1551,12 +1533,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/herne-site/assets/js/sdg.js?v=20241117172322'></script>
+<script src='/herne-site/assets/js/sdg.js?v=20241117183412'></script>
 
 
     
     
-    <script src="/herne-site/assets/js/custom.js?v=20241117172322"></script><script>
+    <script src="/herne-site/assets/js/custom.js?v=20241117183412"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
