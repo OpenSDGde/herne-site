@@ -22,4 +22,524 @@
           "status": "complete"
         }]
     }
+  },
+  {
+    "goal": {
+      "id": "2",
+      "title": "Den Hunger beenden, Ernährungssicherheit und eine bessere Ernährung erreichen und eine nachhaltige Landwirtschaft fördern",
+      "indicators": [
+        
+        {
+          "id": "2-1",
+          "title": "Streuobstwiesen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/2-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "3",
+      "title": "Ein gesundes Leben für alle Menschen jeden Alters gewährleisten und ihr Wohlergehen fördern",
+      "indicators": [
+        
+        {
+          "id": "3-1",
+          "title": "Vorzeitige Sterblichkeit",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/3-1/",
+          "status": "complete"
+        },
+        {
+          "id": "3-2",
+          "title": "Personal in Pflegeheimen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/3-2/",
+          "status": "complete"
+        },
+        {
+          "id": "3-3",
+          "title": "Personal in Pflegediensten",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/3-3/",
+          "status": "complete"
+        },
+        {
+          "id": "3-4",
+          "title": "Pflegeheimplätze",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/3-4/",
+          "status": "complete"
+        },
+        {
+          "id": "3-5",
+          "title": "Luftschadstoffbelastung",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/3-5/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "4",
+      "title": "Inklusive, gleichberechtigte und hochwertige Bildung gewährleisten und Möglichkeiten lebenslangen Lernens für alle fördern",
+      "indicators": [
+        
+        {
+          "id": "4-1",
+          "title": "Schulabbrecherquote",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/4-1/",
+          "status": "complete"
+        },
+        {
+          "id": "4-2",
+          "title": "Betreuung von Kindern - unter 3-jährige",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/4-2/",
+          "status": "complete"
+        },
+        {
+          "id": "4-3",
+          "title": "Integrative Kindertageseinrichtungen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/4-3/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "5",
+      "title": "Geschlechtergleichstellung erreichen und alle Frauen und Mädchen zur Selbstbestimmung befähigen",
+      "indicators": [
+        
+        {
+          "id": "5-2",
+          "title": "Verhältnis der Medianeinkommen von Frauen und Männern",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/5-2/",
+          "status": "complete"
+        },
+        {
+          "id": "5-3",
+          "title": "Frauenanteil im Stadtrat",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/5-3/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "6",
+      "title": "Verfügbarkeit und nachhaltige Bewirtschaftung von Wasser und Sanitärversorgung für alle gewährleisten",
+      "indicators": [
+        
+        {
+          "id": "6-1",
+          "title": "Anzahl an Refill-Stationen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/6-1/",
+          "status": "complete"
+        },
+        {
+          "id": "6-2",
+          "title": "Anzahl an Trinkwasserbrunnen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/6-2/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "7",
+      "title": "Zugang zu bezahlbarer, verlässlicher, nachhaltiger und moderner Energie für alle sichern",
+      "indicators": [
+        
+        {
+          "id": "7-1",
+          "title": "Strom aus erneuerbaren Energien",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/7-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "8",
+      "title": "Dauerhaftes, breitenwirksames und nachhaltiges Wirtschaftswachstum, produktive Vollbeschäftigung und menschenwürdige Arbeit für alle fördern",
+      "indicators": [
+        
+        {
+          "id": "8-1",
+          "title": "Bruttoinlandsprodukt",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/8-1/",
+          "status": "complete"
+        },
+        {
+          "id": "8-2",
+          "title": "Langzeitarbeitslosenquote",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/8-2/",
+          "status": "complete"
+        },
+        {
+          "id": "8-3",
+          "title": "Beschäftigungsquote - 15- bis 64-Jährige",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/8-3/",
+          "status": "complete"
+        },
+        {
+          "id": "8-4",
+          "title": "Beschäftigungsquote - 55- bis 64-Jährige",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/8-4/",
+          "status": "complete"
+        },
+        {
+          "id": "8-5",
+          "title": "Erwerbstätige Aufstocker:innen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/8-5/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "9",
+      "title": "Eine widerstandsfähige Infrastruktur aufbauen, breitenwirksame und nachhaltige Industrialisierung fördern und Innovationen unterstützen",
+      "indicators": [
+        
+        {
+          "id": "9-1",
+          "title": "Existenzgründungen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/9-1/",
+          "status": "complete"
+        },
+        {
+          "id": "9-2",
+          "title": "Breitbandversorgung - Private Haushalte",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/9-2/",
+          "status": "complete"
+        },
+        {
+          "id": "9-3",
+          "title": "Hochqualifizierte am Arbeitsort",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/9-3/",
+          "status": "complete"
+        },
+        {
+          "id": "9-4",
+          "title": "global_indicators.9-4-title",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/9-4/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "10",
+      "title": "Ungleichheit in und zwischen Ländern verringern",
+      "indicators": [
+        
+        {
+          "id": "10-1",
+          "title": "Beschäftigungsquote - Ausländer:innen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/10-1/",
+          "status": "complete"
+        },
+        {
+          "id": "10-2",
+          "title": "Schulabbrecherquote - Ausländer:innen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/10-2/",
+          "status": "complete"
+        },
+        {
+          "id": "10-3",
+          "title": "Einbürgerungen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/10-3/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "11",
+      "title": "Städte und Siedlungen inklusiv, sicher, widerstandsfähig und nachhaltig gestalten",
+      "indicators": [
+        
+        {
+          "id": "11-1",
+          "title": "Mietpreise",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/11-1/",
+          "status": "complete"
+        },
+        {
+          "id": "11-2",
+          "title": "Wohnfläche",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/11-2/",
+          "status": "complete"
+        },
+        {
+          "id": "11-3",
+          "title": "PKW-Dichte",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/11-3/",
+          "status": "complete"
+        },
+        {
+          "id": "11-4",
+          "title": "Elektro- und Hybridfahrzeuge",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/11-4/",
+          "status": "complete"
+        },
+        {
+          "id": "11-5",
+          "title": "Verunglückte im Verkehr",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/11-5/",
+          "status": "complete"
+        },
+        {
+          "id": "11-6",
+          "title": "Flächeninanspruchnahme",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/11-6/",
+          "status": "complete"
+        },
+        {
+          "id": "11-7",
+          "title": "Flächenneuinanspruchnahme",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/11-7/",
+          "status": "complete"
+        },
+        {
+          "id": "11-8",
+          "title": "Flächennutzungsintensität",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/11-8/",
+          "status": "complete"
+        },
+        {
+          "id": "11-9",
+          "title": "Naherholungsflächen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/11-9/",
+          "status": "complete"
+        },
+        {
+          "id": "11-10",
+          "title": "Fertiggestellte Wohngebäude mit erneuerbarer Heizenergie",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/11-10/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "12",
+      "title": "Nachhaltige Konsum- und Produktionsmuster sicherstellen",
+      "indicators": [
+        
+        {
+          "id": "12-1",
+          "title": "Endenergieverbrauch nach Sektoren",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/12-1/",
+          "status": "complete"
+        },
+        {
+          "id": "12-2",
+          "title": "Fairtrade-Town",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/12-2/",
+          "status": "complete"
+        },
+        {
+          "id": "12-3",
+          "title": "Fairtrade-Schools",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/12-3/",
+          "status": "complete"
+        },
+        {
+          "id": "12-4",
+          "title": "Fairtrade-Kitas",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/12-4/",
+          "status": "complete"
+        },
+        {
+          "id": "12-5",
+          "title": "Trinkwasserverbrauch - Private Haushalte",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/12-5/",
+          "status": "complete"
+        },
+        {
+          "id": "12-6",
+          "title": "Abfallmenge",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/12-6/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "13",
+      "title": "Umgehend Maßnahmen zur Bekämpfung des Klimawandels und seiner Auswirkungen ergreifen",
+      "indicators": [
+        
+        {
+          "id": "13-1",
+          "title": "Treibhausgasemissionen nach Sektoren",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/13-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "15",
+      "title": "Landökosysteme schützen, wiederherstellen und ihre nachhaltige Nutzung fördern, Wälder nachhaltig bewirtschaften, Wüstenbildung bekämpfen, Bodendegradation beenden und umkehren und dem Verlust der biologischen Vielfalt ein Ende setzen",
+      "indicators": [
+        
+        {
+          "id": "15-1",
+          "title": "Naturschutzflächen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/15-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "16",
+      "title": "Friedliche und inklusive Gesellschaften für eine nachhaltige Entwicklung fördern, allen Menschen Zugang zur Justiz ermöglichen und leistungsfähige, rechenschaftspflichtige und inklusive Institutionen auf allen Ebenen aufbauen",
+      "indicators": [
+        
+        {
+          "id": "16-1",
+          "title": "Straftaten",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/16-1/",
+          "status": "complete"
+        },
+        {
+          "id": "16-2",
+          "title": "Finanzmittelsaldo",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/16-2/",
+          "status": "complete"
+        },
+        {
+          "id": "16-3",
+          "title": "Steuereinnahmen",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/16-3/",
+          "status": "complete"
+        },
+        {
+          "id": "16-4",
+          "title": "Liquiditätskredite",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/16-4/",
+          "status": "complete"
+        },
+        {
+          "id": "16-5",
+          "title": "Investitionskredite",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/16-5/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "17",
+      "title": "Umsetzungsmittel stärken und die Globale Partnerschaft für nachhaltige Entwicklung mit neuem Leben erfüllen",
+      "indicators": [
+        
+        {
+          "id": "17-1",
+          "title": "Städtepartnerschaften",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/17-1/",
+          "status": "complete"
+        }]
+    }
   }]
