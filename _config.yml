@@ -365,18 +365,12 @@ frontpage_handlungsfelder_title:
 
 
 frontpage_cards:
-  - title: Nachhaltigkeitsbericht - Stadt Herne 2021
-    href: "https://nachhaltigkeitsagenda-herne.de/wp-content/uploads/2023/01/221208_BNK_final_web.pdf" 
-    thumbnail_src: /BNK_Titelbild_1_1.jpg
-  - title: Magazin - "Herne Nachhaltig" - Ausgabe 2022
+  - title: Nachhaltigkeitsbericht - Stadt Herne 2023
+    href: "https://www.herne.de/PDF/Klima/bnk_bericht_herne_final.pdf" 
+    thumbnail_src: /nachhaltigkeitsbericht.jpg
+  - title: Nachhaltigkeitsstrategie - Stadt Herne 2021
     href: "https://nachhaltigkeitsagenda-herne.de/wp-content/uploads/2023/01/IN_Magazin_dpa-CC_FINAL_DIGTAL.pdf"
-    thumbnail_src: /IN_Magazin_Titelbild_1_1.jpg
-  - title: Nachhaltigkeitsfilm - Stadt Herne
-    href: "https://www.youtube.com/watch?v=LnqFFrIGQQQ"
-    thumbnail_src: /Logo N-Agenda_1_1.png
-  - title: Video Rückblick - Visionen 2045 Herne
-    href: "https://www.youtube.com/watch?v=VDQF-RdU0nc"
-    thumbnail_src: /Logo N-Agenda_1_1.png
+    thumbnail_src: /nachhaltigkeitsstrategie.jpg
 
 goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
 graph_color_set: accessible
