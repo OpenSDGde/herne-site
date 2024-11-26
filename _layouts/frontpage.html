@@ -50,31 +50,31 @@
   <div class="tab container" style="margin-top:1rem;">
       <div class="row g-0 align-items-center justify-content-start">
           <!-- Nachhaltige Verwaltung -->
-          <button class="tablinks active" id="tabbtn-1" onclick="openTab(event, 'frontpage-handlungsfelder-Nachhaltige Verwaltung')">
+          <button class="tablinks active" id="tabbtn-1" onclick="openTab(event, 'frontpage-handlungsfelder-nachhaltige-verwaltung')">
               <i class="fa fa-gear" style="font-size: calc(10px + 0.75vw);"></i>
               <span class="tabs-text">Nachhaltige Verwaltung</span>
           </button>
 
           <!-- Klimaschutz und Energie -->
-          <button class="tablinks" id="tabbtn-2" onclick="openTab(event, 'frontpage-handlungsfelder-Klimaschutz und Energie')">
+          <button class="tablinks" id="tabbtn-2" onclick="openTab(event, 'frontpage-handlungsfelder-klimaschutz-und-energie')">
               <i class="fas fa-solar-panel" style="font-size: calc(10px + 0.75vw);"></i>
               <span class="tabs-text">Klimaschutz und Energie</span>
           </button>
 
           <!-- Ressourcenschutz & Klimafolgenanpassung -->
-          <button class="tablinks" id="tabbtn-3" onclick="openTab(event, 'frontpage-handlungsfelder-Ressourcenschutz & Klimafolgenanpassung')">
+          <button class="tablinks" id="tabbtn-3" onclick="openTab(event, 'frontpage-handlungsfelder-ressourcenschutz-klimafolgenanpassung')">
               <i class="fas fa-recycle" style="font-size: calc(10px + 0.75vw);"></i>
-              <span class="tabs-text">Ressourcenschutz & Klimafolgenanpassung</span>
+              <span class="tabs-text">Ressourcen- schutz & Klimafolgen- anpassung</span>
           </button>
 
           <!-- Nachhaltige Mobilität -->
-          <button class="tablinks" id="tabbtn-4" onclick="openTab(event, 'frontpage-handlungsfelder-Nachhaltige Mobilität')">
+          <button class="tablinks" id="tabbtn-4" onclick="openTab(event, 'frontpage-handlungsfelder-nachhaltige-mobilitaet')">
               <i class="fas fa-bicycle" style="font-size: calc(10px + 0.75vw);"></i>
               <span class="tabs-text">Nachhaltige Mobilität</span>
           </button>
 
           <!-- Lebenslanges Lernen & Kultur -->
-          <button class="tablinks" id="tabbtn-5" onclick="openTab(event, 'frontpage-handlungsfelder-Lebenslanges Lernen & Kultur')">
+          <button class="tablinks" id="tabbtn-5" onclick="openTab(event, 'frontpage-handlungsfelder-lebenslanges-lernen-kultur')">
               <i class="fas fa-book" style="font-size: calc(10px + 0.75vw);"></i>
               <span class="tabs-text">Lebenslanges Lernen & Kultur</span>
           </button>
@@ -114,7 +114,7 @@
 
 {% if site.frontpage_handlungsfelder %}
 {% for thema in site.frontpage_handlungsfelder %}
-<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-{{ thema.title }}"  style="background-color: {{ thema.hf-color }};">
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-{{ thema.slug }}"  style="background-color: {{ thema.hf-color }};">
     <!-- import contents of Handlungsfelder from _config.yml -->
     {% include components/thema.html thema=thema %}
 </div>
