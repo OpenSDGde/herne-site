@@ -350,9 +350,10 @@ h1.header {
 
   /* goal-navigation-top */
   #tabbtn-#{$i} {
+    min-height: 200px;
     width: 18%;
     padding: 0.75rem 0rem;
-    margin-right: 1px;
+    margin-right: 4px;
     font-size: calc(5px + 0.75vw);
     font-weight:600; 
     text-transform:uppercase; 
