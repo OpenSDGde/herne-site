@@ -140,44 +140,146 @@ frontpage_handlungsfelder:
     hf-goals: "4"
     hf-color: "#e91e63"
 
-  # - title: Soziale Gerechtigkeit & zukunftsfähige Gesellschaft
-  #   leitsatz: |
-  #     Bereits seit 1991 besteht verwaltungsintern ein Gleichstellungsplan. Es folgte eine stetige Erweiterung der Richtlinien zum Thema Gleichstellung, wie die Gender Mainstreaming Strategie oder die Diversity Mainstreaming Strategie. Gender Mainstreaming und Diversity Mainstreaming werden als Querschnittsaufgabe von allen Dezernaten und Fachbereichen der Stadt Herne umgesetzt. Zahlreiche Maßnahmen und Kampagnen zu den Themen Anti-Diskriminierung (Herne mit Respekt), Gewaltprävention (Runder Tisch gegen häusliche Gewalt in Herne) und Chancengleichheit (Herner Frauenwoche) werden für die Stadtgesellschaft angeboten.
-  #     Die Stadt Herne fördert benachteiligte Bevölkerungsgruppen mit spezifischen Maßnahmen. Angesichts des demographischen Wandels hat die Stadt Herne mehrsprachige Beratungsstellen und Netzwerke für Seniorinnen und Senioren etabliert und nimmt an Projekten zur altersgerechten Quartiersentwicklung teil.
-  #     Darüber hinaus treibt die Stadt Herne das Thema Demokratieförderung voran. Maßnahmen der Demokratieförderung sind Teil eines breiteren Engagements der Stadt, das soziale Gerechtigkeit und die Integration aller Bürgerinnen und Bürger unterstützt. Zusätzlich fördert die Stadt Herne soziales Engagement und ist bestrebt, soziale Teilhabe aller Bevölkerungsgruppen zu ermöglichen.
-  #   hf-goals: "5,10,16"
-  #   hf-color: "#3f51b5"
+  - title: Soziale Gerechtigkeit & zukunftsfähige Gesellschaft
+    slug: soziale-gerechtigkeit-zukunftsfahige-gesellschaft
+    leitsatz: |
+      <p>
+      Bereits seit 1991 besteht verwaltungsintern ein Gleichstellungsplan. Es folgte 
+      eine stetige Erweiterung der Richtlinien zum Thema Gleichstellung, wie die 
+      Gender Mainstreaming Strategie oder die Diversity Mainstreaming Strategie. 
+      Gender Mainstreaming und Diversity Mainstreaming werden als 
+      Querschnittsaufgabe von allen Dezernaten und Fachbereichen der Stadt Herne 
+      umgesetzt. Zahlreiche Maßnahmen und Kampagnen zu den Themen 
+      Anti-Diskriminierung (Herne mit Respekt), 
+      Gewaltprävention (Runder Tisch gegen häusliche Gewalt in Herne) 
+      und Chancengleichheit (Herner Frauenwoche) werden für die Stadtgesellschaft 
+      angeboten.
+      </p>
+
+      <p>
+      Die Stadt Herne fördert benachteiligte Bevölkerungsgruppen mit spezifischen 
+      Maßnahmen. Angesichts des demographischen Wandels hat die Stadt Herne 
+      mehrsprachige Beratungsstellen und Netzwerke für Seniorinnen und Senioren 
+      etabliert und nimmt an Projekten zur altersgerechten Quartiersentwicklung teil.
+      </p>
+
+      <p>
+      Darüber hinaus treibt die Stadt Herne das Thema Demokratieförderung voran. 
+      Maßnahmen der Demokratieförderung sind Teil eines breiteren Engagements der 
+      Stadt, das soziale Gerechtigkeit und die Integration aller Bürgerinnen und 
+      Bürger unterstützt. Zusätzlich fördert die Stadt Herne soziales Engagement 
+      und ist bestrebt, soziale Teilhabe aller Bevölkerungsgruppen zu ermöglichen.
+      </p>
+    hf-goals: "5,10,16"
+    hf-color: "#3f51b5"
+
+  - title: Wohnen & Nachhaltige Quartiere
+    slug: wohnen-nachhaltige-quartiere
+    leitsatz: |
+      <p>
+      Das Handlungskonzept Wohnen beschreibt die Rahmenbedingungen des 
+      Wohnungsmarkts in Herne und formuliert Ziele, Strategien und Maßnahmen der 
+      kommunalen Wohnungspolitik für die kommenden Jahre. Die Wohnraumförderung trägt 
+      gleichzeitig zu einer qualitativen und bezahlbaren Wohnraumversorgung, 
+      insbesondere auch für vulnerable Gruppen, bei.
+      </p>
+
+      <p>
+      Außerdem fördert die Stadt Herne in städtebaulichen Wettbewerben Ideen für 
+      mehr Klimaschutz und Klimaanpassung. Die Bürgerbeteiligung in der 
+      Quartiersentwicklung wird durch Stadtteilbüros, Quartiersforen und 
+      Bürgerworkshops intensiviert und Lärmschutzmaßnahmen werden durch Lärmkarten 
+      sowie Lärmaktionspläne umgesetzt.
+      </p>
+      
+      <p>
+      Naherholung, soziale Kontakte und Fußgängerfreundlichkeit werden durch die 
+      Gestaltung klimagerechter Straßenräume und die Förderung von 
+      Bewegungsparcours unterstützt. Die Vermeidung sozialer Segregation wird 
+      in der Stadtplanung durch die Förderung urbaner Quartiere und einer 
+      sozialen Vielfalt angestrebt.
+      </p>
+    hf-goals: "11"
+    hf-color: "#05afda"
+
+  - title: Gute Arbeit & nachhaltiges Wirtschaften
+    slug: gute-arbeit-nachhaltiges-wirtschaften
+    leitsatz: |
+      <p>
+      Die Stadt Herne setzt verschiedenste Maßnahmen für ein familienfreundliches 
+      Umfeld um. Dazu zählt das Familienbüro als zentrale Anlaufstelle für 
+      Familien, um niederschwellige Zugänge zu vielfältigen Beratungs- und 
+      Unterstützungsangeboten zu ermöglichen. Der Gleichstellungsplan 2022-2025 
+      setzt sich mit konkreten Maßnahmen für die Vereinbarkeit von Familie und 
+      Beruf ein und fördert die Chancengleichheit in der Verwaltung.
+      </p>
+
+      <p>
+      Gleichzeitig werden die Unternehmen auf dem Weg zur Klimaneutralität 
+      unterstützt. Dabei stellt die Stadt Herne Informationen zu 
+      Nachhaltigkeitsthemen wie Digitalisierung, Innovation und Klimaschutz zur 
+      Verfügung und bietet Beratungen im Bereich Energie- und Ressourceneffizienz 
+      sowie zu Förderprogrammen mit Zuschüssen oder Krediten an. Gründerinnen und 
+      Gründer haben darüber hinaus die Möglichkeit, sich im STARTERCENTER NRW bei 
+      Herne.Business bspw. zu bestehenden Förderprogrammen beraten zu lassen und 
+      Kontakte zu Expertinnen und Experten zu knüpfen.
+      </p>
+
+      <p>
+      Die Digitalstrategie 2030+ bündelt Maßnahmen der Handlungsfelder Smart 
+      City Infrastruktur, Digitale Verwaltung, Gesellschaft, Mobilität sowie 
+      Energie und Umwelt. Hierzu arbeitet die Stadt Herne eng mit verschiedenen 
+      Akteuren zusammen. In Zusammenarbeit mit den Stadtwerken Herne wurde eine 
+      automatische Datenübertragung von Sensoren, Zählern und Messinstrumenten 
+      eingeführt, die auf der LoRaWan-Technologie (Long Range Wide Area Network) 
+      basiert. Beim Ausbau von Open-Source-Technologien, die einen reibungslosen 
+      Übergang zu digitalen Energien ermöglichen sollen, arbeitet die 
+      Stadtverwaltung mit der Fiware Foundation zusammen. Und um auch zukünftig 
+      innovative Lösungen wie einen Digitalen Zwilling zu entwickeln, kooperiert 
+      die Stadt mit Hochschulen und andern Innovationstreibern aus der 
+      Region (z. B. Ruhrvalley, Hochschule Bochum, FH Dortmund, RWTH Aachen).
+      </p>
+    hf-goals: "8,9"
+    hf-color: "#795548"
+
+  - title: Nachhaltiger Konsum & gesundes Leben
+    slug: nachhaltiger-konsum-gesundes-leben
+    leitsatz: |
+      <p>
+      Die Karte für einen nachhaltigen Alltag wurde entwickelt, um nachhaltige Orte 
+      wie Repaircafés, Tauschschränke oder Trinkbrunnen im Stadtgebiet zu finden. 
+      Außerdem können die Bürgerinnen und Bürger auf städtischen Streuobstwiesen 
+      u.a. Äpfel oder Kirschen ernten, was das Bewusstsein für eine gesunde 
+      Ernährung stärkt.
+      </p>
+
+      <p>
+      Mit einer strategischen Gesundheitsplanung, die eine 
+      Gesundheitsberichterstattung sowie eine kommunale Präventions- und 
+      Gesundheitskonferenz und die Durchführung von Projekten zur 
+      sozialraumorientierten Gesundheitsförderung beinhaltet, trägt die Stadt 
+      Herne zur Verbesserung der Lebensqualität ihrer Bürgerinnen und Bürger bei.
+      </p>
+
+      <p>
+      Im Bereich der Pflege und Betreuung bietet die Stadt Herne für Seniorinnen 
+      und Senioren Beratungs- und Informationsangebote sowie Ratgeber mit 
+      aktuellen Informationen zu den Themen Gesundheit, Wohnen und Pflege an. 
+      Für Menschen mit Behinderung bietet die Stadt Herne umfassende 
+      Beratungs- und Informationsangebote sowie einen Inklusionsplan, mit dem 
+      Herne zu einer inklusiveren und teilhabefreundlicheren Stadt entwickelt 
+      werden soll.
+      </p>
+    hf-goals: "3,12"
+    hf-color: "#4caf50"
   #
-  # - title: Wohnen & Nachhaltige Quartiere
-  #   leitsatz: |
-  #     Das Handlungskonzept Wohnen beschreibt die Rahmenbedingungen des Wohnungsmarkts in Herne und formuliert Ziele, Strategien und Maßnahmen der kommunalen Wohnungspolitik für die kommenden Jahre. Die Wohnraumförderung trägt gleichzeitig zu einer qualitativen und bezahlbaren Wohnraumversorgung, insbesondere auch für vulnerable Gruppen, bei.
-  #     Außerdem fördert die Stadt Herne in städtebaulichen Wettbewerben Ideen für mehr Klimaschutz und Klimaanpassung. Die Bürgerbeteiligung in der Quartiersentwicklung wird durch Stadtteilbüros, Quartiersforen und Bürgerworkshops intensiviert und Lärmschutzmaßnahmen werden durch Lärmkarten sowie Lärmaktionspläne umgesetzt.
-  #     Naherholung, soziale Kontakte und Fußgängerfreundlichkeit werden durch die Gestaltung klimagerechter Straßenräume und die Förderung von Bewegungsparcours unterstützt. Die Vermeidung sozialer Segregation wird in der Stadtplanung durch die Förderung urbaner Quartiere und einer sozialen Vielfalt angestrebt.
-  #   hf-goals: "11"
-  #   hf-color: "#009688"
-  #
-  # - title: Gute Arbeit & nachhaltiges Wirtschaften
-  #   leitsatz: |
-  #     Die Stadt Herne setzt verschiedenste Maßnahmen für ein familienfreundliches Umfeld um. Dazu zählt das Familienbüro als zentrale Anlaufstelle für Familien, um niederschwellige Zugänge zu vielfältigen Beratungs- und Unterstützungsangeboten zu ermöglichen. Der Gleichstellungsplan 2022-2025 setzt sich mit konkreten Maßnahmen für die Vereinbarkeit von Familie und Beruf ein und fördert die Chancengleichheit in der Verwaltung.
-  #     Gleichzeitig werden die Unternehmen auf dem Weg zur Klimaneutralität unterstützt. Dabei stellt die Stadt Herne Informationen zu Nachhaltigkeitsthemen wie Digitalisierung, Innovation und Klimaschutz zur Verfügung und bietet Beratungen im Bereich Energie- und Ressourceneffizienz sowie zu Förderprogrammen mit Zuschüssen oder Krediten an. Gründerinnen und Gründer haben darüber hinaus die Möglichkeit, sich im STARTERCENTER NRW bei Herne.Business bspw. zu bestehenden Förderprogrammen beraten zu lassen und Kontakte zu Expertinnen und Experten zu knüpfen.
-  #     Die Digitalstrategie 2030+ bündelt Maßnahmen der Handlungsfelder Smart City Infrastruktur, Digitale Verwaltung, Gesellschaft, Mobilität sowie Energie und Umwelt. Hierzu arbeitet die Stadt Herne eng mit verschiedenen Akteuren zusammen. In Zusammenarbeit mit den Stadtwerken Herne wurde eine automatische Datenübertragung von Sensoren, Zählern und Messinstrumenten eingeführt, die auf der LoRaWan-Technologie (Long Range Wide Area Network) basiert. Beim Ausbau von Open-Source-Technologien, die einen reibungslosen Übergang zu digitalen Energien ermöglichen sollen, arbeitet die Stadtverwaltung mit der Fiware Foundation zusammen. Und um auch zukünftig innovative Lösungen wie einen Digitalen Zwilling zu entwickeln, kooperiert die Stadt mit Hochschulen und andern Innovationstreibern aus der Region (z. B. Ruhrvalley, Hochschule Bochum, FH Dortmund, RWTH Aachen).
-  #   hf-goals: "8,9"
-  #   hf-color: "#795548"
-  #
-  # - title: Nachhaltiger Konsum & gesundes Leben
-  #   leitsatz: |
-  #     Die Karte für einen nachhaltigen Alltag wurde entwickelt, um nachhaltige Orte wie Repaircafés, Tauschschränke oder Trinkbrunnen im Stadtgebiet zu finden. Außerdem können die Bürgerinnen und Bürger auf städtischen Streuobstwiesen u.a. Äpfel oder Kirschen ernten, was das Bewusstsein für eine gesunde Ernährung stärkt.
-  #     Mit einer strategischen Gesundheitsplanung, die eine Gesundheitsberichterstattung sowie eine kommunale Präventions- und Gesundheitskonferenz und die Durchführung von Projekten zur sozialraumorientierten Gesundheitsförderung beinhaltet, trägt die Stadt Herne zur Verbesserung der Lebensqualität ihrer Bürgerinnen und Bürger bei.
-  #     Im Bereich der Pflege und Betreuung bietet die Stadt Herne für Seniorinnen und Senioren Beratungs- und Informationsangebote sowie Ratgeber mit aktuellen Informationen zu den Themen Gesundheit, Wohnen und Pflege an. Für Menschen mit Behinderung bietet die Stadt Herne umfassende Beratungs- und Informationsangebote sowie einen Inklusionsplan, mit dem Herne zu einer inklusiveren und teilhabefreundlicheren Stadt entwickelt werden soll.
-  #   hf-goals: "3,12"
-  #   hf-color: "#4caf50"
-  #
-  # - title: Globale Verantwortung & Eine Welt
-  #   leitsatz: |
-  #     Als Fairtrade-Stadt engagiert sich die Stadt Herne mit diversen Akteuren der Stadtgesellschaft seit über einem Jahrzehnt für Nachhaltigkeit und globale Gerechtigkeit. Die Stadt Herne ist Teil des Netzwerks Faire Metropole Ruhr, bei dem ein regelmäßiger Wissens- und Erfahrungsaustausch zu den Themen Fairer Handel, nachhaltige Beschaffung sowie übergreifend zur Umsetzung der Globalen Nachhaltigkeitsziele in der Metropole Ruhr erfolgt. Mit der Unterzeichnung der Charta Faire Metropole Ruhr 2030 - Eine Fairfassung bekennt sich die Stadt Herne zu Fairem Handel und zu Fairer öffentlicher Beschaffung.
-  #     Der Verein zur Förderung der partnerschaftlichen Beziehungen der Stadt Herne e.V. intensiviert den Austausch zwischen Bürgerinnen und Bürgern der Partnerstädte der Stadt Herne und unterstützt humanitäre Projekte, die u.a. die Nachhaltigkeit fördern, wie den Bau von umweltfreundlichen Häusern aus recycelten Materialien in Nicaragua. Zusätzlich werden Projekte an einer Schule unterstützt, die zum Umweltbewusstsein der Kinder und Jugendlichen beitragen, wie die Vermeidung von Müll und Recycling.
-  #   hf-goals: "17"
-  #   hf-color: "#673ab7"
+  - title: Globale Verantwortung & Eine Welt
+    slug: globale-verantwortung-eine-welt
+    leitsatz: |
+      Als Fairtrade-Stadt engagiert sich die Stadt Herne mit diversen Akteuren der Stadtgesellschaft seit über einem Jahrzehnt für Nachhaltigkeit und globale Gerechtigkeit. Die Stadt Herne ist Teil des Netzwerks Faire Metropole Ruhr, bei dem ein regelmäßiger Wissens- und Erfahrungsaustausch zu den Themen Fairer Handel, nachhaltige Beschaffung sowie übergreifend zur Umsetzung der Globalen Nachhaltigkeitsziele in der Metropole Ruhr erfolgt. Mit der Unterzeichnung der Charta Faire Metropole Ruhr 2030 - Eine Fairfassung bekennt sich die Stadt Herne zu Fairem Handel und zu Fairer öffentlicher Beschaffung.
+      Der Verein zur Förderung der partnerschaftlichen Beziehungen der Stadt Herne e.V. intensiviert den Austausch zwischen Bürgerinnen und Bürgern der Partnerstädte der Stadt Herne und unterstützt humanitäre Projekte, die u.a. die Nachhaltigkeit fördern, wie den Bau von umweltfreundlichen Häusern aus recycelten Materialien in Nicaragua. Zusätzlich werden Projekte an einer Schule unterstützt, die zum Umweltbewusstsein der Kinder und Jugendlichen beitragen, wie die Vermeidung von Müll und Recycling.
+    hf-goals: "17"
+    hf-color: "#673ab7"
 
 email_contacts:
   questions: nachhaltigkeit@herne.de
