@@ -188,7 +188,7 @@ frontpage_handlungsfelder_title:
 
 frontpage_cards:
   - title: Nachhaltigkeitsbericht - Stadt Herne 2021
-    href: "https://nachhaltigkeitsagenda-herne.de/wp-content/uploads/2023/01/221208_BNK_final_web.pdf" 
+    href: "https://nachhaltigkeitsagenda-herne.de/wp-content/uploads/2023/01/221208_BNK_final_web.pdf"
     thumbnail_src: /BNK_Titelbild_1_1.jpg
   - title: Magazin - "Herne Nachhaltig" - Ausgabe 2022
     href: "https://nachhaltigkeitsagenda-herne.de/wp-content/uploads/2023/01/IN_Magazin_dpa-CC_FINAL_DIGTAL.pdf"
@@ -209,7 +209,7 @@ languages:
 
 menu:
   - path: /
-    translation_key: Startseite
+    translation_key: menu.start
   - path: /goals
     translation_key: general.goals
   - path: /reporting-status
