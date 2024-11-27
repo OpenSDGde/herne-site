@@ -1,4 +1,6 @@
+@charset "UTF-8";
 /* open-sans-regular - latin */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Museo+Slab:wght@400;700&display=swap");
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -2809,6 +2811,20 @@ body.contrast-high #search-bar-on-page button:hover {
 body.contrast-high.layout-search form input, body.contrast-high.layout-search form label {
   color: black; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Museo Slab", serif; }
+
+/* Fließtext */
+body,
+p,
+li {
+  font-family: "PT Sans", sans-serif; }
+
 h1 {
   font-size: 2.5rem;
   text-align: start; }
@@ -3035,16 +3051,21 @@ h1.header {
   margin-bottom: 0px; }
 
 /*1-1. frontpage */
-@media (min-width: 992px) {
-  .main-image {
-    padding-bottom: 5rem; }
-    .main-image img {
-      max-width: 100%; } }
-@media (max-width: 992px) {
-  .main-image {
-    padding-bottom: 1rem; }
-    .main-image img {
-      height: calc(30vw + 80px); } }
+.main-image {
+  margin-top: 1rem;
+  /* Stile für größere Bildschirme */
+  /* Stile für kleinere Bildschirme */ }
+  .main-image img {
+    width: 100%;
+    height: 60%;
+    display: block;
+    /* Verhindert unerwünschte Abstände unter dem Bild */ }
+  @media (min-width: 992px) {
+    .main-image {
+      padding-bottom: 5rem; } }
+  @media (max-width: 992px) {
+    .main-image {
+      padding-bottom: 1rem; } }
 
 .site-intro {
   background: none !important;
@@ -3052,17 +3073,23 @@ h1.header {
   text-align: justify; }
 
 /*1-2. Handlungsfelder*/
-#frontpage-handlungsfelder-Umwelt,
-#frontpage-handlungsfelder-Leben,
-#frontpage-handlungsfelder-Vielfalt,
-#frontpage-handlungsfelder-Bildung {
+#frontpage-handlungsfelder-klimaschutz-und-energie,
+#frontpage-handlungsfelder-ressourcenschutz-klimafolgenanpassung,
+#frontpage-handlungsfelder-nachhaltige-mobilitaet,
+#frontpage-handlungsfelder-wohnen-nachhaltige-quartiere,
+#frontpage-handlungsfelder-gute-arbeit-nachhaltiges-wirtschaften,
+#frontpage-handlungsfelder-nachhaltiger-konsum-gesundes-leben,
+#frontpage-handlungsfelder-globale-verantwortung-eine-welt,
+#frontpage-handlungsfelder-lebenslanges-lernen-kultur {
   display: none; }
 
 /* goal-navigation-top */
 #tabbtn-1 {
+  min-height: 200px;
   width: 18%;
   padding: 0.75rem 0rem;
   margin-right: 1px;
+  margin-top: 1px;
   font-size: calc(5px + 0.75vw);
   font-weight: 600;
   text-transform: uppercase;
@@ -3086,9 +3113,11 @@ h1.header {
 
 /* goal-navigation-top */
 #tabbtn-2 {
+  min-height: 200px;
   width: 18%;
   padding: 0.75rem 0rem;
   margin-right: 1px;
+  margin-top: 1px;
   font-size: calc(5px + 0.75vw);
   font-weight: 600;
   text-transform: uppercase;
@@ -3112,14 +3141,16 @@ h1.header {
 
 /* goal-navigation-top */
 #tabbtn-3 {
+  min-height: 200px;
   width: 18%;
   padding: 0.75rem 0rem;
   margin-right: 1px;
+  margin-top: 1px;
   font-size: calc(5px + 0.75vw);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #f8b715;
+  color: #6a1b9a;
   border-radius: 10px 10px 0 0;
   background-color: #fcfcfc;
   border: none;
@@ -3127,25 +3158,27 @@ h1.header {
 
 #tabbtn-3:hover {
   color: white !important;
-  background-color: #f8b715 !important;
+  background-color: #6a1b9a !important;
   box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
 
 #tabbtn-3:focus,
 #tabbtn-3.active {
   color: white !important;
-  background-color: #f8b715 !important;
+  background-color: #6a1b9a !important;
   box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
 
 /* goal-navigation-top */
 #tabbtn-4 {
+  min-height: 200px;
   width: 18%;
   padding: 0.75rem 0rem;
   margin-right: 1px;
+  margin-top: 1px;
   font-size: calc(5px + 0.75vw);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #ed6d29;
+  color: #ff9800;
   border-radius: 10px 10px 0 0;
   background-color: #fcfcfc;
   border: none;
@@ -3153,20 +3186,78 @@ h1.header {
 
 #tabbtn-4:hover {
   color: white !important;
-  background-color: #ed6d29 !important;
+  background-color: #ff9800 !important;
   box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
 
 #tabbtn-4:focus,
 #tabbtn-4.active {
   color: white !important;
-  background-color: #ed6d29 !important;
+  background-color: #ff9800 !important;
   box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
 
 /* goal-navigation-top */
 #tabbtn-5 {
+  min-height: 200px;
   width: 18%;
   padding: 0.75rem 0rem;
   margin-right: 1px;
+  margin-top: 1px;
+  font-size: calc(5px + 0.75vw);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #e91e63;
+  border-radius: 10px 10px 0 0;
+  background-color: #fcfcfc;
+  border: none;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
+
+#tabbtn-5:hover {
+  color: white !important;
+  background-color: #e91e63 !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
+
+#tabbtn-5:focus,
+#tabbtn-5.active {
+  color: white !important;
+  background-color: #e91e63 !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
+
+/* goal-navigation-top */
+#tabbtn-6 {
+  min-height: 200px;
+  width: 18%;
+  padding: 0.75rem 0rem;
+  margin-right: 1px;
+  margin-top: 1px;
+  font-size: calc(5px + 0.75vw);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #3f51b5;
+  border-radius: 10px 10px 0 0;
+  background-color: #fcfcfc;
+  border: none;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
+
+#tabbtn-6:hover {
+  color: white !important;
+  background-color: #3f51b5 !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
+
+#tabbtn-6:focus,
+#tabbtn-6.active {
+  color: white !important;
+  background-color: #3f51b5 !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
+
+/* goal-navigation-top */
+#tabbtn-7 {
+  min-height: 200px;
+  width: 18%;
+  padding: 0.75rem 0rem;
+  margin-right: 1px;
+  margin-top: 1px;
   font-size: calc(5px + 0.75vw);
   font-weight: 600;
   text-transform: uppercase;
@@ -3177,16 +3268,103 @@ h1.header {
   border: none;
   box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
 
-#tabbtn-5:hover {
+#tabbtn-7:hover {
   color: white !important;
   background-color: #05afda !important;
   box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
 
-#tabbtn-5:focus,
-#tabbtn-5.active {
+#tabbtn-7:focus,
+#tabbtn-7.active {
   color: white !important;
   background-color: #05afda !important;
   box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
+
+/* goal-navigation-top */
+#tabbtn-8 {
+  min-height: 200px;
+  width: 18%;
+  padding: 0.75rem 0rem;
+  margin-right: 1px;
+  margin-top: 1px;
+  font-size: calc(5px + 0.75vw);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #795548;
+  border-radius: 10px 10px 0 0;
+  background-color: #fcfcfc;
+  border: none;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
+
+#tabbtn-8:hover {
+  color: white !important;
+  background-color: #795548 !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
+
+#tabbtn-8:focus,
+#tabbtn-8.active {
+  color: white !important;
+  background-color: #795548 !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
+
+/* goal-navigation-top */
+#tabbtn-9 {
+  min-height: 200px;
+  width: 18%;
+  padding: 0.75rem 0rem;
+  margin-right: 1px;
+  margin-top: 1px;
+  font-size: calc(5px + 0.75vw);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4caf50;
+  border-radius: 10px 10px 0 0;
+  background-color: #fcfcfc;
+  border: none;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
+
+#tabbtn-9:hover {
+  color: white !important;
+  background-color: #4caf50 !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
+
+#tabbtn-9:focus,
+#tabbtn-9.active {
+  color: white !important;
+  background-color: #4caf50 !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
+
+/* goal-navigation-top */
+#tabbtn-10 {
+  min-height: 200px;
+  width: 18%;
+  padding: 0.75rem 0rem;
+  margin-right: 1px;
+  margin-top: 1px;
+  font-size: calc(5px + 0.75vw);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #673ab7;
+  border-radius: 10px 10px 0 0;
+  background-color: #fcfcfc;
+  border: none;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
+
+#tabbtn-10:hover {
+  color: white !important;
+  background-color: #673ab7 !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
+
+#tabbtn-10:focus,
+#tabbtn-10.active {
+  color: white !important;
+  background-color: #673ab7 !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
+
+.tablinks {
+  margin-top: 0px; }
 
 .tabs-text {
   display: block; }
@@ -3268,7 +3446,7 @@ h1.header {
   height: fit-content;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  background-color: #ff8c00; }
+  background-color: #FABE1E; }
   .card .cont {
     display: table-cell;
     vertical-align: middle;
@@ -3283,7 +3461,7 @@ h1.header {
     background-color: white; }
 
 .card:hover {
-  background-color: #4b7d9d; }
+  background-color: #007D30; }
 
 .carousel-card-prev,
 .carousel-card-next {
@@ -4037,7 +4215,7 @@ h1.header {
 #toolbar {
   margin-top: 1.5rem !important; }
 
-button[role=tab]:focus {
+button[role="tab"]:focus {
   background-color: transparent !important; }
 
 /*#4. goal-navigation-bottom */
@@ -4152,7 +4330,7 @@ ul {
   margin-bottom: 0px; }
 
 #kooperation {
-  background-color: #003E59;
+  background-color: #00A5D7;
   color: white;
   padding-top: 30px;
   padding-bottom: 15px;

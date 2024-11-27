@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/herne-site/assets/css/style.css?v=20241127100356">
+        <link rel="stylesheet" href="/herne-site/assets/css/style.css?v=20241127100749">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -293,7 +293,7 @@ layout-frontpage
 
 
 <div class ="main-image">
-    <a><img src="/herne-site/assets/img/HEADER_DashKon_ohne Schrift_Neu.png"></a>
+    <a><img src="/herne-site/assets/img/herne.jpg" alt="Hero Image City Herne"></a>
 </div>
 
 
@@ -471,35 +471,73 @@ eine nachhaltige Entwicklung der Stadt Herne.
     </div>
     
     <!-- Handlungsfelder - expandable tabs -->
-    <div class="tab container" style="margin-top:1rem;">
-        <div class="row g-0 align-items-center justify-content-start">
-            <button class="tablinks active" id="tabbtn-1" onclick="openTab(event, 'frontpage-handlungsfelder-Wirtschaft')">
-                <i class="fa fa-gear" style="font-size:  calc(10px + 0.75vw);"></i>
-                <span class="tabs-text">Wirtschaft</span>
-            </button>
-            <button class="tablinks" id="tabbtn-2" onclick="openTab(event, 'frontpage-handlungsfelder-Umwelt')">
-                <i class='fas fa-solar-panel'style="font-size:  calc(10px + 0.75vw);"></i>
-                <span class="tabs-text">Umwelt</span>
-            </button>
-            <button class="tablinks" id="tabbtn-3" onclick="openTab(event, 'frontpage-handlungsfelder-Leben')">
-                <i class="fa fa-tree" style="font-size:  calc(10px + 0.75vw);"></i>
-                <span class="tabs-text">Leben</span>
-            </button>
-            <button class="tablinks" id="tabbtn-4" onclick="openTab(event, 'frontpage-handlungsfelder-Vielfalt')">
-                <i class="fa fa-globe" style="font-size:  calc(10px + 0.75vw);"></i>
-                <span class="tabs-text">Vielfalt</span>
-            </button>
-            <button class="tablinks" id="tabbtn-5" onclick="openTab(event, 'frontpage-handlungsfelder-Bildung')">            
-                <i class="fa fa-pencil" style="font-size:  calc(10px + 0.75vw);"></i>
-                <span class="tabs-text">Bildung</span>
-            </button>
-        </div>
+  <div class="tab container" style="margin-top:1rem;">
+      <div class="row g-0 align-items-center justify-content-start">
+          <!-- Nachhaltige Verwaltung -->
+          <button class="tablinks active" id="tabbtn-1" onclick="openTab(event, 'frontpage-handlungsfelder-nachhaltige-verwaltung')">
+              <i class="fa fa-gear" style="font-size: calc(10px + 0.75vw);"></i>
+              <span class="tabs-text">Nachhaltige Verwaltung</span>
+          </button>
+
+          <!-- Klimaschutz und Energie -->
+          <button class="tablinks" id="tabbtn-2" onclick="openTab(event, 'frontpage-handlungsfelder-klimaschutz-und-energie')">
+              <i class="fas fa-solar-panel" style="font-size: calc(10px + 0.75vw);"></i>
+              <span class="tabs-text">Klimaschutz und Energie</span>
+          </button>
+
+          <!-- Ressourcenschutz & Klimafolgenanpassung -->
+          <button class="tablinks" id="tabbtn-3" onclick="openTab(event, 'frontpage-handlungsfelder-ressourcenschutz-klimafolgenanpassung')">
+              <i class="fas fa-recycle" style="font-size: calc(10px + 0.75vw);"></i>
+              <span class="tabs-text">Ressourcen- schutz & Klimafolgen- anpassung</span>
+          </button>
+
+          <!-- Nachhaltige Mobilität -->
+          <button class="tablinks" id="tabbtn-4" onclick="openTab(event, 'frontpage-handlungsfelder-nachhaltige-mobilitaet')">
+              <i class="fas fa-bicycle" style="font-size: calc(10px + 0.75vw);"></i>
+              <span class="tabs-text">Nachhaltige Mobilität</span>
+          </button>
+
+          <!-- Lebenslanges Lernen & Kultur -->
+          <button class="tablinks" id="tabbtn-5" onclick="openTab(event, 'frontpage-handlungsfelder-lebenslanges-lernen-kultur')">
+              <i class="fas fa-book" style="font-size: calc(10px + 0.75vw);"></i>
+              <span class="tabs-text">Lebenslanges Lernen & Kultur</span>
+          </button>
+
+          <!-- Soziale Gerechtigkeit & zukunftsfähige Gesellschaft -->
+          <button class="tablinks" id="tabbtn-6" onclick="openTab(event, 'frontpage-handlungsfelder-soziale-gerechtigkeit-zukunftsfahige-gesellschaft')">
+              <i class="fas fa-handshake" style="font-size: calc(10px + 0.75vw);"></i>
+              <span class="tabs-text">Soziale Gerechtigkeit & zukunftsfähige Gesellschaft</span>
+          </button>
+
+          <!-- Wohnen & Nachhaltige Quartiere -->
+          <button class="tablinks" id="tabbtn-7" onclick="openTab(event, 'frontpage-handlungsfelder-wohnen-nachhaltige-quartiere')">
+              <i class="fas fa-home" style="font-size: calc(10px + 0.75vw);"></i>
+              <span class="tabs-text">Wohnen & Nachhaltige Quartiere</span>
+          </button>
+
+          <!-- Gute Arbeit & nachhaltiges Wirtschaften -->
+          <button class="tablinks" id="tabbtn-8" onclick="openTab(event, 'frontpage-handlungsfelder-gute-arbeit-nachhaltiges-wirtschaften')">
+              <i class="fas fa-briefcase" style="font-size: calc(10px + 0.75vw);"></i>
+              <span class="tabs-text">Gute Arbeit & nachhaltiges Wirtschaften</span>
+          </button>
+
+          <!-- Nachhaltiger Konsum & gesundes Leben -->
+          <button class="tablinks" id="tabbtn-9" onclick="openTab(event, 'frontpage-handlungsfelder-nachhaltiger-konsum-gesundes-leben')">
+              <i class="fas fa-leaf" style="font-size: calc(10px + 0.75vw);"></i>
+              <span class="tabs-text">Nachhaltiger Konsum & gesundes Leben</span>
+
+          <!-- Globale Verantwortung & Eine Welt -->
+          <button class="tablinks" id="tabbtn-10" onclick="openTab(event, 'frontpage-handlungsfelder-globale-verantwortung-eine-welt')">
+              <i class="fas fa-globe" style="font-size: calc(10px + 0.75vw);"></i>
+              <span class="tabs-text">Globale Verantwortung & Eine Welt</span>
+          </button>
+      </div>
     </div>
 </div>
 
 
 
-<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Nachhaltige Verwaltung"  style="background-color: #007ebe;">
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-nachhaltige-verwaltung"  style="background-color: #007ebe;">
     <!-- import contents of Handlungsfelder from _config.yml -->
     <div class="tab container">
     <div class="row justify-content-start">
@@ -510,9 +548,18 @@ eine nachhaltige Entwicklung der Stadt Herne.
             
             
             <div class="hf-thema-title">Leitsatz</div>
-            <div class="hf-thema-text">Nachhaltigkeit ist bei der Stadt Herne als Querschnittsthema in allen Bereichen der Stadtverwaltung integriert. Grundsätze der nachhaltigen Entwicklung sind bereits fester Bestandteil im alltäglichen Handeln verschiedener Fachbereiche und sollen zukünftig weiter ausgebaut werden. Die Verwaltung der Stadt Herne orientiert sich am Leitbild der Starken Nachhaltigkeit und leistet damit einen aktiven Beitrag zur Erfüllung der Nachhaltigkeitsstrategien auf Bundes- und Landesebene sowie der Agenda 2030.
-<br>
+            <div class="hf-thema-text"><p> Nachhaltigkeit ist bei der Stadt Herne als Querschnittsthema in allen Bereichen der 
+Stadtverwaltung integriert. Grundsätze der nachhaltigen Entwicklung sind 
+bereits fester Bestandteil im alltäglichen Handeln verschiedener Fachbereiche 
+und sollen zukünftig weiter ausgebaut werden. Die Verwaltung der Stadt Herne 
+orientiert sich am Leitbild der Starken Nachhaltigkeit und leistet damit 
+einen aktiven Beitrag zur Erfüllung der Nachhaltigkeitsstrategien auf 
+Bundes- und Landesebene sowie der Agenda 2030.
+</p>
+
+<p>
 Die Umsetzung der im Jahr 2021 verabschiedeten Nachhaltigkeitsstrategie wird in Herne durch ein Kernteam vorangetrieben, das sich aus Vertreterinnen und Vertretern verschiedener Dezernate zusammensetzt und durch eine Steuerungsgruppe mit externen Stakeholdern unterstützt wird. Die Koordinationsstelle im Fachbereich Umwelt und Stadtplanung steuert das kommunale Nachhaltigkeitsmanagement.
+</p>
 </div>
             
         </div>
@@ -584,7 +631,7 @@ Die Umsetzung der im Jahr 2021 verabschiedeten Nachhaltigkeitsstrategie wird in 
 
 </div>
 
-<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Klimaschutz und Energie"  style="background-color: #65b448;">
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-klimaschutz-und-energie"  style="background-color: #65b448;">
     <!-- import contents of Handlungsfelder from _config.yml -->
     <div class="tab container">
     <div class="row justify-content-start">
@@ -595,9 +642,28 @@ Die Umsetzung der im Jahr 2021 verabschiedeten Nachhaltigkeitsstrategie wird in 
             
             
             <div class="hf-thema-title">Leitsatz</div>
-            <div class="hf-thema-text">Herne bekennt sich zu den auf der UN-Klimakonferenz 2015 in Paris vereinbarten Klimaschutzzielen und bekräftigt dies mit der Ausrufung des Klimanotstands im Jahr 2019. Zudem wurde 2019 das integrierte Klimaschutzkonzept aktualisiert, welches um die Bereiche Gesundheitsförderung und Prävention sowie Klimaanpassung erweitert wurde und diesen Themenfeldern ein besonderes Augenmerk widmet. Hiermit ist das Ziel verbunden, einen Beitrag zur Umweltgerechtigkeit und zur Sicherung der Lebensqualität zu leisten. Durch verschiedene Projekte wird zum einen der Ausbau der erneuerbaren Energien gefördert und zum anderen bei der energetischen Sanierung unterstützt.
-<br>
-Klimaschutz und Klimafolgenanpassung ist gleichzeitig integraler Bestandteil in der räumlichen Planung und der Entwicklung der Stadt Herne. Innovative Ansätze für klimafreundliche Siedlungen und Quartiere sind in vielen Projekten der räumlichen Entwicklung verankert. Klimaschutz- und Klimafolgenanpassungsaspekte werden zudem konsequent in formelle und informelle Planwerke der Stadtplanung einbezogen, um die Qualität urbaner Räume zu steigern.
+            <div class="hf-thema-text"><p>
+Herne bekennt sich zu den auf der UN-Klimakonferenz 2015 in Paris vereinbarten 
+Klimaschutzzielen und bekräftigt dies mit der Ausrufung des Klimanotstands 
+im Jahr 2019. Zudem wurde 2019 das integrierte Klimaschutzkonzept aktualisiert, 
+welches um die Bereiche Gesundheitsförderung und Prävention sowie 
+Klimaanpassung erweitert wurde und diesen Themenfeldern ein besonderes 
+Augenmerk widmet. Hiermit ist das Ziel verbunden, einen Beitrag zur 
+Umweltgerechtigkeit und zur Sicherung der Lebensqualität zu leisten. 
+Durch verschiedene Projekte wird zum einen der Ausbau der erneuerbaren 
+Energien gefördert und zum anderen bei der energetischen Sanierung 
+unterstützt.
+</p>
+
+<p>
+Klimaschutz und Klimafolgenanpassung ist gleichzeitig integraler Bestandteil 
+in der räumlichen Planung und der Entwicklung der Stadt Herne. Innovative 
+Ansätze für klimafreundliche Siedlungen und Quartiere sind in vielen Projekten 
+der räumlichen Entwicklung verankert. Klimaschutz- und 
+Klimafolgenanpassungsaspekte werden zudem konsequent in formelle und 
+informelle Planwerke der Stadtplanung einbezogen, um die Qualität urbaner 
+Räume zu steigern.
+</p>
 </div>
             
         </div>
@@ -675,7 +741,7 @@ Klimaschutz und Klimafolgenanpassung ist gleichzeitig integraler Bestandteil in 
 
 </div>
 
-<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Ressourcenschutz & Klimafolgenanpassung"  style="background-color: #f8b715;">
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-ressourcenschutz-klimafolgenanpassung"  style="background-color: #6a1b9a;">
     <!-- import contents of Handlungsfelder from _config.yml -->
     <div class="tab container">
     <div class="row justify-content-start">
@@ -686,11 +752,32 @@ Klimaschutz und Klimafolgenanpassung ist gleichzeitig integraler Bestandteil in 
             
             
             <div class="hf-thema-title">Leitsatz</div>
-            <div class="hf-thema-text">Die Stadt Herne hat 2019 ein Klimafolgenanpassungskonzept verabschiedet, welches eine stadtweite Handlungskarte und einen umfassenden Maßnahmenkatalog beinhaltet. Die Roadmap Klimafolgenanpassung verdichtet die Gesamtstrategie mit dem Ziel, konkrete Maßnahmen zu identifizieren und diese anhand verschiedener Kriterien zu priorisieren, um Aktivitäten zur Klimafolgenanpassung im Verwaltungshandeln zu verstetigen.
-<br>
-Gleichzeitig setzt sich die Stadt Herne für den Schutz der Biodiversität durch die Anlage von Blühwiesen ein und führte 2023 einen Wettbewerb zur Umgestaltung von Schottergärten durch. Der Grünflächenentwicklungsplan fördert zudem die Schaffung von Grünräumen, um die städtische Natur zu stärken.
-<br>
-Das interkommunale Projekt ÖKOPROFIT hat in der Vergangenheit u. a. die Entsorgung Herne, die Stadtwerke Herne, den Revierpark Gysenberg Herne und das Technische Rathaus Herne erfolgreich unterstützt, ihr betriebliches Umweltmanagement und den Ressourcenschutz zu verbessern. Entsorgung Herne bietet verschiedene Aktionen zum Thema Abfallvermeidung an. Bei der Umweltbildung werden Kindern und Jugendlichen u.a. die Themen Abfallvermeidung, Abfalltrennung, Kompostierung, Recycling und Konsumverhalten altersgerecht vermittelt.
+            <div class="hf-thema-text"><p>
+Die Stadt Herne hat 2019 ein Klimafolgenanpassungskonzept verabschiedet, 
+welches eine stadtweite Handlungskarte und einen umfassenden Maßnahmenkatalog 
+beinhaltet. Die Roadmap Klimafolgenanpassung verdichtet die Gesamtstrategie 
+mit dem Ziel, konkrete Maßnahmen zu identifizieren und diese anhand 
+verschiedener Kriterien zu priorisieren, um Aktivitäten zur 
+Klimafolgenanpassung im Verwaltungshandeln zu verstetigen.
+</p>
+
+<p>
+Gleichzeitig setzt sich die Stadt Herne für den Schutz der Biodiversität durch 
+die Anlage von Blühwiesen ein und führte 2023 einen Wettbewerb zur 
+Umgestaltung von Schottergärten durch. Der Grünflächenentwicklungsplan 
+fördert zudem die Schaffung von Grünräumen, um die städtische Natur zu stärken.
+</p>
+
+<p>
+Das interkommunale Projekt ÖKOPROFIT hat in der Vergangenheit u. a. die 
+Entsorgung Herne, die Stadtwerke Herne, den Revierpark Gysenberg Herne und 
+das Technische Rathaus Herne erfolgreich unterstützt, ihr betriebliches 
+Umweltmanagement und den Ressourcenschutz zu verbessern. Entsorgung Herne 
+bietet verschiedene Aktionen zum Thema Abfallvermeidung an. Bei der 
+Umweltbildung werden Kindern und Jugendlichen u.a. die Themen 
+Abfallvermeidung, Abfalltrennung, Kompostierung, Recycling und Konsumverhalten 
+altersgerecht vermittelt.
+</p>
 </div>
             
         </div>
@@ -706,42 +793,6 @@ Das interkommunale Projekt ÖKOPROFIT hat in der Vergangenheit u. a. die Entsorg
                 
                 
                 
-                <div>
-                    <a href="/herne-site/2">
-                        <img src="/herne-site/assets/img/goals/de/2.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 2" id="goal2"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/3">
-                        <img src="/herne-site/assets/img/goals/de/3.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 3" id="goal3"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/6">
-                        <img src="/herne-site/assets/img/goals/de/6.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 6" id="goal6"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/9">
-                        <img src="/herne-site/assets/img/goals/de/9.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 9" id="goal9"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/10">
-                        <img src="/herne-site/assets/img/goals/de/10.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 10" id="goal10"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/11">
-                        <img src="/herne-site/assets/img/goals/de/11.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 11" id="goal11"/>
-                    </a>
-                </div>
                 <div>
                     <a href="/herne-site/12">
                         <img src="/herne-site/assets/img/goals/de/12.png" class="block img-responsive img-hf-goal"
@@ -755,15 +806,15 @@ Das interkommunale Projekt ÖKOPROFIT hat in der Vergangenheit u. a. die Entsorg
                     </a>
                 </div>
                 <div>
-                    <a href="/herne-site/15">
-                        <img src="/herne-site/assets/img/goals/de/15.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 15" id="goal15"/>
+                    <a href="/herne-site/14">
+                        <img src="/herne-site/assets/img/goals/de/14.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 14" id="goal14"/>
                     </a>
                 </div>
                 <div>
-                    <a href="/herne-site/16">
-                        <img src="/herne-site/assets/img/goals/de/16.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 16" id="goal16"/>
+                    <a href="/herne-site/15">
+                        <img src="/herne-site/assets/img/goals/de/15.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 15" id="goal15"/>
                     </a>
                 </div>
             </div>  
@@ -774,7 +825,7 @@ Das interkommunale Projekt ÖKOPROFIT hat in der Vergangenheit u. a. die Entsorg
 
 </div>
 
-<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Nachhaltige Mobilität"  style="background-color: #ed6d29;">
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-nachhaltige-mobilitaet"  style="background-color: #ff9800;">
     <!-- import contents of Handlungsfelder from _config.yml -->
     <div class="tab container">
     <div class="row justify-content-start">
@@ -785,9 +836,24 @@ Das interkommunale Projekt ÖKOPROFIT hat in der Vergangenheit u. a. die Entsorg
             
             
             <div class="hf-thema-title">Leitsatz</div>
-            <div class="hf-thema-text">Die Stadt Herne setzt auf nachhaltige Mobilität. Der Masterplan klimafreundliche Mobilität enthält zahlreiche Strategien und Maßnahmen zur Einsparung von verkehrsbedingten Emissionen und zur Stärkung des Rad-, Fuß- und ÖPNV-Verkehrs. Der Green City Plan wurde darüber hinaus erstellt, um die Stickoxid-Emissionen zu reduzieren. Gleichzeitig fördert die Stadt Herne den bedarfsorientierten Ausbau der E-Ladeinfrastruktur und steigt bei den Dienstfahrzeugen sukzessive auf alternative Antriebe um.
+            <div class="hf-thema-text"><p>
+Die Stadt Herne setzt auf nachhaltige Mobilität. Der Masterplan 
+klimafreundliche Mobilität enthält zahlreiche Strategien und Maßnahmen 
+zur Einsparung von verkehrsbedingten Emissionen und zur Stärkung des Rad-, 
+Fuß- und ÖPNV-Verkehrs. Der Green City Plan wurde darüber hinaus erstellt, 
+um die Stickoxid-Emissionen zu reduzieren. Gleichzeitig fördert die Stadt 
+Herne den bedarfsorientierten Ausbau der E-Ladeinfrastruktur und steigt bei 
+den Dienstfahrzeugen sukzessive auf alternative Antriebe um.
+</p>
 
-Übergeordnetes Ziel ist es, eine sichere, attraktive und nachhaltige Mobilität für alle Bürgerinnen und Bürger zu ermöglichen und die Stadt Herne damit als attraktiven Lebens- und Wirtschaftsstandort zu stärken. Die zentralen Herausforderungen sind dabei vielfältig und beinhalten u.a. den Klimaschutz, die Luftreinhaltung, den Schutz vor Lärmbelästigung oder den Schutz von Grünflächen und natürlichen Ressourcen.
+<p>
+Übergeordnetes Ziel ist es, eine sichere, attraktive und nachhaltige Mobilität 
+für alle Bürgerinnen und Bürger zu ermöglichen und die Stadt Herne damit als 
+attraktiven Lebens- und Wirtschaftsstandort zu stärken. Die zentralen 
+Herausforderungen sind dabei vielfältig und beinhalten u.a. den Klimaschutz, 
+die Luftreinhaltung, den Schutz vor Lärmbelästigung oder den Schutz von 
+Grünflächen und natürlichen Ressourcen.
+</p>
 </div>
             
         </div>
@@ -804,45 +870,9 @@ Das interkommunale Projekt ÖKOPROFIT hat in der Vergangenheit u. a. die Entsorg
                 
                 
                 <div>
-                    <a href="/herne-site/1">
-                        <img src="/herne-site/assets/img/goals/de/1.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 1" id="goal1"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/2">
-                        <img src="/herne-site/assets/img/goals/de/2.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 2" id="goal2"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/3">
-                        <img src="/herne-site/assets/img/goals/de/3.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 3" id="goal3"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/4">
-                        <img src="/herne-site/assets/img/goals/de/4.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 4" id="goal4"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/5">
-                        <img src="/herne-site/assets/img/goals/de/5.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 5" id="goal5"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/6">
-                        <img src="/herne-site/assets/img/goals/de/6.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 6" id="goal6"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/10">
-                        <img src="/herne-site/assets/img/goals/de/10.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 10" id="goal10"/>
+                    <a href="/herne-site/9">
+                        <img src="/herne-site/assets/img/goals/de/9.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 9" id="goal9"/>
                     </a>
                 </div>
                 <div>
@@ -852,21 +882,9 @@ Das interkommunale Projekt ÖKOPROFIT hat in der Vergangenheit u. a. die Entsorg
                     </a>
                 </div>
                 <div>
-                    <a href="/herne-site/15">
-                        <img src="/herne-site/assets/img/goals/de/15.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 15" id="goal15"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/16">
-                        <img src="/herne-site/assets/img/goals/de/16.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 16" id="goal16"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/17">
-                        <img src="/herne-site/assets/img/goals/de/17.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 17" id="goal17"/>
+                    <a href="/herne-site/13">
+                        <img src="/herne-site/assets/img/goals/de/13.png" class="block img-responsive img-hf-goal"
+                            alt="Handlungsfelder - Goal 13" id="goal13"/>
                     </a>
                 </div>
             </div>  
@@ -877,7 +895,7 @@ Das interkommunale Projekt ÖKOPROFIT hat in der Vergangenheit u. a. die Entsorg
 
 </div>
 
-<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Lebenslanges Lernen & Kultur"  style="background-color: #05afda;">
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-lebenslanges-lernen-kultur"  style="background-color: #e91e63;">
     <!-- import contents of Handlungsfelder from _config.yml -->
     <div class="tab container">
     <div class="row justify-content-start">
@@ -888,11 +906,27 @@ Das interkommunale Projekt ÖKOPROFIT hat in der Vergangenheit u. a. die Entsorg
             
             
             <div class="hf-thema-title">Leitsatz</div>
-            <div class="hf-thema-text">Lern- und Förderangebote decken in Herne das gesamte Spektrum der Lebensphasen ab. Für die jüngsten Bürgerinnen und Bürger werden bedarfsgerechte Kindertagesstätten und Sprachförderprogramme angeboten. Zudem gibt es verschiedene institutionelle Einrichtungen, die eine Kette des lebenslangen Lernens sichern und sich zu Orten der Begegnung zusammenschließen.
-<br>
-Auch das Thema Nachhaltigkeit ist im Bereich Bildung für Herne von zentraler Bedeutung. So ist Herne Modellkommune im Projekt "Bildung – Nachhaltigkeit – Kommune", mit welchem Bildung für nachhaltige Entwicklung (BNE), u.a. auch durch zwei BNE-Netzwerke, gestärkt werden soll.
-<br>
-Kooperationen mit MINT-Bildungseinrichtungen und Kulturprojekten wie dem Emschertal-Museum stärken das Bewusstsein für Nachhaltigkeit. Außerdem setzt sich die Stadt Herne im Rahmen einer nachhaltigen Personalentwicklung für den Erhalt der Beschäftigungsfähigkeit der Mitarbeitenden ein.
+            <div class="hf-thema-text"><p>
+Lern- und Förderangebote decken in Herne das gesamte Spektrum der Lebensphasen 
+ab. Für die jüngsten Bürgerinnen und Bürger werden bedarfsgerechte 
+Kindertagesstätten und Sprachförderprogramme angeboten. Zudem gibt es 
+verschiedene institutionelle Einrichtungen, die eine Kette des lebenslangen 
+Lernens sichern und sich zu Orten der Begegnung zusammenschließen.
+</p>
+
+<p>
+Auch das Thema Nachhaltigkeit ist im Bereich Bildung für Herne von zentraler 
+Bedeutung. So ist Herne Modellkommune im Projekt "Bildung – Nachhaltigkeit – 
+Kommune", mit welchem Bildung für nachhaltige Entwicklung (BNE), u.a. auch 
+durch zwei BNE-Netzwerke, gestärkt werden soll.
+</p>
+
+<p>
+Kooperationen mit MINT-Bildungseinrichtungen und Kulturprojekten wie dem 
+Emschertal-Museum stärken das Bewusstsein für Nachhaltigkeit. Außerdem setzt 
+sich die Stadt Herne im Rahmen einer nachhaltigen Personalentwicklung für den 
+Erhalt der Beschäftigungsfähigkeit der Mitarbeitenden ein.
+</p>
 </div>
             
         </div>
@@ -914,30 +948,6 @@ Kooperationen mit MINT-Bildungseinrichtungen und Kulturprojekten wie dem Emscher
                             alt="Handlungsfelder - Goal 4" id="goal4"/>
                     </a>
                 </div>
-                <div>
-                    <a href="/herne-site/9">
-                        <img src="/herne-site/assets/img/goals/de/9.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 9" id="goal9"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/10">
-                        <img src="/herne-site/assets/img/goals/de/10.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 10" id="goal10"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/11">
-                        <img src="/herne-site/assets/img/goals/de/11.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 11" id="goal11"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/16">
-                        <img src="/herne-site/assets/img/goals/de/16.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 16" id="goal16"/>
-                    </a>
-                </div>
             </div>  
         </div>
     </div>
@@ -946,7 +956,7 @@ Kooperationen mit MINT-Bildungseinrichtungen und Kulturprojekten wie dem Emscher
 
 </div>
 
-<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Soziale Gerechtigkeit & zukunftsfähige Gesellschaft"  style="background-color: #FF5733;">
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-soziale-gerechtigkeit-zukunftsfahige-gesellschaft"  style="background-color: #3f51b5;">
     <!-- import contents of Handlungsfelder from _config.yml -->
     <div class="tab container">
     <div class="row justify-content-start">
@@ -957,11 +967,33 @@ Kooperationen mit MINT-Bildungseinrichtungen und Kulturprojekten wie dem Emscher
             
             
             <div class="hf-thema-title">Leitsatz</div>
-            <div class="hf-thema-text">Bereits seit 1991 besteht verwaltungsintern ein Gleichstellungsplan. Es folgte eine stetige Erweiterung der Richtlinien zum Thema Gleichstellung, wie die Gender Mainstreaming Strategie oder die Diversity Mainstreaming Strategie. Gender Mainstreaming und Diversity Mainstreaming werden als Querschnittsaufgabe von allen Dezernaten und Fachbereichen der Stadt Herne umgesetzt. Zahlreiche Maßnahmen und Kampagnen zu den Themen Anti-Diskriminierung (Herne mit Respekt), Gewaltprävention (Runder Tisch gegen häusliche Gewalt in Herne) und Chancengleichheit (Herner Frauenwoche) werden für die Stadtgesellschaft angeboten.
-<br>
-Die Stadt Herne fördert benachteiligte Bevölkerungsgruppen mit spezifischen Maßnahmen. Angesichts des demographischen Wandels hat die Stadt Herne mehrsprachige Beratungsstellen und Netzwerke für Seniorinnen und Senioren etabliert und nimmt an Projekten zur altersgerechten Quartiersentwicklung teil.
-<br>
-Darüber hinaus treibt die Stadt Herne das Thema Demokratieförderung voran. Maßnahmen der Demokratieförderung sind Teil eines breiteren Engagements der Stadt, das soziale Gerechtigkeit und die Integration aller Bürgerinnen und Bürger unterstützt. Zusätzlich fördert die Stadt Herne soziales Engagement und ist bestrebt, soziale Teilhabe aller Bevölkerungsgruppen zu ermöglichen.
+            <div class="hf-thema-text"><p>
+Bereits seit 1991 besteht verwaltungsintern ein Gleichstellungsplan. Es folgte 
+eine stetige Erweiterung der Richtlinien zum Thema Gleichstellung, wie die 
+Gender Mainstreaming Strategie oder die Diversity Mainstreaming Strategie. 
+Gender Mainstreaming und Diversity Mainstreaming werden als 
+Querschnittsaufgabe von allen Dezernaten und Fachbereichen der Stadt Herne 
+umgesetzt. Zahlreiche Maßnahmen und Kampagnen zu den Themen 
+Anti-Diskriminierung (Herne mit Respekt), 
+Gewaltprävention (Runder Tisch gegen häusliche Gewalt in Herne) 
+und Chancengleichheit (Herner Frauenwoche) werden für die Stadtgesellschaft 
+angeboten.
+</p>
+
+<p>
+Die Stadt Herne fördert benachteiligte Bevölkerungsgruppen mit spezifischen 
+Maßnahmen. Angesichts des demographischen Wandels hat die Stadt Herne 
+mehrsprachige Beratungsstellen und Netzwerke für Seniorinnen und Senioren 
+etabliert und nimmt an Projekten zur altersgerechten Quartiersentwicklung teil.
+</p>
+
+<p>
+Darüber hinaus treibt die Stadt Herne das Thema Demokratieförderung voran. 
+Maßnahmen der Demokratieförderung sind Teil eines breiteren Engagements der 
+Stadt, das soziale Gerechtigkeit und die Integration aller Bürgerinnen und 
+Bürger unterstützt. Zusätzlich fördert die Stadt Herne soziales Engagement 
+und ist bestrebt, soziale Teilhabe aller Bevölkerungsgruppen zu ermöglichen.
+</p>
 </div>
             
         </div>
@@ -1003,7 +1035,7 @@ Darüber hinaus treibt die Stadt Herne das Thema Demokratieförderung voran. Ma�
 
 </div>
 
-<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Wohnen & Nachhaltige Quartiere"  style="background-color: #33FF57;">
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-wohnen-nachhaltige-quartiere"  style="background-color: #05afda;">
     <!-- import contents of Handlungsfelder from _config.yml -->
     <div class="tab container">
     <div class="row justify-content-start">
@@ -1014,11 +1046,29 @@ Darüber hinaus treibt die Stadt Herne das Thema Demokratieförderung voran. Ma�
             
             
             <div class="hf-thema-title">Leitsatz</div>
-            <div class="hf-thema-text">Das Handlungskonzept Wohnen beschreibt die Rahmenbedingungen des Wohnungsmarkts in Herne und formuliert Ziele, Strategien und Maßnahmen der kommunalen Wohnungspolitik für die kommenden Jahre. Die Wohnraumförderung trägt gleichzeitig zu einer qualitativen und bezahlbaren Wohnraumversorgung, insbesondere auch für vulnerable Gruppen, bei.
-<br>
-Außerdem fördert die Stadt Herne in städtebaulichen Wettbewerben Ideen für mehr Klimaschutz und Klimaanpassung. Die Bürgerbeteiligung in der Quartiersentwicklung wird durch Stadtteilbüros, Quartiersforen und Bürgerworkshops intensiviert und Lärmschutzmaßnahmen werden durch Lärmkarten sowie Lärmaktionspläne umgesetzt.
-<br>
-Naherholung, soziale Kontakte und Fußgängerfreundlichkeit werden durch die Gestaltung klimagerechter Straßenräume und die Förderung von Bewegungsparcours unterstützt. Die Vermeidung sozialer Segregation wird in der Stadtplanung durch die Förderung urbaner Quartiere und einer sozialen Vielfalt angestrebt.
+            <div class="hf-thema-text"><p>
+Das Handlungskonzept Wohnen beschreibt die Rahmenbedingungen des 
+Wohnungsmarkts in Herne und formuliert Ziele, Strategien und Maßnahmen der 
+kommunalen Wohnungspolitik für die kommenden Jahre. Die Wohnraumförderung trägt 
+gleichzeitig zu einer qualitativen und bezahlbaren Wohnraumversorgung, 
+insbesondere auch für vulnerable Gruppen, bei.
+</p>
+
+<p>
+Außerdem fördert die Stadt Herne in städtebaulichen Wettbewerben Ideen für 
+mehr Klimaschutz und Klimaanpassung. Die Bürgerbeteiligung in der 
+Quartiersentwicklung wird durch Stadtteilbüros, Quartiersforen und 
+Bürgerworkshops intensiviert und Lärmschutzmaßnahmen werden durch Lärmkarten 
+sowie Lärmaktionspläne umgesetzt.
+</p>
+
+<p>
+Naherholung, soziale Kontakte und Fußgängerfreundlichkeit werden durch die 
+Gestaltung klimagerechter Straßenräume und die Förderung von 
+Bewegungsparcours unterstützt. Die Vermeidung sozialer Segregation wird 
+in der Stadtplanung durch die Förderung urbaner Quartiere und einer 
+sozialen Vielfalt angestrebt.
+</p>
 </div>
             
         </div>
@@ -1048,7 +1098,7 @@ Naherholung, soziale Kontakte und Fußgängerfreundlichkeit werden durch die Ges
 
 </div>
 
-<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Gute Arbeit & nachhaltiges Wirtschaften"  style="background-color: #3357FF;">
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-gute-arbeit-nachhaltiges-wirtschaften"  style="background-color: #795548;">
     <!-- import contents of Handlungsfelder from _config.yml -->
     <div class="tab container">
     <div class="row justify-content-start">
@@ -1059,11 +1109,40 @@ Naherholung, soziale Kontakte und Fußgängerfreundlichkeit werden durch die Ges
             
             
             <div class="hf-thema-title">Leitsatz</div>
-            <div class="hf-thema-text">Die Stadt Herne setzt verschiedenste Maßnahmen für ein familienfreundliches Umfeld um. Dazu zählt das Familienbüro als zentrale Anlaufstelle für Familien, um niederschwellige Zugänge zu vielfältigen Beratungs- und Unterstützungsangeboten zu ermöglichen. Der Gleichstellungsplan 2022-2025 setzt sich mit konkreten Maßnahmen für die Vereinbarkeit von Familie und Beruf ein und fördert die Chancengleichheit in der Verwaltung.
-<br>
-Gleichzeitig werden die Unternehmen auf dem Weg zur Klimaneutralität unterstützt. Dabei stellt die Stadt Herne Informationen zu Nachhaltigkeitsthemen wie Digitalisierung, Innovation und Klimaschutz zur Verfügung und bietet Beratungen im Bereich Energie- und Ressourceneffizienz sowie zu Förderprogrammen mit Zuschüssen oder Krediten an. Gründerinnen und Gründer haben darüber hinaus die Möglichkeit, sich im STARTERCENTER NRW bei Herne.Business bspw. zu bestehenden Förderprogrammen beraten zu lassen und Kontakte zu Expertinnen und Experten zu knüpfen.
-<br>
-Die Digitalstrategie 2030+ bündelt Maßnahmen der Handlungsfelder Smart City Infrastruktur, Digitale Verwaltung, Gesellschaft, Mobilität sowie Energie und Umwelt. Hierzu arbeitet die Stadt Herne eng mit verschiedenen Akteuren zusammen. In Zusammenarbeit mit den Stadtwerken Herne wurde eine automatische Datenübertragung von Sensoren, Zählern und Messinstrumenten eingeführt, die auf der LoRaWan-Technologie (Long Range Wide Area Network) basiert. Beim Ausbau von Open-Source-Technologien, die einen reibungslosen Übergang zu digitalen Energien ermöglichen sollen, arbeitet die Stadtverwaltung mit der Fiware Foundation zusammen. Und um auch zukünftig innovative Lösungen wie einen Digitalen Zwilling zu entwickeln, kooperiert die Stadt mit Hochschulen und andern Innovationstreibern aus der Region (z. B. Ruhrvalley, Hochschule Bochum, FH Dortmund, RWTH Aachen).
+            <div class="hf-thema-text"><p>
+Die Stadt Herne setzt verschiedenste Maßnahmen für ein familienfreundliches 
+Umfeld um. Dazu zählt das Familienbüro als zentrale Anlaufstelle für 
+Familien, um niederschwellige Zugänge zu vielfältigen Beratungs- und 
+Unterstützungsangeboten zu ermöglichen. Der Gleichstellungsplan 2022-2025 
+setzt sich mit konkreten Maßnahmen für die Vereinbarkeit von Familie und 
+Beruf ein und fördert die Chancengleichheit in der Verwaltung.
+</p>
+
+<p>
+Gleichzeitig werden die Unternehmen auf dem Weg zur Klimaneutralität 
+unterstützt. Dabei stellt die Stadt Herne Informationen zu 
+Nachhaltigkeitsthemen wie Digitalisierung, Innovation und Klimaschutz zur 
+Verfügung und bietet Beratungen im Bereich Energie- und Ressourceneffizienz 
+sowie zu Förderprogrammen mit Zuschüssen oder Krediten an. Gründerinnen und 
+Gründer haben darüber hinaus die Möglichkeit, sich im STARTERCENTER NRW bei 
+Herne.Business bspw. zu bestehenden Förderprogrammen beraten zu lassen und 
+Kontakte zu Expertinnen und Experten zu knüpfen.
+</p>
+
+<p>
+Die Digitalstrategie 2030+ bündelt Maßnahmen der Handlungsfelder Smart 
+City Infrastruktur, Digitale Verwaltung, Gesellschaft, Mobilität sowie 
+Energie und Umwelt. Hierzu arbeitet die Stadt Herne eng mit verschiedenen 
+Akteuren zusammen. In Zusammenarbeit mit den Stadtwerken Herne wurde eine 
+automatische Datenübertragung von Sensoren, Zählern und Messinstrumenten 
+eingeführt, die auf der LoRaWan-Technologie (Long Range Wide Area Network) 
+basiert. Beim Ausbau von Open-Source-Technologien, die einen reibungslosen 
+Übergang zu digitalen Energien ermöglichen sollen, arbeitet die 
+Stadtverwaltung mit der Fiware Foundation zusammen. Und um auch zukünftig 
+innovative Lösungen wie einen Digitalen Zwilling zu entwickeln, kooperiert 
+die Stadt mit Hochschulen und andern Innovationstreibern aus der 
+Region (z. B. Ruhrvalley, Hochschule Bochum, FH Dortmund, RWTH Aachen).
+</p>
 </div>
             
         </div>
@@ -1091,12 +1170,6 @@ Die Digitalstrategie 2030+ bündelt Maßnahmen der Handlungsfelder Smart City In
                             alt="Handlungsfelder - Goal 9" id="goal9"/>
                     </a>
                 </div>
-                <div>
-                    <a href="/herne-site/12">
-                        <img src="/herne-site/assets/img/goals/de/12.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 12" id="goal12"/>
-                    </a>
-                </div>
             </div>  
         </div>
     </div>
@@ -1105,7 +1178,7 @@ Die Digitalstrategie 2030+ bündelt Maßnahmen der Handlungsfelder Smart City In
 
 </div>
 
-<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Nachhaltiger Konsum & gesundes Leben"  style="background-color: #FF33A8;">
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-nachhaltiger-konsum-gesundes-leben"  style="background-color: #4caf50;">
     <!-- import contents of Handlungsfelder from _config.yml -->
     <div class="tab container">
     <div class="row justify-content-start">
@@ -1116,11 +1189,31 @@ Die Digitalstrategie 2030+ bündelt Maßnahmen der Handlungsfelder Smart City In
             
             
             <div class="hf-thema-title">Leitsatz</div>
-            <div class="hf-thema-text">Die Karte für einen nachhaltigen Alltag wurde entwickelt, um nachhaltige Orte wie Repaircafés, Tauschschränke oder Trinkbrunnen im Stadtgebiet zu finden. Außerdem können die Bürgerinnen und Bürger auf städtischen Streuobstwiesen u.a. Äpfel oder Kirschen ernten, was das Bewusstsein für eine gesunde Ernährung stärkt.
-<br>
-Mit einer strategischen Gesundheitsplanung, die eine Gesundheitsberichterstattung sowie eine kommunale Präventions- und Gesundheitskonferenz und die Durchführung von Projekten zur sozialraumorientierten Gesundheitsförderung beinhaltet, trägt die Stadt Herne zur Verbesserung der Lebensqualität ihrer Bürgerinnen und Bürger bei.
-<br>
-Im Bereich der Pflege und Betreuung bietet die Stadt Herne für Seniorinnen und Senioren Beratungs- und Informationsangebote sowie Ratgeber mit aktuellen Informationen zu den Themen Gesundheit, Wohnen und Pflege an. Für Menschen mit Behinderung bietet die Stadt Herne umfassende Beratungs- und Informationsangebote sowie einen Inklusionsplan, mit dem Herne zu einer inklusiveren und teilhabefreundlicheren Stadt entwickelt werden soll.
+            <div class="hf-thema-text"><p>
+Die Karte für einen nachhaltigen Alltag wurde entwickelt, um nachhaltige Orte 
+wie Repaircafés, Tauschschränke oder Trinkbrunnen im Stadtgebiet zu finden. 
+Außerdem können die Bürgerinnen und Bürger auf städtischen Streuobstwiesen 
+u.a. Äpfel oder Kirschen ernten, was das Bewusstsein für eine gesunde 
+Ernährung stärkt.
+</p>
+
+<p>
+Mit einer strategischen Gesundheitsplanung, die eine 
+Gesundheitsberichterstattung sowie eine kommunale Präventions- und 
+Gesundheitskonferenz und die Durchführung von Projekten zur 
+sozialraumorientierten Gesundheitsförderung beinhaltet, trägt die Stadt 
+Herne zur Verbesserung der Lebensqualität ihrer Bürgerinnen und Bürger bei.
+</p>
+
+<p>
+Im Bereich der Pflege und Betreuung bietet die Stadt Herne für Seniorinnen 
+und Senioren Beratungs- und Informationsangebote sowie Ratgeber mit 
+aktuellen Informationen zu den Themen Gesundheit, Wohnen und Pflege an. 
+Für Menschen mit Behinderung bietet die Stadt Herne umfassende 
+Beratungs- und Informationsangebote sowie einen Inklusionsplan, mit dem 
+Herne zu einer inklusiveren und teilhabefreundlicheren Stadt entwickelt 
+werden soll.
+</p>
 </div>
             
         </div>
@@ -1156,7 +1249,7 @@ Im Bereich der Pflege und Betreuung bietet die Stadt Herne für Seniorinnen und 
 
 </div>
 
-<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-Globale Verantwortung & Eine Welt"  style="background-color: #A833FF;">
+<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-globale-verantwortung-eine-welt"  style="background-color: #673ab7;">
     <!-- import contents of Handlungsfelder from _config.yml -->
     <div class="tab container">
     <div class="row justify-content-start">
@@ -1168,7 +1261,6 @@ Im Bereich der Pflege und Betreuung bietet die Stadt Herne für Seniorinnen und 
             
             <div class="hf-thema-title">Leitsatz</div>
             <div class="hf-thema-text">Als Fairtrade-Stadt engagiert sich die Stadt Herne mit diversen Akteuren der Stadtgesellschaft seit über einem Jahrzehnt für Nachhaltigkeit und globale Gerechtigkeit. Die Stadt Herne ist Teil des Netzwerks Faire Metropole Ruhr, bei dem ein regelmäßiger Wissens- und Erfahrungsaustausch zu den Themen Fairer Handel, nachhaltige Beschaffung sowie übergreifend zur Umsetzung der Globalen Nachhaltigkeitsziele in der Metropole Ruhr erfolgt. Mit der Unterzeichnung der Charta Faire Metropole Ruhr 2030 - Eine Fairfassung bekennt sich die Stadt Herne zu Fairem Handel und zu Fairer öffentlicher Beschaffung.
-<br>
 Der Verein zur Förderung der partnerschaftlichen Beziehungen der Stadt Herne e.V. intensiviert den Austausch zwischen Bürgerinnen und Bürgern der Partnerstädte der Stadt Herne und unterstützt humanitäre Projekte, die u.a. die Nachhaltigkeit fördern, wie den Bau von umweltfreundlichen Häusern aus recycelten Materialien in Nicaragua. Zusätzlich werden Projekte an einer Schule unterstützt, die zum Umweltbewusstsein der Kinder und Jugendlichen beitragen, wie die Vermeidung von Müll und Recycling.
 </div>
             
@@ -1185,18 +1277,6 @@ Der Verein zur Förderung der partnerschaftlichen Beziehungen der Stadt Herne e.
                 
                 
                 
-                <div>
-                    <a href="/herne-site/10">
-                        <img src="/herne-site/assets/img/goals/de/10.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 10" id="goal10"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="/herne-site/16">
-                        <img src="/herne-site/assets/img/goals/de/16.png" class="block img-responsive img-hf-goal"
-                            alt="Handlungsfelder - Goal 16" id="goal16"/>
-                    </a>
-                </div>
                 <div>
                     <a href="/herne-site/17">
                         <img src="/herne-site/assets/img/goals/de/17.png" class="block img-responsive img-hf-goal"
@@ -1231,10 +1311,10 @@ Der Verein zur Förderung der partnerschaftlichen Beziehungen der Stadt Herne e.
         <div class="carousel-item active card-gap" style="overflow:visible">
             <div class="col">
                 <div class="card border">
-                    <a href="https://nachhaltigkeitsagenda-herne.de/wp-content/uploads/2023/01/221208_BNK_final_web.pdf" target="_blank" style="text-decoration: none;">
-                        <img class="card-img-top" src='/herne-site/assets/img/BNK_Titelbild_1_1.jpg' alt="include.card.title">
+                    <a href="https://www.herne.de/PDF/Klima/bnk_bericht_herne_final.pdf" target="_blank" style="text-decoration: none;">
+                        <img class="card-img-top" src='/herne-site/assets/img/nachhaltigkeitsbericht.jpg' alt="include.card.title">
                         <div class="cont">
-                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Nachhaltigkeitsbericht - Stadt Herne 2021</h4>
+                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Nachhaltigkeitsbericht - Stadt Herne 2023</h4>
                         </div>
                     </a>
                 </div>
@@ -1245,35 +1325,9 @@ Der Verein zur Förderung der partnerschaftlichen Beziehungen der Stadt Herne e.
             <div class="col">
                 <div class="card border">
                     <a href="https://nachhaltigkeitsagenda-herne.de/wp-content/uploads/2023/01/IN_Magazin_dpa-CC_FINAL_DIGTAL.pdf" target="_blank" style="text-decoration: none;">
-                        <img class="card-img-top" src='/herne-site/assets/img/IN_Magazin_Titelbild_1_1.jpg' alt="include.card.title">
+                        <img class="card-img-top" src='/herne-site/assets/img/nachhaltigkeitsstrategie.jpg' alt="include.card.title">
                         <div class="cont">
-                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Magazin - "Herne Nachhaltig" - Ausgabe 2022</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="carousel-item  card-gap" style="overflow:visible">
-            <div class="col">
-                <div class="card border">
-                    <a href="https://www.youtube.com/watch?v=LnqFFrIGQQQ" target="_blank" style="text-decoration: none;">
-                        <img class="card-img-top" src='/herne-site/assets/img/Logo N-Agenda_1_1.png' alt="include.card.title">
-                        <div class="cont">
-                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Nachhaltigkeitsfilm - Stadt Herne</h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="carousel-item  card-gap" style="overflow:visible">
-            <div class="col">
-                <div class="card border">
-                    <a href="https://www.youtube.com/watch?v=VDQF-RdU0nc" target="_blank" style="text-decoration: none;">
-                        <img class="card-img-top" src='/herne-site/assets/img/Logo N-Agenda_1_1.png' alt="include.card.title">
-                        <div class="cont">
-                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Video Rückblick - Visionen 2045 Herne</h4>
+                            <h4 style="font-weight: 600; font-size: calc(1rem + 1vw*0.075); line-height: 1.5;">Nachhaltigkeitsstrategie - Stadt Herne 2021</h4>
                         </div>
                     </a>
                 </div>
@@ -1339,7 +1393,7 @@ Der Verein zur Förderung der partnerschaftlichen Beziehungen der Stadt Herne e.
     <div class="container">
         <div class="row g-0" style="padding: 0px;text-align: center;">
             <div class="col-xs-12">
-                <div id="footerLinks" style="background-color:#003E59;color:white;padding: 10px;margin-bottom: 1px;">
+                <div id="footerLinks" style="background-color:#00A5D7;color:white;padding: 10px;margin-bottom: 1px;">
                     <ul style="text-align: center;">
                         
                             <li style="color:white;margin: 15px;font-weight: bold;">
@@ -1370,7 +1424,7 @@ Der Verein zur Förderung der partnerschaftlichen Beziehungen der Stadt Herne e.
     <div class="container">
         <div class="row g-0" style="padding: 0px;text-align:center">
             <div class="col-xs-12">
-                <div id="footerende" style="background-color:#003E59;color:white;padding: 10px;margin-bottom:1px; text-align: center;">
+                <div id="footerende" style="background-color:#00A5D7;color:white;padding: 10px;margin-bottom:1px; text-align: center;">
                     <ul style="text-align: center;">
                         <li style="color:white;margin: 15px;font-weight: bold; list-style-type: none;">
                             <a href="https://open-sdg.org/" id="footerende-href" target="_blank" style="text-decoration: none; color:white; margin:10px; font-size:15px;">Diese Webseite wurde mit Open SDG erstellt</a>
@@ -1566,12 +1620,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/herne-site/assets/js/sdg.js?v=20241127100356'></script>
+<script src='/herne-site/assets/js/sdg.js?v=20241127100749'></script>
 
 
     
     
-    <script src="/herne-site/assets/js/custom.js?v=20241127100356"></script><script>
+    <script src="/herne-site/assets/js/custom.js?v=20241127100749"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
