@@ -473,6 +473,22 @@
   },
   {
     "goal": {
+      "id": "14",
+      "title": "Ozeane, Meere und Meeresressourcen im Sinne nachhaltiger Entwicklung erhalten und nachhaltig nutzen",
+      "indicators": [
+        
+        {
+          "id": "14-1",
+          "title": "global_indicators.14-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/herne-site/14-1/",
+          "status": "complete"
+        }]
+    }
+  },
+  {
+    "goal": {
       "id": "15",
       "title": "Landökosysteme schützen, wiederherstellen und ihre nachhaltige Nutzung fördern, Wälder nachhaltig bewirtschaften, Wüstenbildung bekämpfen, Bodendegradation beenden und umkehren und dem Verlust der biologischen Vielfalt ein Ende setzen",
       "indicators": [

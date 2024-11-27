@@ -119,9 +119,9 @@ var translations = {
         
     <title>
         
-        Indikator 9.2 -
+        Indikator 14.1 -
         
-        Breitbandversorgung - Private Haushalte - Indikatoren für die nachhaltigen Entwicklungsziele
+        global_indicators.14-1-title - Indikatoren für die nachhaltigen Entwicklungsziele
     </title>
 
 
@@ -167,11 +167,179 @@ var translations = {
 
     </head>
 <body class="language-de
-layout-indicator-iframe
+layout-indicator
 ">
 <!-- <div class="container"> -->
 
 <script>translations['header'] = {"alpha":"Alpha-Version","default_contrast":"Standard kontrast","disable_high_contrast":"Hoher Kontrast deaktivieren","disclaimer":"Diese Seite befindet sich im Entwicklungsstadium.Wir freuen uns über Ihre <a href=\"mailto:%email_contacts.suggestions\">Kommentare</a>.","enable_high_contrast":"Aktivieren Sie hohen Kontrast","hide_menu":"Navigationsmenü ausblenden","high_contrast":"Hoher kontrast","internet_explorer_message":"Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari. Wenn Sie Schwierigkeiten haben, einen anderen Browser zu installieren oder darauf zuzugreifen, wenden Sie sich bitte an Ihr IT-Supportteam.","internet_explorer_message_title":"Der Internet-Browser wird nicht mehr unterstützt","logo_title":"Zur Homepage gehen","show_menu":"Navigationsmenü anzeigen","skip_link":"Zum Hauptinhalt springen","tag_line":"17 Ziele, um unsere Welt zu verändern","toggle_menu":"Menü umschalten. Klicken Sie darauf, um das Menü zu erweitern oder zu reduzieren.","toggle_search":"Umschalten der Suche. Klicken Sie darauf, um die Suchleiste ein- oder auszublenden."};</script>
+
+<a class="sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Zum Hauptinhalt springen</a>
+<div class="container internet-explorer-message">
+    <h2 class="internet-explorer-message-title">Der Internet-Browser wird nicht mehr unterstützt</h2>
+    <p class="internet-explorer-message-body">Wir haben festgestellt, dass Sie den Internet Explorer verwenden, um diese Website zu besuchen. Der Internet Explorer wird von Microsoft nicht mehr unterstützt. Aus diesem Grund hat diese Website ebenfalls die Unterstützung für alle Versionen des Internet Explorers eingestellt, einige Bereiche auf dieser Website werden daher nicht oder nur eingeschränkt funktionieren. Bitte verwenden Sie einen modernen Browser wie Edge, Chrome, Firefox oder Safari. Wenn Sie Schwierigkeiten haben, einen anderen Browser zu installieren oder darauf zuzugreifen, wenden Sie sich bitte an Ihr IT-Supportteam.</p>
+</div>
+
+<header>
+    <div id="color-bar-background"></div>
+
+    <div class="header-container justify-content-between"> 
+      
+        <!-- header logo and lower navbar -->
+        <div class="row g-0 w-100">
+            <div class="col align-self-center">
+                <a href="https://nachhaltigkeitsagenda-herne.de/" id="home" aria-label="Zur Homepage gehen" title="Zur Homepage gehen" target="_blank">
+                    <img src="/herne-site/assets/img/SDG_logo.png" alt="Nachhaltigkeitsagenda Herne" style="width: 100%">      
+                </a>
+            </div>
+            <div class="col align-self-center">
+
+                <!-- header page-top navbar -->
+                <div class="row justify-content-end header-navigation-top">
+                    <li class="page-top-navbar" style="width:fit-content; list-style-type: none; padding-bottom: 20px;">
+    <a id="page-top-navbar-item" href="/herne-site/leichte-sprache"  target="">Leichtes Deutsch</a>
+</li><li class="page-top-navbar" style="width:fit-content; list-style-type: none; padding-bottom: 20px;">
+    <a id="page-top-navbar-item" href="/herne-site/reiter-english"  target="">English</a>
+</li>
+                </div>
+
+                <div class="navbar navbar-expand-lg navbar-dark align-items-center" id="narbar-container">
+                    <button class="navbar-toggler" id="navbar-hamburger-collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Navigationsmenü anzeigen">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse justify-content-end">
+                        <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/"  target="">Startseite</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/goals"  target="">Ziele</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/reporting-status"  target="">Berichtsstatus</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/about"  target="">Über uns</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/faq"  target="">FAQ</a>
+</li></ul>
+    
+                    </div>
+                    <span class="d-flex justify-content-end">
+                        <div class="align-items-center" id="navbar-search-md">
+    <button class="btn hide-btn" id="search-btn-collapse" onclick="showSearchField()" aria-label="Navigationsmenü anzeigen">
+        <i class="fa fa-search"></i>
+    </button>
+    <div class="overlay header-container" id="search-field-input">
+        <form class="search-field float-start" id="search-md" action="/herne-site/search/">
+            <div class="input-group">
+                <label class="visually-hidden" for="indicator_search">Suche</label>
+                <input class="form-control" type="search" placeholder="Indikatoren suchen" name="q" id="indicator_search" title="Suche">
+            </div>
+        </form>
+        <span class="float-end" >
+            <button id="search-field-close" onclick="hideSearchField()">
+                <i class="fa fa-close" style="padding: 0.45em; background-color: white;"></i>
+            </button>
+        </span>
+    </div>
+</div>
+
+
+<script>
+    function showSearchField() {
+        $("#search-field-input").slideDown(500);
+        // document.getElementById( "search-field-input" ).style.display = "unset";
+        // document.getElementById( "search-field-input" ).style.top="45px";
+    }
+    function hideSearchField() {
+        $("#search-field-input").slideUp(500);
+        // document.getElementById( "search-field-input" ).style.top="0px";
+        // document.getElementById( "search-field-input" ).style.display = "none";  
+    }
+</script>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+<div class="header-navigation-dropdown">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/"  target="">Startseite</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/goals"  target="">Ziele</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/reporting-status"  target="">Berichtsstatus</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/about"  target="">Über uns</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/faq"  target="">FAQ</a>
+</li></ul>
+    
+        <ul class="navbar-nav" id="menu"><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/leichte-sprache"  target="">Leichtes Deutsch</a>
+</li><li class="nav-item ">
+    <a class="container nav-link" href="/herne-site/reiter-english"  target="">English</a>
+</li></ul>
+    </div>
+</div>
+
+
+<!--
+<div id="top" tabindex=-1></div>
+
+ -->
+
+
+<div class="header-container">
+    
+<nav>
+    <ol aria-label="breadcrumb" class="breadcrumb" style="--bs-breadcrumb-divider: '&rsaquo;';">
+        
+        <li class="breadcrumb-item">
+            <a href="/herne-site/">Startseite</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/herne-site/14/"
+               title="Ziel 14 - Leben unter Wasser"
+               aria-label="Ziel  - ">
+               Ziel 14
+            </a>
+        </li>
+        <li class="breadcrumb-item active">Indikator 14.1</li>
+        
+    </ol>
+</nav>
+
+
+ </div>
+ 
+<!-- add upper navigation bar -->
+<div class="heading goal-banner goal-14"> 
+  <div class="container" id="goal-nav-top">
+
+    
+    <div class="previous-next-links row d-flex align-items-center justify-content-evenly">
+      <div class="col text-center">
+        <a href="/herne-site/13-1/" class="btn btn-primary goal-14 btn-left goal-banner" role="button">
+          <i class="fa fa-chevron-left" aria-hidden="true" style="font-size: 2.8vw;"></i> <span id="previous-link" class="hidden-sm hidden-xs"></span>
+        </a>
+      </div>
+      <div class="Image col-4">
+        <img class="img-fluid" src="/herne-site/assets/img/goals/de/14.png" alt="Leben unter Wasser - Ziel 14" id="goal-14"  />
+      </div>
+      <div class="col text-center">
+        <a href="/herne-site/15-1/" class="btn btn-primary goal-14 btn-right goal-banner" role="button">
+          <i class="fa fa-chevron-right" aria-hidden="true" style="font-size: 2.8vw;"></i><span id="next-link" class="hidden-sm hidden-xs"></span>
+        </a>
+      </div>
+    </div>
+    
+
+    </div>
+  </div>
+
+
 
 
 <script type="text/template" id="item_template">
@@ -251,42 +419,26 @@ layout-indicator-iframe
 <script>translations['data'] = {"Year":"Jahr"};</script>
 
 
-<div class="heading goal-banner indicator goal-9">
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-                <a href="/herne-site/9/" aria-label="Ziele und Indikatoren für Ziel anzeigen 9" title="Ziele und Indikatoren für Ziel anzeigen 9">
-                    <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/9.png"
-                        alt="Industrie, Innovationen und Infrastruktur - Ziel 9"
-                        id="goal-9"
-                        class="goal-icon-image goal-icon-image-" />
-                </a>
-            </div>
-            <div class="col-8 col-md-9 col-lg-10 indicator-details">
-            
-                <div>
-                    <h1>
-                        
-                        Indikator 9.2
-                        
-                        <span class="lead-copy">Breitbandversorgung - Private Haushalte</span>
-                    </h1>
-                </div>
+<div class="container">
+    <div class="row">
+        
+        <div class="col-8 col-md-9 col-lg-10 indicator-details">
+        
+            <div class="goal-titles">
+                
+                <h2 class="indicator-title-by-indicator goal-14">Indikator 14.1</h2>
+                <h2 class="indicator-title-by-indicator goal-14" style="font-weight:600">global_indicators.14-1-title</h2>
+                
             </div>
         </div>
     </div>
 </div>
-<div id="main-content" class="container goal-9" role="main">
-  
+<div id="main-content" class="container goal-14" role="main">
+    
 
-  
+    
 
-  
-
-  
-
-  
+    
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
@@ -296,7 +448,7 @@ layout-indicator-iframe
 </div>
 
 
-    <!-- add statistic data as image for indicators if its "data_non_statistical" in meta data is set to "true" -->
+      <!-- add statistic data as image for indicators if its "data_non_statistical" in meta data is set to "true" -->
 
 
 
@@ -304,12 +456,12 @@ layout-indicator-iframe
 
 <div class="row"
   id="indicatorData"
-  data-indicatorid='indicator_9-2'
-  data-id="9-2"
+  data-indicatorid='indicator_14-1'
+  data-id="14-1"
   data-country="Herne"
-  data-charttitle="Breitbandversorgung - Private Haushalte"
+  data-charttitle="global_indicators.14-1-title"
   data-charttitles="null"
-  data-measurementunit="Anteil (%)"
+  data-measurementunit="pro Jahr nach Bilanzierungssystematik Kommunal (BISKO) (in 1.000 Tonnen)"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="bar"
@@ -323,7 +475,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Gruppierung&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Wirtschaft&quot;,&quot;Kommunale Einrichtung&quot;,&quot;Private Haushalte&quot;,&quot;Verkehr&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Gruppierung&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -356,93 +508,15 @@ layout-indicator-iframe
   <div id="datatables">
 
     
-    <a role="button" href="https://opensdgde.github.io/herne-data/de/headline/9-2.csv" class="btn btn-primary btn-download" download="indicator_9-2.csv" tabindex="0" role="button">Speichern der Headline im CSV-Format</a>
-    
-    <a role="button" href="https://opensdgde.github.io/herne-data/de/data/9-2.csv" class="btn btn-primary btn-download" download='indicator_9-2.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
+    <a role="button" href="https://opensdgde.github.io/herne-data/de/data/14-1.csv" class="btn btn-primary btn-download" download='indicator_14-1.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
 
     <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
 
     
-    <h3>Schlagzeilendaten</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Breitbandversorgung - Private Haushalte</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td class="table-value">81.26</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td class="table-value">99.26</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td class="table-value">99.31</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2022</td>
-          
-          
-          
-          <td class="table-value">98.28</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>Keine Headline-Daten verfügbar</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    
-    <p>Geographische Abdeckung: Herne</p>
-    
-    
-    <p>Einheit: Anteil (%)</p>
-    
-    
-  </div>
   
 
 </div>
@@ -526,7 +600,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Breitbandversorgung - Private Haushalte
+            global_indicators.14-1-title
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -699,6 +773,10 @@ data-event-label="Change to Metadaten tab"
     
     
     
+        <li role="presentation" class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit" aria-controls="edit" role="tab">Bearbeiten</a>
+        </li>
+    
 </ul>
 
 <div class="tab-content">
@@ -731,7 +809,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Indikatorennummerierung </th>
         <td>
           
-            <p>9.2</p>
+            <p>14.1</p>
 
           
         </td>
@@ -747,7 +825,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Indikatorenbezeichnung </th>
         <td>
           
-            <p>Breitbandversorgung - Private Haushalte</p>
+            <p>global_indicators.14-1-title</p>
 
           
         </td>
@@ -786,7 +864,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Einheit </th>
         <td>
           
-            <p>Anteil (%)</p>
+            <p>pro Jahr nach Bilanzierungssystematik Kommunal (BISKO) (in 1.000 Tonnen)</p>
 
           
         </td>
@@ -834,7 +912,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p>2019</p>
+            <p>2018</p>
 
           
         </td>
@@ -850,7 +928,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p>SDG-Portal</p>
+            <p>Stadt Herne</p>
 
           
         </td>
@@ -925,6 +1003,28 @@ data-event-label="Change to Metadaten tab"
         
     
     
+        <div role="tabpanel" class="tab-pane" id="edit">
+            <div class="edit-container">
+  
+  
+
+  
+  
+
+
+  <a class="btn btn-primary" href="http://prose.io/#OpenSDGde/herne-data/edit/develop/data/indicator_14-1.csv">Daten bearbeiten</a>
+  
+
+  
+  <a class="btn btn-primary" href="http://prose.io/#OpenSDGde/herne-data/edit/develop/meta/14-1.md">Metadaten bearbeiten</a>
+  
+
+  
+
+</div>
+
+        </div>
+    
 </div>
 
 </div>
@@ -933,6 +1033,251 @@ data-event-label="Change to Metadaten tab"
 
 </div>
 
+<!-- lower navigation bar -->
+<div class="carousel-container" id="contain" style="padding-bottom: 0px;">
+    <div class="row">
+        <div id="text">
+            <h3 class="text-center" style="margin-bottom: 20px ; font-weight: 700;"><b> Entdecke mehr SDGS</b></h2>
+            <h4 class="text-center" style="margin-bottom: 10px; color: #adadad;">Klicken Sie auf die einzelnen Ziele, um die Daten unserer lokalen <br> Indikatoren für nachhaltige Entwicklung anzuzeigen.</h4>
+        </div>
+        <div id="carouselLowerNavigation" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+            <!-- iterate over a specified list: create the initial carousel-item and modify them in custom.js -->
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/1/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/1.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-1" alt="Keine Armut - Ziel 1"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/2/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/2.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-2" alt="Kein Hunger - Ziel 2"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/3/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/3.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-3" alt="Gesundheit und Wohlergehen - Ziel 3"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/4/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/4.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-4" alt="Hochwertige Bildung - Ziel 4"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/5/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/5.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-5" alt="Geschlechtergleichstellung - Ziel 5"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/6/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/6.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-6" alt="Sauberes Wasser und Sanitärversorgung - Ziel 6"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/7/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/7.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-7" alt="Bezahlbare und saubere Energie - Ziel 7"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/8/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/8.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-8" alt="Menschenwürdige Arbeit und Wirtschaftswachstum - Ziel 8"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/9/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/9.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-9" alt="Industrie, Innovationen und Infrastruktur - Ziel 9"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/10/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/10.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-10" alt="Weniger Ungleichheiten - Ziel 10"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/11/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/11.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-11" alt="Nachhaltige Städte und Gemeinden - Ziel 11"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/12/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/12.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-12" alt="Verantwortungsvolle Konsum- und Produktionsmuster - Ziel 12"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/13/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/13.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-13" alt="Maßnahmen zum Klimaschutz - Ziel 13"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/14/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/14.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-14" alt="Leben unter Wasser - Ziel 14"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/15/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/15.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-15" alt="Leben an Land - Ziel 15"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/16/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/16.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-16" alt="Frieden, Gerechtigkeit und starke Institutionen - Ziel 16"/>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="carousel-item ">
+                    <div class="carousel-col" id="lowerNavGoalHide">
+                        <a href="/herne-site/17/">
+                            <img src="https://open-sdg.org/sdg-translations/assets/img/goals/de/17.png" class="d-block w-100 goal-icon-image goal-icon-image-" id="goal-17" alt="Partnerschaften zur Erreichung der Ziele - Ziel 17"/>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <a class="carousel-control-prev" role="button" data-bs-target="#carouselLowerNavigation" data-bs-slide="prev">
+                <span class="fa fa-chevron-left" id="nav-arrow" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" role="button" data-bs-target="#carouselLowerNavigation" data-bs-slide="next">
+                <span class="fa fa-chevron-right" id="nav-arrow" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+<footer class="wide-background " style="width: 100%; margin-top: 6rem; padding-top: 5rem; padding-bottom: 0px;">
+    <div class="container">
+        <div class="row g-0" style="padding: 0px;">
+            <div class="col-xs-12">
+                <div id="kooperation" >
+                    <p>Unsere Projektpartner</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-0 flexdirection justify-content-around">
+            <div class="col-xs-3" id="footer-binder">
+                <div id="bilder" style="background-color:white; padding-top: 1.4rem;">
+                    <a href="https://www.htw-berlin.de" id="footer-binder-href" target="_blank"><img src="/herne-site/assets/img/logo_htw.png" alt="htw_berlin" id="footer-binder-image" class="img-responsive"></a>
+                </div>
+            </div>
+            <div class="col-xs-3" id="footer-binder">
+                <div id="bilder" style="background-color:white;">
+                    <h5 style="margin-top: 3%; margin-bottom: 2%;">In Koorperation mit</h5>
+                    <a href="https://www.engagement-global.de/" id="footer-binder-href" target="_blank" ><img src="/herne-site/assets/img/logo_eg.png" alt="engagement_global1" id="footer-binder-image" class="img-responsive"></a>
+                </div>
+            </div>
+            <div class="col-xs-3" id="footer-binder">
+                <div id="bilder" style="background-color:white;">
+                    <h5 style="margin-top: 3%; margin-bottom: 2%;">mit ihrer</h5>
+                    <a href="https://skew.engagement-global.de/" id="footer-binder-href" target="_blank" ><img src="/herne-site/assets/img/logo_skew_de.png" alt="engagement_global2" id="footer-binder-image" class="img-responsive"></a>
+                </div>
+            </div>
+            <div class="col-xs-3" id="footer-binder">
+                <div id="bilder" style="background-color:white;">
+                    <h5 style="margin-top: 2.5%; margin-bottom: 0%">mit Mitteln des</h5>
+                    <a href="https://www.bmz.de/de" id="footer-binder-href" target="_blank" ><img src="/herne-site/assets/img/logo_BMZ.png" alt="bmz" id="footer-binder-image" class="img-responsive"></a>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div class="container">
+        <div class="row g-0" style="padding: 0px;text-align: center;">
+            <div class="col-xs-12">
+                <div id="footerLinks" style="background-color:#003E59;color:white;padding: 10px;margin-bottom: 1px;">
+                    <ul style="text-align: center;">
+                        
+                            <li style="color:white;margin: 15px;font-weight: bold;">
+                                    
+                                        <a href="https://StadtIngolstadt.github.io/sdg-data/de/zip/all_indicators.zip" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem; font-size: 1.1rem; font-weight: 600;">Download</a>
+                                        
+                                    </li>
+                            <li style="color:white;margin: 15px;font-weight: bold;">
+                                    
+                                        <a href="mailto:nachhaltigkeit@herne.de" target="_blank" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Kontakt</a>
+                                    
+                                    </li>
+                            <li style="color:white;margin: 15px;font-weight: bold;">
+                                    <a href="/herne-site/about/cookies-and-privacy/" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Impressum & Datenschutz</a>
+                                    
+                                    </li>
+                            <li style="color:white;margin: 15px;font-weight: bold;">
+                                    <a href="/herne-site/guidance" style="text-decoration: none;color:white;margin: 10px; padding:0.5rem 0rem;font-size: 1.1rem; font-weight: 600;">Technische Hinweise</a>
+                                    
+                                    </li>
+                            
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-0" style="padding: 0px;text-align:center">
+            <div class="col-xs-12">
+                <div id="footerende" style="background-color:#003E59;color:white;padding: 10px;margin-bottom:1px; text-align: center;">
+                    <ul style="text-align: center;">
+                        <li style="color:white;margin: 15px;font-weight: bold; list-style-type: none;">
+                            <a href="https://open-sdg.org/" id="footerende-href" target="_blank" style="text-decoration: none; color:white; margin:10px; font-size:15px;">Diese Webseite wurde mit Open SDG erstellt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
@@ -1128,10 +1473,4 @@ if (allRequired) {
     new accessibilitySwitcher();
 </script>
 
-<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
-<script>
-    new pym.Child();
-</script>
 
-</body>
-</html>
