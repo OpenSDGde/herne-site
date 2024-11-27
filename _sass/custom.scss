@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Museo+Slab:wght@400;700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Museo Slab", serif;
+}
+
+/* Fließtext */
+body,
+p,
+li {
+  font-family: "PT Sans", sans-serif;
+}
+
 // responsive text size
 h1 {
   font-size: 2.5rem;
@@ -35,7 +53,6 @@ h4 {
 //   font-weight: bold; // titles and subtitles use arial bold
 // }
 
-
 #main-content {
   .goal-tiles {
     .goal-tile {
@@ -59,13 +76,13 @@ h4 {
 
 /* header color bar on top */
 #color-bar-background {
-  background: $backgroundColor url('../img/sdgbg.png') top left repeat-x;
+  background: $backgroundColor url("../img/sdgbg.png") top left repeat-x;
   top: 0px;
   height: 13px;
 }
 
 /* replace original body setting */
-body{
+body {
   font-size: 14pt;
   background: white;
   padding-top: 0px;
@@ -73,11 +90,11 @@ body{
 
 header {
   position: sticky;
-  top:0;
+  top: 0;
   background-color: white;
   z-index: 100;
 }
-.header-container  {
+.header-container {
   padding-right: 32px;
   padding-left: 30px;
 }
@@ -90,8 +107,8 @@ h1.header {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-} 
-#home{
+}
+#home {
   display: inline-block;
   position: relative;
   padding-top: 15px;
@@ -108,13 +125,13 @@ h1.header {
 }
 
 #page-top-navbar-item {
-    color:#000000; 
-    font-size:13px; 
-    font-weight:600; 
-    text-transform:uppercase; 
-    text-decoration: none;
-    padding-bottom: 0.2rem;
-  }
+  color: #000000;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+}
 #page-top-navbar-item:hover {
   border-bottom: 3px solid #000000;
 }
@@ -123,13 +140,12 @@ h1.header {
   border-bottom: 3px solid #000000;
 }
 
-
 .navbar {
   justify-content: flex-end; // space out brand from logo
 }
 .navbar .navbar-nav > .nav-item {
   padding-left: 0px;
-  padding-right: 22px; 
+  padding-right: 22px;
 }
 // set color of navigation links (upper right)
 .navbar .navbar-nav > .nav-item > .nav-link {
@@ -154,31 +170,30 @@ h1.header {
     font-size: 0.8rem;
   }
   .navbar-toggler {
-    border-color: rgb(255,255,255);
-    background-color: rgb(255,255,255);
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     margin-top: 0px;
-  } 
+  }
   .navbar-toggler:focus {
-    border-color: rgb(255,255,255);
+    border-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 0px 0px transparent !important;
   }
 }
 
-
 /* search field*/
 // search bar on search-result page
-#search-bar-on-page {  
+#search-bar-on-page {
   .input-group {
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+  }
   input {
     height: auto;
-    border: 1.25px solid #ced4da; 
+    border: 1.25px solid #ced4da;
   }
   input:focus {
     background-color: white !important;
     border-color: #444444;
-    outline: 0px solid transparent !important; 
-    
+    outline: 0px solid transparent !important;
   }
   button {
     right: 0px;
@@ -193,9 +208,9 @@ h1.header {
   button:focus {
     color: white !important;
     border-color: #444444;
-    outline: 0px solid transparent !important; 
+    outline: 0px solid transparent !important;
     background-color: #444444 !important;
-    z-index: 1; 
+    z-index: 1;
   }
   .fa.fa-search {
     font-size: 1rem;
@@ -224,15 +239,15 @@ h1.header {
   .hide-btn {
     padding: 0.375rem 0.75rem;
   }
-  
+
   // show input field on click
   #search-field-input {
-      position: fixed;
-      top: 83px;
-      right: 5px;
-      padding-bottom: 5px;
-      display: none;
-      background-color: white;
+    position: fixed;
+    top: 83px;
+    right: 5px;
+    padding-bottom: 5px;
+    display: none;
+    background-color: white;
 
     #search-md {
       width: 25rem;
@@ -261,7 +276,6 @@ h1.header {
   }
 }
 
-
 // small screen --> hamburger icon and dropdown menu
 @media screen and (min-width: 992px) {
   // show navigation dropdown when screen is small
@@ -274,7 +288,7 @@ h1.header {
   .header-navigation-dropdown {
     .nav-item {
       background-color: white;
-    } 
+    }
     .nav-item:hover {
       background-color: #f7f7f7;
     }
@@ -307,7 +321,6 @@ h1.header {
   margin-bottom: 0px;
 }
 
-
 /*1-1. frontpage */
 // main {
 //   height: 100vh;
@@ -316,10 +329,9 @@ h1.header {
 // }
 .main-image {
   margin-top: 1rem;
-  /* Gemeinsame Stile für alle Bildschirmgrößen */
   img {
     width: 100%;
-    height: 65%;
+    height: 60%;
     display: block; /* Verhindert unerwünschte Abstände unter dem Bild */
   }
 
@@ -334,14 +346,14 @@ h1.header {
   }
 }
 .site-intro {
-  background: none!important;
-  padding-right: 0px!important;
+  background: none !important;
+  padding-right: 0px !important;
   text-align: justify;
 }
 
 /*1-2. Handlungsfelder*/
 
-// initialize without hf contents 
+// initialize without hf contents
 #frontpage-handlungsfelder-klimaschutz-und-energie,
 #frontpage-handlungsfelder-ressourcenschutz-klimafolgenanpassung,
 #frontpage-handlungsfelder-nachhaltige-mobilitaet,
@@ -365,27 +377,27 @@ h1.header {
     margin-right: 1px;
     margin-top: 1px;
     font-size: calc(5px + 0.75vw);
-    font-weight:600; 
-    text-transform:uppercase; 
+    font-weight: 600;
+    text-transform: uppercase;
     letter-spacing: 1px;
     color: $hf-bg-color;
-    
-    border-radius: 10px 10px 0 0 ;
+
+    border-radius: 10px 10px 0 0;
     background-color: #fcfcfc;
     border: none;
-    box-shadow: 5px 5px 5px 0px rgba(5,5,5,0.2);
+    box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2);
   }
 
   #tabbtn-#{$i}:hover {
     color: white !important;
     background-color: $hf-bg-color !important;
-    box-shadow: 5px 5px 5px 0px rgba(5,5,5,0.2) !important;
+    box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important;
   }
   #tabbtn-#{$i}:focus,
   #tabbtn-#{$i}.active {
     color: white !important;
     background-color: $hf-bg-color !important;
-    box-shadow: 5px 5px 5px 0px rgba(5,5,5,0.05) !important;
+    box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important;
   }
 }
 
@@ -395,13 +407,12 @@ h1.header {
 
 .tabs-text {
   display: block;
-  @media screen and (max-width: 576px) { 
+  @media screen and (max-width: 576px) {
     display: none;
   }
 }
 
-
-.hf-title{
+.hf-title {
   margin-top: 10vh;
   color: white;
   font-weight: bold;
@@ -412,9 +423,9 @@ h1.header {
   color: white;
   font-size: 1.5em;
   border-bottom: 1px solid white;
-  padding-bottom:1em;
+  padding-bottom: 1em;
 }
-.hf-subtitle{
+.hf-subtitle {
   margin-top: 10vh;
   margin-bottom: 3vh;
   color: white;
@@ -441,27 +452,25 @@ h1.header {
   flex-direction: row;
 }
 .flex-grid > * {
-  flex-basis: calc(5vw + 30px); 
-  width: 33.33%; 
+  flex-basis: calc(5vw + 30px);
+  width: 33.33%;
 }
 .hf-goal-tiles {
   margin-bottom: 8vw;
   .row {
-      & > div {
+    & > div {
       padding-bottom: 1rem;
-      }
+    }
   }
 }
 .block.img-responsive.img-hf-goal {
   max-width: 100%;
-  box-shadow: 5px 5px 5px 0px rgba(5,5,5,0.2);
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2);
 
   &:hover {
-      box-shadow: 5px 5px 5px 0px rgba(5,5,5,0.4);
+    box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.4);
   }
 }
-
-
 
 /*#1. carousel-cards on landing page*/
 // cards backgorund color
@@ -470,8 +479,8 @@ h1.header {
 }
 #main-content {
   .frontpage-card:before {
-    content:"";
-    background-color:#efeeeb;
+    content: "";
+    background-color: #efeeeb;
     position: absolute;
     height: 110%;
     width: 200vw;
@@ -485,7 +494,7 @@ h1.header {
 }
 .card {
   height: fit-content;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: #ff8c00;
 
@@ -500,11 +509,11 @@ h1.header {
       vertical-align: middle;
     }
   }
-  .card-img-top{
+  .card-img-top {
     width: 100%;
     height: max-content;
     background-color: white;
-  } 
+  }
 }
 .card:hover {
   background-color: #4b7d9d;
@@ -520,8 +529,12 @@ h1.header {
 // small screen: xs /show 1 card
 @media (max-width: 768px) {
   #carouselCard {
-    .carousel-inner .carousel-item > div { display: none; }
-    .carousel-inner .carousel-item > div:first-child { display: block; }
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
   }
 }
 .carousel-inner .carousel-item.active,
@@ -533,14 +546,24 @@ h1.header {
 // small screen: md > lg /show 2 cards
 @media (min-width: 768px) and (max-width: 992px) {
   #carouselCard {
-    .carousel-inner .carousel-item > div { display: none; }
-    .carousel-inner .carousel-item > div:first-child { display: block; }
-    .carousel-inner .carousel-item > div:first-child + div { display: block; }
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+    .carousel-inner .carousel-item > div:first-child + div {
+      display: block;
+    }
     // shift starting position by 1/2
     .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next { transform: translateX(51%); }
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev { transform: translateX(-51%); }
+    .carousel-inner .carousel-item-next {
+      transform: translateX(51%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-51%);
+    }
   }
 }
 // large screen /show 3 cards
@@ -548,19 +571,23 @@ h1.header {
   // shift starting position by 1/3
   #carouselCard {
     .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next { transform: translateX(33.8%); }
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev { transform: translateX(-33.8%); }
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.8%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.8%);
+    }
   }
 }
 @media (min-width: 768px) {
   #carouselCard {
     .carousel-inner .carousel-item-end,
-    .carousel-inner .carousel-item-start {  transform: translateX(0); }
+    .carousel-inner .carousel-item-start {
+      transform: translateX(0);
+    }
   }
 }
-
-
 
 /*#2. goal page */
 .breadcrumb {
@@ -579,7 +606,7 @@ h1.header {
       background-color: $background-c;
       padding-top: 0px;
       padding-bottom: 0px;
-      & > .Image{
+      & > .Image {
         display: block;
         text-align: center;
         width: 25%;
@@ -591,10 +618,10 @@ h1.header {
         font-size: calc(1rem + ((2vw) * 0.6944));
       }
       .fa-chevron-left:is(:hover, :focus, :active) {
-        color: darken($background-c,50%); //white
+        color: darken($background-c, 50%); //white
       }
       .fa-chevron-right:is(:hover, :focus, :active) {
-        color: darken($background-c,50%); //white
+        color: darken($background-c, 50%); //white
       }
     }
     .Image.col-2 {
@@ -618,7 +645,7 @@ h1.header {
   }
 }
 
-// goal-navigation-top with button effect: 
+// goal-navigation-top with button effect:
 // 1. change .fa-chevron-left/right :is(...) { color: white; }
 // 2. change font-size of class "fa fa-chevron-left/right" in goal-navigation-top.html --> padding: 3vw 0.5vw;
 // 3. and uncomment below:
@@ -641,11 +668,11 @@ h1.header {
     margin-left: 0px;
     padding-right: 70px;
     .indicator-number {
-      font-size: 1.4rem; 
+      font-size: 1.4rem;
       font-weight: 500;
-      color:#444444; 
+      color: #444444;
       text-decoration: none;
-      padding:0.5rem 0rem; 
+      padding: 0.5rem 0rem;
       @media screen and (max-width: 992px) {
         font-size: 1.2rem;
       }
@@ -654,9 +681,9 @@ h1.header {
 
   .indicator-name {
     a {
-      font-size: 1.5rem; 
+      font-size: 1.5rem;
       font-weight: 500;
-      color:#444444;
+      color: #444444;
       text-decoration: none;
       padding: 0.2rem 0rem;
       margin-bottom: 0.3rem;
@@ -665,7 +692,6 @@ h1.header {
         padding: 0rem 0rem;
         font-size: 1.2rem;
       }
-
     }
     a:hover {
       border-bottom: 3px solid #444444;
@@ -707,7 +733,6 @@ h1.header {
   margin-top: var(--bs-gutter-y);
 }
 
-
 // /* goal-navigation-top.night mode*/
 // body.contrast-high {
 //   .goal-banner {
@@ -717,38 +742,34 @@ h1.header {
 //   }
 // }
 
-
-
-
-
 /*#3. indicator page */
 #toolbar {
   margin-top: 1.5rem !important;
 }
-button[role=tab]:focus {
+button[role="tab"]:focus {
   background-color: transparent !important;
 }
 
-
-
-
-
 /*#4. goal-navigation-bottom */
-#contain{
+#contain {
   margin: auto;
   padding-bottom: 100px;
   padding-top: 50px;
   width: 50%;
 }
-#text{
-    padding-bottom: 20px;
+#text {
+  padding-bottom: 20px;
 }
 
 // small screen: xs /show 1 item
 @media (max-width: 576px) {
   #carouselLowerNavigation {
-    .carousel-inner .carousel-item > div { display: none; }
-    .carousel-inner .carousel-item > div:first-child { display: block; }
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
   }
 }
 .carousel-inner .carousel-item.active,
@@ -759,28 +780,50 @@ button[role=tab]:focus {
 // small screen: sm > md /show 2 items
 @media (min-width: 576px) and (max-width: 768px) {
   #carouselLowerNavigation {
-    .carousel-inner .carousel-item > div { display: none; }
-    .carousel-inner .carousel-item > div:first-child { display: block; }
-    .carousel-inner .carousel-item > div:first-child + div { display: block; }
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+    .carousel-inner .carousel-item > div:first-child + div {
+      display: block;
+    }
     // shift starting position by 1/2
     .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next { transform: translateX(50%); }
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev { transform: translateX(-50%); }
+    .carousel-inner .carousel-item-next {
+      transform: translateX(50%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-50%);
+    }
   }
 }
 // small screen: md > lg /show 3 items
 @media (min-width: 768px) and (max-width: 992px) {
   #carouselLowerNavigation {
-    .carousel-inner .carousel-item > div { display: none; }
-    .carousel-inner .carousel-item > div:first-child { display: block; }
-    .carousel-inner .carousel-item > div:first-child + div { display: block; }
-    .carousel-inner .carousel-item > div:first-child + div + div { display: block; }
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+    .carousel-inner .carousel-item > div:first-child + div {
+      display: block;
+    }
+    .carousel-inner .carousel-item > div:first-child + div + div {
+      display: block;
+    }
     // shift starting position by 1/3
     .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next { transform: translateX(33.33%); }
-      .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev { transform: translateX(-33.33%); }
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.33%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.33%);
+    }
   }
 }
 // large screen /show 4 items
@@ -788,15 +831,21 @@ button[role=tab]:focus {
   // shift starting position by 1/4
   #carouselLowerNavigation {
     .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next { transform: translateX(25%); }
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev { transform: translateX(-25%); }
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
   }
 }
 @media (min-width: 576px) {
   #carouselLowerNavigation {
     .carousel-inner .carousel-item-end,
-    .carousel-inner .carousel-item-start { transform: translateX(0); }
+    .carousel-inner .carousel-item-start {
+      transform: translateX(0);
+    }
   }
 }
 
@@ -807,7 +856,7 @@ button[role=tab]:focus {
 }
 .carousel-col:hover {
   margin: 0.4rem;
-  box-shadow: 0 8px 16px 0 rgba(3,3,3,3.2);
+  box-shadow: 0 8px 16px 0 rgba(3, 3, 3, 3.2);
 }
 
 // prev and nex button
@@ -824,14 +873,10 @@ button[role=tab]:focus {
   text-decoration: none !important;
 }
 
-
-
-
- 
 /*#5. Footer*/
-footer{
-  position:relative;
-  width:100%;
+footer {
+  position: relative;
+  width: 100%;
   height: auto;
   //background-color: #363636;
   //background-image: url('../img/bg_site-header.png');
@@ -840,9 +885,9 @@ footer{
 }
 
 #footer-binder {
-  width: 13em; 
-  height: 5.5em; 
-  margin-top: 4%; 
+  width: 13em;
+  height: 5.5em;
+  margin-top: 4%;
   margin-bottom: 4%;
 }
 #footer-binder-image {
@@ -850,7 +895,6 @@ footer{
   width: 400;
   height: auto;
 }
-
 
 // remove the focus style for footer binder png
 #footerende-href {
@@ -868,32 +912,31 @@ ul {
   margin-bottom: 0px;
 }
 
-
 #kooperation {
-      background-color: #003E59;
-      color: white;
-      padding-top: 30px;
-      padding-bottom: 15px;
-      font-size: 20px;
-      text-align: center;
-      font-weight: bold;
-  }
+  background-color: #003e59;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
 
-  * {
-      padding: 0;
-      margin: 0;
-  }
+* {
+  padding: 0;
+  margin: 0;
+}
 
-  main {
-      width: 85%;
-      height: 200px;
-      margin: 200px, auto;
-      margin-left: 125px;
-      padding-top: 150px;
-      padding-bottom: 199px;
-      overflow: hidden;
-      position: relative;
-  }
+main {
+  width: 85%;
+  height: 200px;
+  margin: 200px, auto;
+  margin-left: 125px;
+  padding-top: 150px;
+  padding-bottom: 199px;
+  overflow: hidden;
+  position: relative;
+}
 
 .flexdirection {
   display: flex;
@@ -902,8 +945,8 @@ ul {
   row-gap: 1rem;
 }
 
-h5 {    
-  font-size: 0.9rem; 
+h5 {
+  font-size: 0.9rem;
   font-weight: 300;
   padding-bottom: 0.5rem;
   padding-left: 0.4rem;
@@ -911,16 +954,15 @@ h5 {
 
 @media screen and (max-width: 760px) {
   .flexdirection {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
   }
-  h5 {  
-      text-align: center;
-      padding-left: 0rem;
+  h5 {
+    text-align: center;
+    padding-left: 0rem;
   }
-} 
-
+}
 
 // for all a href tags, remove thick black line after clicking (focus)
 [href]:focus {
