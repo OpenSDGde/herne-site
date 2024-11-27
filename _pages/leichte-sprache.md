@@ -6,7 +6,7 @@ permalink: /leichte-sprache/
 layout: page
 
 ---
-<img src="{{ site.baseurl }}/assets/img/Leichte Sprache.png"/><br>
+<img src="{{ site.baseurl }}/assets/img/Leichte Sprache.png" alt="Logo für Leichte Sprache"/><br>
 Leichte Sprache<br>
 <br>
 <h1>Über uns</h1>
@@ -14,7 +14,7 @@ Wir wollen die 17 welt-weiten Nachhaltigkeits-Ziele in Herne umsetzen.<br>
 Diese Ziele nennt man auch SDGs.<br>
 Das ist die englische Abkürzung für: nachhaltige Entwicklungs-Ziele.<br>
 Die Ziele wurden 2015 von den Vereinten Nationen fest-gelegt.<br>
-<img src="{{ site.baseurl }}/assets/img/SDG_POSTER-German.jpg" style="width:100%;"/><br>
+<img src="{{ site.baseurl }}/assets/img/SDG_POSTER-German.jpg" style="width:100%;" alt="Poster der SDGs in deutscher Sprache"/><br>
 <br>
 Im Februar 2019 hat der Stadt-Rat beschlossen,<br> 
 dass es eine Nachhaltigkeits-Agenda geben soll.<br> 
