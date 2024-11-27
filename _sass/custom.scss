@@ -315,17 +315,22 @@ h1.header {
 //   scroll-snap-type: y proximity;
 // }
 .main-image {
+  margin-top: 1rem;
+  /* Gemeinsame Stile für alle Bildschirmgrößen */
+  img {
+    width: 100%;
+    height: 65%;
+    display: block; /* Verhindert unerwünschte Abstände unter dem Bild */
+  }
+
+  /* Stile für größere Bildschirme */
   @media (min-width: 992px) {
     padding-bottom: 5rem;
-    img {
-      max-width: 100%;
-    }
   }
+
+  /* Stile für kleinere Bildschirme */
   @media (max-width: 992px) {
     padding-bottom: 1rem;
-    img {
-      height: calc(30vw + 80px);
-    }
   }
 }
 .site-intro {
