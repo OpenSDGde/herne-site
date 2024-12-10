@@ -26,8 +26,8 @@ frontpage_handlungsfelder:
       <p>
       Die Umsetzung der im Jahr 2021 verabschiedeten Nachhaltigkeitsstrategie wird in Herne durch ein Kernteam vorangetrieben, das sich aus Vertreterinnen und Vertretern verschiedener Dezernate zusammensetzt und durch eine Steuerungsgruppe mit externen Stakeholdern unterstützt wird. Die Koordinationsstelle im Fachbereich Umwelt und Stadtplanung steuert das kommunale Nachhaltigkeitsmanagement.
       </p>
-    hf-goals: "4,5,8,9,10,11,12,13"
-    hf-color: "#007ebe"
+    hf-goals: "4,5,8,10,11,12,13,16,17"
+    hf-color: "#00689D"
 
   - title: Klimaschutz und Energie
     slug: klimaschutz-und-energie
@@ -54,8 +54,8 @@ frontpage_handlungsfelder:
       informelle Planwerke der Stadtplanung einbezogen, um die Qualität urbaner 
       Räume zu steigern.
       </p>
-    hf-goals: "2,6,7,9,11,12,13,14,15"
-    hf-color: "#65b448"
+    hf-goals: "7,11,13"
+    hf-color: "#FCC30B" 
 
   - title: Ressourcenschutz & Klimafolgenanpassung
     slug: ressourcenschutz-klimafolgenanpassung
@@ -86,8 +86,8 @@ frontpage_handlungsfelder:
       Abfallvermeidung, Abfalltrennung, Kompostierung, Recycling und Konsumverhalten 
       altersgerecht vermittelt.
       </p>
-    hf-goals: "12,13,14,15"
-    hf-color: "#6a1b9a"
+    hf-goals: "3,6,11,12,14,15"
+    hf-color: "#56C02B"
 
   - title: Nachhaltige Mobilität
     slug: nachhaltige-mobilitaet
@@ -110,10 +110,10 @@ frontpage_handlungsfelder:
       die Luftreinhaltung, den Schutz vor Lärmbelästigung oder den Schutz von 
       Grünflächen und natürlichen Ressourcen.
       </p>
-    hf-goals: "9,11,13"
-    hf-color: "#ff9800"
+    hf-goals: "7,9,11"
+    hf-color: "#FD6925"
 
-  - title: Lebenslanges Lernen & Kultur
+  - title: Lebenslanges Lernen
     slug: lebenslanges-lernen-kultur
     leitsatz: |
       <p>
@@ -137,10 +137,10 @@ frontpage_handlungsfelder:
       sich die Stadt Herne im Rahmen einer nachhaltigen Personalentwicklung für den 
       Erhalt der Beschäftigungsfähigkeit der Mitarbeitenden ein.
       </p>
-    hf-goals: "4"
-    hf-color: "#e91e63"
+    hf-goals: "4,10,11,16,17"
+    hf-color: "#C5192D"
 
-  - title: Soziale Gerechtigkeit & zukunftsfähige Gesellschaft
+  - title: Soziale Gerechtigkeit & Zukunftsfähigkeit
     slug: soziale-gerechtigkeit-zukunftsfahige-gesellschaft
     leitsatz: |
       <p>
@@ -170,10 +170,10 @@ frontpage_handlungsfelder:
       Bürger unterstützt. Zusätzlich fördert die Stadt Herne soziales Engagement 
       und ist bestrebt, soziale Teilhabe aller Bevölkerungsgruppen zu ermöglichen.
       </p>
-    hf-goals: "5,10,16"
-    hf-color: "#3f51b5"
+    hf-goals: "1,2,3,4,5,10,11,17"
+    hf-color: "#DD1367"
 
-  - title: Wohnen & Nachhaltige Quartiere
+  - title: Wohnen & nachhaltige Quartiere
     slug: wohnen-nachhaltige-quartiere
     leitsatz: |
       <p>
@@ -199,8 +199,8 @@ frontpage_handlungsfelder:
       in der Stadtplanung durch die Förderung urbaner Quartiere und einer 
       sozialen Vielfalt angestrebt.
       </p>
-    hf-goals: "11"
-    hf-color: "#05afda"
+    hf-goals: "10,11,12,13"
+    hf-color: "#FD9D24"
 
   - title: Gute Arbeit & nachhaltiges Wirtschaften
     slug: gute-arbeit-nachhaltiges-wirtschaften
@@ -239,8 +239,8 @@ frontpage_handlungsfelder:
       die Stadt mit Hochschulen und andern Innovationstreibern aus der 
       Region (z. B. Ruhrvalley, Hochschule Bochum, FH Dortmund, RWTH Aachen).
       </p>
-    hf-goals: "8,9"
-    hf-color: "#795548"
+    hf-goals: "1,3,4,8,10,12"
+    hf-color: "#A21942"
 
   - title: Nachhaltiger Konsum & gesundes Leben
     slug: nachhaltiger-konsum-gesundes-leben
@@ -270,16 +270,16 @@ frontpage_handlungsfelder:
       Herne zu einer inklusiveren und teilhabefreundlicheren Stadt entwickelt 
       werden soll.
       </p>
-    hf-goals: "3,12"
-    hf-color: "#4caf50"
+    hf-goals: "2,3,6,11,12,14"
+    hf-color: "#BF8B2E"
   #
   - title: Globale Verantwortung & Eine Welt
     slug: globale-verantwortung-eine-welt
     leitsatz: |
       Als Fairtrade-Stadt engagiert sich die Stadt Herne mit diversen Akteuren der Stadtgesellschaft seit über einem Jahrzehnt für Nachhaltigkeit und globale Gerechtigkeit. Die Stadt Herne ist Teil des Netzwerks Faire Metropole Ruhr, bei dem ein regelmäßiger Wissens- und Erfahrungsaustausch zu den Themen Fairer Handel, nachhaltige Beschaffung sowie übergreifend zur Umsetzung der Globalen Nachhaltigkeitsziele in der Metropole Ruhr erfolgt. Mit der Unterzeichnung der Charta Faire Metropole Ruhr 2030 - Eine Fairfassung bekennt sich die Stadt Herne zu Fairem Handel und zu Fairer öffentlicher Beschaffung.
       Der Verein zur Förderung der partnerschaftlichen Beziehungen der Stadt Herne e.V. intensiviert den Austausch zwischen Bürgerinnen und Bürgern der Partnerstädte der Stadt Herne und unterstützt humanitäre Projekte, die u.a. die Nachhaltigkeit fördern, wie den Bau von umweltfreundlichen Häusern aus recycelten Materialien in Nicaragua. Zusätzlich werden Projekte an einer Schule unterstützt, die zum Umweltbewusstsein der Kinder und Jugendlichen beitragen, wie die Vermeidung von Müll und Recycling.
-    hf-goals: "17"
-    hf-color: "#673ab7"
+    hf-goals: "4,11,12,16,17"
+    hf-color: "#19486A" 
 
 email_contacts:
   questions: nachhaltigkeit@herne.de
