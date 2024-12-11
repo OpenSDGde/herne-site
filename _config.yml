@@ -371,6 +371,9 @@ frontpage_cards:
   - title: Nachhaltigkeitsstrategie - Stadt Herne 2021
     href: "https://www.herne.de/PDF/Umwelt/klima/lag_nhs_herne_gesamt_rz_web.pdf"
     thumbnail_src: /nachhaltigkeitsstrategie.jpg
+  - title: Nachhaltigkeitskarte Stadt Herne
+    href: "https://geoportal.herne.de/basis/?l=lernenundberatung%2Cnachhaltigereinkauf%2Cnachhaltigemobilitaet%2Creparierenstattwegwerfen%2Ctauscheundteilen%2Cwasserauffuellen%2Cschatten!%2CSitzgelegenheit!%2Ctoilette!%2Cwasser!%2Cstadtgebiet&bl=stadtplanwerkfarbegroup&t=klimamap&c=375736%2C5711250&s=39350"
+    thumbnail_src: /HerneLogoWithBackground.jpeg
 
 goal_image_base: https://open-sdg.org/sdg-translations/assets/img/goals
 graph_color_set: accessible
