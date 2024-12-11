@@ -145,7 +145,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/herne-site/assets/css/style.css?v=20241211082702">
+        <link rel="stylesheet" href="/herne-site/assets/css/style.css?v=20241211091000">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -440,6 +440,25 @@ layout-indicator
 
     
 
+<div class="row" id="page-content">
+  <div class="col-xs-12">
+    <p>Armut hat eine große Tendenz, sich zu verfestigen und über Generationen hinweg weitergegeben zu werden. Kinderarmut ist oftmals bedingt durch die Arbeitslosigkeit und Armut der Eltern. Mögliche Konsequenzen 
+können die Unterversorgung in wichtigen Lebensbereichen wie Wohnen oder Ernährung und ungleiche Bildungs- und Teilhabechancen sein.  In der Stadt Herne ist der Anteil der unter 15-Jährigen, die von Armut 
+betroffen sind, im Zeitverlauf gesunken.</p>
+
+<p>Jugendarmut kann eine unmittelbare Folge von Kinderarmut sein. Erschwerend zu den nicht hinreichenden Mitteln zur Grundversorgung kommt hinzu, dass sich Jugendliche im Übergang zur Selbstständigkeit befinden. 
+Konnten sie jedoch bereits zuvor wegen Armut nur unterdurchschnittlich an Bildung teilhaben, so schränkt das ihre Wahlmöglichkeiten bspw. auf die Berufswahl enorm ein. . In der Stadt Herne ist der Anteil 
+der 15- bis 17-Jährigen, die von Armut betroffen sind, im Zeitverlauf auf gleichbleibendem Niveau.</p>
+
+<p>Altersarmut beschreibt die Problematik, unabhängig von der Länge der Erwerbstätigkeit, zum Erreichen des Renteneintritts über einen Rentenanspruch zu verfügen, der unter dem Existenzminimum liegt. In der Stadt
+Herne ist der Anteil der über 65-Jährigen, die von Armut betroffen sind, seit Jahren leicht angestiegen. Die Möglichkeiten für ältere Menschen diese Situation aktiv zu ändern sind häufig eingeschränkt, was 
+zusätzlich zu Isolation führen kann.</p>
+
+<p>Maßnahmen gegen Armut werden bei der Stadt Herne auf unterschiedlichen Handlungsebenen angesetzt, die vom Arbeitsmarkt über die Bildung bis zum Wohnungsbau und der Stadtentwicklung reichen. <br /></p>
+
+  </div>
+</div>
+
 
       <!-- add statistic data as image for indicators if its "data_non_statistical" in meta data is set to "true" -->
 
@@ -454,14 +473,14 @@ layout-indicator
   data-country="Herne"
   data-charttitle="Armut nach Altersgruppen"
   data-charttitles="null"
-  data-measurementunit=""
+  data-measurementunit="Prozent"
   data-xaxislabel=""
   data-showdata="true"
-  data-graphtype="line"
+  data-graphtype="bar"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap=""
-  data-startvalues="null"
+  data-startvalues="[{&quot;field&quot;:&quot;Jahr&quot;,&quot;value&quot;:&quot;€/m²&quot;}]"
   data-graphlimits="null"
   data-stackeddisaggregation=""
   data-graphannotations="null"
@@ -615,6 +634,9 @@ data-event-label="Change to Table tab"
         
 
         
+        <dt>Geographische Abdeckung:</dt>
+        <dd>Herne</dd>
+        
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
         <dd class="data-controlled-footer-field unit-from-data"></dd>
@@ -684,6 +706,9 @@ data-event-label="Change to Table tab"
     <dl>
         
 
+        
+        <dt>Geographische Abdeckung:</dt>
+        <dd>Herne</dd>
         
 
         <dt class="data-controlled-footer-field unit-from-data">Einheit:</dt>
@@ -846,19 +871,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Einheit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Für diesen Indikator nicht verfügbar</span></p>
+            <p>Prozent</p>
 
           
         </td>
@@ -868,20 +886,13 @@ data-event-label="Change to Metadaten tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Geographische Abdeckung </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Für diesen Indikator nicht verfügbar</span></p>
+            <p>Herne</p>
 
           
         </td>
@@ -891,20 +902,13 @@ data-event-label="Change to Metadaten tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Periodizität </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Für diesen Indikator nicht verfügbar</span></p>
+            <p>Jährlich</p>
 
           
         </td>
@@ -914,20 +918,13 @@ data-event-label="Change to Metadaten tab"
   
       
       
-      
-        
-          
-          
-          
-          
-        
       
       
       <tr>
         <th scope="row">Daten verfügbar seit </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Für diesen Indikator nicht verfügbar</span></p>
+            <p>2019</p>
 
           
         </td>
@@ -938,19 +935,12 @@ data-event-label="Change to Metadaten tab"
       
       
       
-        
-          
-          
-          
-          
-        
-      
       
       <tr>
         <th scope="row">Datenquellen </th>
         <td>
           
-            <p><span class="empty-metadata-placeholder">Für diesen Indikator nicht verfügbar</span></p>
+            <p>SDG-Portal</p>
 
           
         </td>
@@ -1485,12 +1475,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/herne-site/assets/js/sdg.js?v=20241211082702'></script>
+<script src='/herne-site/assets/js/sdg.js?v=20241211091000'></script>
 
 
     
     
-    <script src="/herne-site/assets/js/custom.js?v=20241211082702"></script><script>
+    <script src="/herne-site/assets/js/custom.js?v=20241211091000"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
