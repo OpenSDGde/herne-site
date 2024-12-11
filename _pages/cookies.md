@@ -12,47 +12,39 @@ Herausgeber dieser Webseite ist die Stadt Herne.
 
 ### Vertretungsberechtigt
 
-Oberbürgermeister Dr. Christian Scharpf
+Oberbürgermeister Dr. Frank Dudda
 
 ### Rechtsform: 											                       
-Behörde, Organ der juristischen Person des öffentlichen Rechts
+Die Stadt Herne ist eine Körperschaft des Öffentlichen Rechts.
 
 ### Anschrift:
 Stadt Herne <br>
-Direktorium - Stabsstelle Nachhaltigkeit <br>
-Rathausplatz 2 <br>
-85049 Herne <br>
+Fachbereich Umwelt und Stadtplanung  <br>
+Langekampstraße 36 <br>
+44652 Herne <br>
 
 ### Kontakt
-Telefon: +49 (841) 305 – 2004 <br>
-E-Mail: nachhaltigkeit@herne.de 
+Telefon: 0 23 23 / 16 - 27 42 <br>
+E-Mail: fb-umweltundstadtplanung@herne.de 
 
 ### Redaktion:
-E-Mail: nachhaltigkeit@herne.de  
+E-Mail: fb-umweltundstadtplanung@herne.de  
 
 ### Inhalte/Produktion:
-Stadt Herne und HTW 
+Stadt Herne und HTW
 
 ### Datenschutzbeauftragter der Stadt Herne
-Rechtsamt<br>
-Ludwigstraße 9<br>
-85049 Herne <br>
-Tel.: 0841 305 1373<br>
+- persönlich - <br>
+Postfach 10 18 20<br>
+44621 Herne <br>
+Telefon: 0 23 23 / 16 - 23 83<br>
 <a href="mailto:datenschutz@herne.de">datenschutz@herne.de</a>
 
 ### Umsatzsteuer-Identifikationsnummer            						     
-Die Umsatzsteueridentifikationsnummer (abgekürzt USt-IdNr. oder UID) der Stadt Herne gemäß § 27a UStG lautet: DE 128 601 333 	
-
-### Hosting:
-GitHub 
-
-### Hosting Subdomain:
-Diese Seite läuft über eine Subdomain der Webseite <a href="https://nachhaltigkeitsagenda-herne.de/">https://nachhaltigkeitsagenda-herne.de/</a> der Stadt Herne. Diese Seite wird über den Anbieter 1 & 1 IONOS SE gehostet. Die Datenschutzhinweise zu dieser Webseite finden Sie auf der Webseite der Nachhaltigkeitsagenda Herne: <a href="https://nachhaltigkeitsagenda-herne.de/">https://nachhaltigkeitsagenda-herne.de/</a> 
+Die Umsatzsteueridentifikationsnummer der Stadt Herne lautet: DE 125416650
 
 ## Haftungsausschluss
-Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt recherchiert und implementiert. Fehler im Bearbeitungsvorgang sind dennoch nicht auszuschließen. Hinweise und Korrekturen senden Sie bitte an unsere E-Mail-Adresse: <a href="mailto:nachhaltigkeit@herne.de">nachhaltigkeit@herne.de</a>.
-Eine Haftung für die Richtigkeit, Vollständigkeit und Aktualität dieser Website kann trotz sorgfältiger Prüfung nicht übernommen werden. Die Stadt Herne übernimmt insbesondere keinerlei Haftung für eventuelle Schäden oder Konsequenzen, die durch die direkte oder indirekte Nutzung der angebotenen Inhalte entstehen.
-Neben den eigenen Inhalten bietet die Stadt Herne Querverweise („externe Links“) auf die von anderen Anbietern bereitgehaltenen Inhalte. Die fremden Inhalte stammen weder von der Stadt Herne noch hat es die Möglichkeit, den Inhalt von Seiten Dritter zu beeinflussen. Die Inhalte fremder Seiten, auf die die Stadt Herne mittels Links hinweist, spiegeln nicht die Meinung der Stadt Herne wider, sondern dienen lediglich der Information und der Darstellung von Zusammenhängen. Die Stadt Herne haftet nicht für fremde Inhalte, auf die es lediglich im oben genannten Sinne hinweist. Die Verantwortlichkeit liegt alleine bei dem Anbieter der Inhalte. Bei Nutzungsausfällen der Website wegen technischer oder organisatorischer Störungen bestehen keinerlei Ansprüche - gleich welcher Art - gegen die Stadt Herne.
+Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt recherchiert und implementiert. Fehler im Bearbeitungsvorgang sind dennoch nicht auszuschließen. Hinweise und Korrekturen senden Sie bitte an unsere E-Mail-Adresse: <a href="mailto:fb-umweltundstadtplanung@herne.de">fb-umweltundstadtplanung@herne.de</a>. Eine Haftung für die Richtigkeit, Vollständigkeit und Aktualität dieser Website kann trotz sorgfältiger Prüfung nicht übernommen werden. Die Stadt Herne übernimmt insbesondere keinerlei Haftung für eventuelle Schäden oder Konsequenzen, die durch die direkte oder indirekte Nutzung der angebotenen Inhalte entstehen. Neben den eigenen Inhalten bietet die Stadt Herne Querverweise („externe Links“) auf die von anderen Anbietern bereitgehaltenen Inhalte. Die fremden Inhalte stammen weder von der Stadt Herne noch hat es die Möglichkeit, den Inhalt von Seiten Dritter zu beeinflussen. Die Inhalte fremder Seiten, auf die die Stadt Herne mittels Links hinweist, spiegeln nicht die Meinung der Stadt Herne wider, sondern dienen lediglich der Information und der Darstellung von Zusammenhängen. Die Stadt Herne haftet nicht für fremde Inhalte, auf die es lediglich im oben genannten Sinne hinweist. Die Verantwortlichkeit liegt alleine bei dem Anbieter der Inhalte. Bei Nutzungsausfällen der Website wegen technischer oder organisatorischer Störungen bestehen keinerlei Ansprüche - gleich welcher Art - gegen die Stadt Herne.
 
 ## Zweck der Datenverarbeitung
 Zweck der Datenverarbeitung auf dieser Website ist, der interessierten Öffentlichkeit aktuelle Informationen über die Erreichung der Nachhaltigkeitsziele der Stadt Herne zur Verfügung zu Stellen.

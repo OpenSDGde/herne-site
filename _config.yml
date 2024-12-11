@@ -282,9 +282,9 @@ frontpage_handlungsfelder:
     hf-color: "#19486A" 
 
 email_contacts:
-  questions: nachhaltigkeit@herne.de
-  suggestions: nachhaltigkeit@herne.de
-  functional: nachhaltigkeit@herne.de
+  questions: fb-umweltundstadtplanung@herne.de
+  suggestions: fb-umweltundstadtplanung@herne.de
+  functional: fb-umweltundstadtplanung@herne.de
 
 #
 # other settings are alphabetically ordered:
@@ -344,7 +344,7 @@ footer_language_toggle: none
 footer_menu:
   - path: https://StadtIngolstadt.github.io/sdg-data/de/zip/all_indicators.zip
     translation_key: Download
-  - path: mailto:nachhaltigkeit@herne.de
+  - path: mailto:fb-umweltundstadtplanung@herne.de
     translation_key: menu.contact_us
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
