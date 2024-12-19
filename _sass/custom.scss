@@ -334,6 +334,8 @@ h1.header {
     width: 100%;
     height: 60%;
     display: block; /* Verhindert unerwünschte Abstände unter dem Bild */
+    object-fit: cover;
+    object-position: right;
   }
 
   /* Stile für größere Bildschirme */
@@ -346,6 +348,7 @@ h1.header {
     padding-bottom: 1rem;
   }
 }
+
 .site-intro {
   background: none !important;
   padding-right: 0px !important;
