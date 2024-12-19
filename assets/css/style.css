@@ -3075,7 +3075,9 @@ h1.header {
     width: 100%;
     height: 60%;
     display: block;
-    /* Verhindert unerwünschte Abstände unter dem Bild */ }
+    /* Verhindert unerwünschte Abstände unter dem Bild */
+    object-fit: cover;
+    object-position: right; }
   @media (min-width: 992px) {
     .main-image {
       padding-bottom: 5rem; } }
