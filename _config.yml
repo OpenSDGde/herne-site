@@ -409,7 +409,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-open-sdg-plugins
 
-remote_theme: open-sdg/open-sdg@2.3.0
+remote_theme: OpenSDGde/open-sdg@tpwd
 
 title: general.site_title
 url: ""
