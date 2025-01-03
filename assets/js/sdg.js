@@ -2785,6 +2785,17 @@ function inputEdges(edges) {
       return true;
     });
   }
+  var configuredObservationAttributes = null;
+  if (configuredObservationAttributes && configuredObservationAttributes.length > 0) {
+    configuredObservationAttributesFlat = configuredObservationAttributes.map(function(att) { return att.field; });
+    edgesData = edgesData.filter(function(edge) {
+      if (configuredObservationAttributesFlat.includes(edge.To) || configuredObservationAttributesFlat.includes(edge.From)) {
+        return false;
+      }
+      return true;
+    });
+  }
+
   return edgesData;
 }
 
@@ -4271,10 +4282,10 @@ opensdg.chartTypes.base = function(info) {
         value = parseInt(value, 10);
     }
     if (value === 1) {
-        return 'Yes';
+        return translations.indicator.affirmative;
     }
     else if (value === -1) {
-        return 'No';
+        return translations.indicator.negative;
     }
     return '';
 }
@@ -4408,6 +4419,15 @@ function initialiseDataTable(el, info) {
                     var additionalInfo = Object.assign({}, info);
                     additionalInfo.row = row;
                     additionalInfo.col = col;
+                    if (info.chartType === 'binary') {
+                        var cellDataInt = Number(cellData);
+                        if (cellDataInt === 1) {
+                            cellData = translations.indicator.affirmative;
+                        }
+                        else if (cellDataInt === 0 || cellDataInt === -1) {
+                            cellData = translations.indicator.negative;
+                        }
+                    }
                     $(td).text(alterDataDisplay(cellData, rowData, 'table cell', additionalInfo));
                 },
             },
@@ -4428,7 +4448,7 @@ function initialiseDataTable(el, info) {
  * @return null
  */
 function createSelectionsTable(chartInfo) {
-    createTable(chartInfo.selectionsTable, chartInfo.indicatorId, '#selectionsTable', chartInfo.isProxy, chartInfo.observationAttributesTable);
+    createTable(chartInfo.selectionsTable, chartInfo.indicatorId, '#selectionsTable', chartInfo.isProxy, chartInfo.observationAttributesTable, chartInfo.chartType);
     $('#tableSelectionDownload').empty();
     createTableTargetLines(chartInfo.graphAnnotations);
     createDownloadButton(chartInfo.selectionsTable, 'Table', chartInfo.indicatorId, '#tableSelectionDownload', chartInfo.selectedSeries, chartInfo.selectedUnit);
@@ -4478,9 +4498,10 @@ function tableHasData(table) {
  * @param {Element} el
  * @param {bool} isProxy
  * @param {Object} observationAttributesTable
+ * @param {String} chartType
  * @return null
  */
-function createTable(table, indicatorId, el, isProxy, observationAttributesTable) {
+function createTable(table, indicatorId, el, isProxy, observationAttributesTable, chartType) {
 
     var table_class = OPTIONS.table_class || 'table table-hover';
 
@@ -4535,6 +4556,7 @@ function createTable(table, indicatorId, el, isProxy, observationAttributesTable
             table: table,
             indicatorId: indicatorId,
             observationAttributesTable: observationAttributesTable,
+            chartType: chartType,
         };
         initialiseDataTable(el, alterationInfo);
 
