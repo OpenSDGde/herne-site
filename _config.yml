@@ -1,7 +1,7 @@
 # Jekyll configuration for Open SDG platform
 
 # primary settings:
-baseurl: "" # change here!
+baseurl: "/herne-site" # change here!
 remote_data_prefix: https://opensdgde.github.io/herne-data/
 
 # URL for the "Edit Data" and "Edit Metadata" button on indicators.
