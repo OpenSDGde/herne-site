@@ -3462,7 +3462,7 @@ h1.header {
   gap: 1rem; }
 
 .card {
-  height: fit-content;
+  height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: #FABE1E; }
@@ -3476,8 +3476,9 @@ h1.header {
       vertical-align: middle; }
   .card .card-img-top {
     width: 100%;
-    height: max-content;
-    background-color: white; }
+    height: auto;
+    background-color: white;
+    object-fit: cover; }
 
 .card:hover {
   background-color: #007D30; }
