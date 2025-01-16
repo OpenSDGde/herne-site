@@ -118,7 +118,7 @@ var translations = {
         
         Indikator 14.2 -
         
-        global_indicators.14-2-title - Indikatoren für die nachhaltigen Entwicklungsziele
+        Gewässerqualität - Indikatoren für die nachhaltigen Entwicklungsziele
     </title>
 
 
@@ -142,7 +142,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/herne-site/assets/css/style.css?v=20250116164241">
+        <link rel="stylesheet" href="/herne-site/assets/css/style.css?v=20250116165053">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -267,7 +267,7 @@ layout-indicator-iframe
                         
                         Indikator 14.2
                         
-                        <span class="lead-copy">global_indicators.14-2-title</span>
+                        <span class="lead-copy">Gewässerqualität</span>
                     </h1>
                 </div>
             </div>
@@ -304,7 +304,7 @@ layout-indicator-iframe
   data-indicatorid='indicator_14-2'
   data-id="14-2"
   data-country="Herne"
-  data-charttitle="global_indicators.14-2-title"
+  data-charttitle="Gewässerqualität"
   data-charttitles="null"
   data-measurementunit="pro Jahr nach Bilanzierungssystematik Kommunal (BISKO) (in 1.000 Tonnen)"
   data-xaxislabel=""
@@ -320,7 +320,7 @@ layout-indicator-iframe
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Gruppierung&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;1&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Gruppierung&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Jahr&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="null"
   data-proxy=""
@@ -353,15 +353,57 @@ layout-indicator-iframe
   <div id="datatables">
 
     
+    <a role="button" href="https://open-sdg-germany.usercontent.opencode.de/herne-data/de/headline/14-2.csv" class="btn btn-primary btn-download" download="indicator_14-2.csv" tabindex="0" role="button">Speichern der Headline im CSV-Format</a>
+    
     <a role="button" href="https://open-sdg-germany.usercontent.opencode.de/herne-data/de/data/14-2.csv" class="btn btn-primary btn-download" download='indicator_14-2.csv' tabindex='0' role='button'>Daten im CSV-Format speichern</a>
 
     <p class="no-js-disaggregation-hint">Quell-CSV für Disaggregationen herunterladen</p>
 
     
-    <h3>Keine Headline-Daten verfügbar</h3>
+    <h3>Schlagzeilendaten</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Gewässerqualität</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col" class="table-value">Value</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2025</td>
+          
+          
+          
+          <td class="table-value">1</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    
+    <p>Geographische Abdeckung: Herne</p>
+    
+    
+    <p>Einheit: pro Jahr nach Bilanzierungssystematik Kommunal (BISKO) (in 1.000 Tonnen)</p>
+    
+    
+  </div>
   
 
 </div>
@@ -445,7 +487,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            global_indicators.14-2-title
+            Gewässerqualität
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -666,7 +708,7 @@ data-event-label="Change to Metadaten tab"
         <th scope="row">Indikatorenbezeichnung </th>
         <td>
           
-            <p>global_indicators.14-2-title</p>
+            <p>Gewässerqualität</p>
 
           
         </td>
@@ -1030,12 +1072,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Suche';</script>
 
-<script src='/herne-site/assets/js/sdg.js?v=20250116164241'></script>
+<script src='/herne-site/assets/js/sdg.js?v=20250116165053'></script>
 
 
     
     
-    <script src="/herne-site/assets/js/custom.js?v=20250116164241"></script><script>
+    <script src="/herne-site/assets/js/custom.js?v=20250116165053"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
