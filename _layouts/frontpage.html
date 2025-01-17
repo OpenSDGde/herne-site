@@ -42,8 +42,8 @@
 <div style="background-color:#efeeeb;">
     <div class="container" style="margin-top: 3rem; padding-top: 3rem; padding-bottom: 1rem;">
         <!-- <hr style="border: 1px solid black; margin-top: 5rem;"> -->
-        <h2 class="frontpage-goals-grid-title" style="font-size: 32px; font-weight: 700;">{{ site.frontpage_handlungsfelder_title.hf-title| t }}</h2>
-        <div class="frontpage-goals-grid-description"  style="font-size: 22px;">{{ site.frontpage_handlungsfelder_title.hf-subtitle | t }}</div>
+        <h2 class="frontpage-goals-grid-title" style="font-size: 32px; font-weight: 700;">{{ site.data.handlungsfelder.frontpage_handlungsfelder_title.hf-title | t }}</h2>
+        <div class="frontpage-goals-grid-description"  style="font-size: 22px;">{{ site.data.handlungsfelder.frontpage_handlungsfelder_title.hf-subtitle | t }}</div>
     </div>
 
     <!-- Handlungsfelder - expandable tabs -->
@@ -111,8 +111,8 @@
     </div>
 </div>
 
-{% if site.frontpage_handlungsfelder %}
-{% for thema in site.frontpage_handlungsfelder %}
+{% if site.data.handlungsfelder.frontpage_handlungsfelder %}
+{% for thema in site.data.handlungsfelder.frontpage_handlungsfelder %}
 <div class ="wide-background tabcontent" id="frontpage-handlungsfelder-{{ thema.slug }}"  style="background-color: {{ thema.hf-color }};">
     <!-- import contents of Handlungsfelder from _config.yml -->
     {% include components/thema.html thema=thema %}

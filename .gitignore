@@ -13,3 +13,4 @@ deploy_key*.pub
 *.keybase
 .bundle
 vendor/
+_data/handlungsfelder.yml

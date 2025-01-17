@@ -6,6 +6,9 @@ before_script:
   - gem install bundler
   - bundle config path vendor/bundle
   - bundle install
+  - git submodule update --init --remote
+  - chmod +x copy_handlungsfelder.sh
+  - ./copy_handlungsfelder.sh   
 
 pages:
   script:
