@@ -1,152 +1,69 @@
 <head>
-    <script src="https://kit.fontawesome.com/7ee11bdcfb.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7ee11bdcfb.js" crossorigin="anonymous"></script>
 </head>
 
 <html>
-{% include head.html %}
-<!-- custom header. Design specified in _sass/custom.scss -->
-{% include header.html %}
+  {% include head.html %}
+  <!-- custom header. Design specified in _sass/custom.scss -->
+  {% include header.html %}
 
-<div class ="main-image">
-    <a><img src="{{ site.baseurl }}/assets/img/StadtHerne.jpeg" alt="Hero Image City Herne"></a>
-</div>
+  <div class="main-image">
+    <a><img src="{{ site.baseurl }}/assets/img/StadtHerne.jpeg" alt="Hero Image City Herne" /></a>
+  </div>
 
-
-<div id="main-content" class="container" role="main">
+  <div id="main-content" class="container" role="main">
     {% if site.frontpage_introduction_banner %}
-        <div class="site-intro">
-            <h1 style="font-weight: 700;">{{ site.frontpage_introduction_banner.title | t }}</h1>
-            <div class="lead-copy"><p> {{ site.frontpage_introduction_banner.description | t }}</p></div>
-        </div>
-    {% endif %}
-
-    {% if site.frontpage_goals_grid %}
+    <div class="site-intro">
+      <h1 style="font-weight: 700">{{ site.frontpage_introduction_banner.title | t }}</h1>
+      <div class="lead-copy"><p>{{ site.frontpage_introduction_banner.description | t }}</p></div>
+    </div>
+    {% endif %} {% if site.frontpage_goals_grid %}
     <div class="frontpage-goals-grid">
-
-        {% if site.frontpage_goals_grid.title %}
-        <h2 class="frontpage-goals-grid-title" style="font-size: 32px; font-weight: 700;">{{ site.frontpage_goals_grid.title | t }}</h2>
-        {% endif %}
-
-        {% if site.frontpage_goals_grid.description %}
-        <div class="frontpage-goals-grid-description"  style="font-size: 22px;">{{ site.frontpage_goals_grid.description | t | markdownify }}</div>
-        {% endif %}
-
-        {% include components/goal-tiles.html %}
+      {% if site.frontpage_goals_grid.title %}
+      <h2 class="frontpage-goals-grid-title" style="font-size: 32px; font-weight: 700">
+        {{ site.frontpage_goals_grid.title | t }}
+      </h2>
+      {% endif %} {% if site.frontpage_goals_grid.description %}
+      <div class="frontpage-goals-grid-description" style="font-size: 22px">
+        {{ site.frontpage_goals_grid.description | t | markdownify }}
+      </div>
+      {% endif %} {% include components/goal-tiles.html %}
     </div>
     {% endif %}
+  </div>
 
-</div>
-
-
-<!-- Handlungsfelder - title -->
-<div style="background-color:#efeeeb;">
-    <div class="container" style="margin-top: 3rem; padding-top: 3rem; padding-bottom: 1rem;">
-        <!-- <hr style="border: 1px solid black; margin-top: 5rem;"> -->
-        <h2 class="frontpage-goals-grid-title" style="font-size: 32px; font-weight: 700;">{{ site.data.handlungsfelder.frontpage_handlungsfelder_title.hf-title | t }}</h2>
-        <div class="frontpage-goals-grid-description"  style="font-size: 22px;">{{ site.data.handlungsfelder.frontpage_handlungsfelder_title.hf-subtitle | t }}</div>
-    </div>
-
-    <!-- Handlungsfelder - expandable tabs -->
-  <div class="tab container" style="margin-top:1rem;">
-      <div class="row g-0 align-items-center justify-content-start">
-          <!-- Nachhaltige Verwaltung -->
-          <button class="tablinks active" id="tabbtn-1" onclick="openTab(event, 'frontpage-handlungsfelder-nachhaltige-verwaltung')">
-              <i class="fa fa-gear" style="font-size: calc(10px + 0.75vw);"></i>
-              <span class="tabs-text">Nachhaltige Verwaltung</span>
-          </button>
-
-          <!-- Klimaschutz und Energie -->
-          <button class="tablinks" id="tabbtn-2" onclick="openTab(event, 'frontpage-handlungsfelder-klimaschutz-und-energie')">
-              <i class="fas fa-solar-panel" style="font-size: calc(10px + 0.75vw);"></i>
-              <span class="tabs-text">Klimaschutz und Energie</span>
-          </button>
-
-          <!-- Ressourcenschutz & Klimafolgenanpassung -->
-          <button class="tablinks" id="tabbtn-3" onclick="openTab(event, 'frontpage-handlungsfelder-ressourcenschutz-klimafolgenanpassung')">
-              <i class="fas fa-recycle" style="font-size: calc(10px + 0.75vw);"></i>
-              <span class="tabs-text">Ressourcen- schutz & Klimafolgen- anpassung</span>
-          </button>
-
-          <!-- Nachhaltige Mobilität -->
-          <button class="tablinks" id="tabbtn-4" onclick="openTab(event, 'frontpage-handlungsfelder-nachhaltige-mobilitaet')">
-              <i class="fas fa-bicycle" style="font-size: calc(10px + 0.75vw);"></i>
-              <span class="tabs-text">Nachhaltige Mobilität</span>
-          </button>
-
-          <!-- Lebenslanges Lernen & Kultur -->
-          <button class="tablinks" id="tabbtn-5" onclick="openTab(event, 'frontpage-handlungsfelder-lebenslanges-lernen-kultur')">
-              <i class="fas fa-book" style="font-size: calc(10px + 0.75vw);"></i>
-              <span class="tabs-text">Lebenslanges Lernen</span>
-          </button>
-
-          <!-- Soziale Gerechtigkeit & zukunftsfähige Gesellschaft -->
-          <button class="tablinks" id="tabbtn-6" onclick="openTab(event, 'frontpage-handlungsfelder-soziale-gerechtigkeit-zukunftsfahige-gesellschaft')">
-              <i class="fas fa-handshake" style="font-size: calc(10px + 0.75vw);"></i>
-              <span class="tabs-text">Soziale Gerechtigkeit & zukunftsfähige Gesellschaft</span>
-          </button>
-
-          <!-- Wohnen & Nachhaltige Quartiere -->
-          <button class="tablinks" id="tabbtn-7" onclick="openTab(event, 'frontpage-handlungsfelder-wohnen-nachhaltige-quartiere')">
-              <i class="fas fa-home" style="font-size: calc(10px + 0.75vw);"></i>
-              <span class="tabs-text">Wohnen & Nachhaltige Quartiere</span>
-          </button>
-
-          <!-- Gute Arbeit & nachhaltiges Wirtschaften -->
-          <button class="tablinks" id="tabbtn-8" onclick="openTab(event, 'frontpage-handlungsfelder-gute-arbeit-nachhaltiges-wirtschaften')">
-              <i class="fas fa-briefcase" style="font-size: calc(10px + 0.75vw);"></i>
-              <span class="tabs-text">Gute Arbeit & nachhaltiges Wirtschaften</span>
-          </button>
-
-          <!-- Nachhaltiger Konsum & gesundes Leben -->
-          <button class="tablinks" id="tabbtn-9" onclick="openTab(event, 'frontpage-handlungsfelder-nachhaltiger-konsum-gesundes-leben')">
-              <i class="fas fa-leaf" style="font-size: calc(10px + 0.75vw);"></i>
-              <span class="tabs-text">Nachhaltiger Konsum & gesundes Leben</span>
-
-          <!-- Globale Verantwortung & Eine Welt -->
-          <button class="tablinks" id="tabbtn-10" onclick="openTab(event, 'frontpage-handlungsfelder-globale-verantwortung-eine-welt')">
-              <i class="fas fa-globe" style="font-size: calc(10px + 0.75vw);"></i>
-              <span class="tabs-text">Globale Verantwortung & Eine Welt</span>
-          </button>
+  <div style="background-color: #efeeeb">
+    <div class="container" style="margin-top: 3rem; padding-top: 3rem; padding-bottom: 1rem">
+      <!-- <hr style="border: 1px solid black; margin-top: 5rem;"> -->
+      <h2 class="frontpage-goals-grid-title" style="font-size: 32px; font-weight: 700">
+        {{ site.data.handlungsfelder.frontpage_handlungsfelder_title.hf-title | t }}
+      </h2>
+      <div class="frontpage-goals-grid-description" style="font-size: 22px">
+        {{ site.data.handlungsfelder.frontpage_handlungsfelder_title.hf-subtitle | t }}
       </div>
     </div>
-</div>
 
-{% if site.data.handlungsfelder.frontpage_handlungsfelder %}
-{% for thema in site.data.handlungsfelder.frontpage_handlungsfelder %}
-<div class ="wide-background tabcontent" id="frontpage-handlungsfelder-{{ thema.slug }}"  style="background-color: {{ thema.hf-color }};">
-    <!-- import contents of Handlungsfelder from _config.yml -->
-    {% include components/thema.html thema=thema %}
-</div>
+    {% if site.data.handlungsfelder.use_tab == true %} {% include components/handlungsfelder-tabs.html %} {% else %} {%
+    include components/handlungsfelder-tile.html %}  {% endif %}
+  </div>
+
+  <!-- Publications  --->
+  {% if site.frontpage_cards %}
+  <div class="container">
+    <div class="row g-0 frontpage-card">{% include components/card.html card=card %}</div>
+  </div>
+  {% endif %}
+
+
+  <div>
+{% assign colors = "" %}
+{% for field in site.data.handlungsfelder.frontpage_handlungsfelder %}
+  {% assign colors = colors | append: field.hf-color | append: " " %}
 {% endfor %}
-{% endif %}
+<!-- Output: Farben anzeigen -->
+<div> {{ colors }} </div>
 
+  <!-- footer incl. binder logos -->
+  {% include footer.html %}
 
-<!-- cards (imported from separate file) -->
-{% if site.frontpage_cards %}
-<div class="container">
-    <div class="row g-0 frontpage-card">
-        {% include components/card.html card=card %}
-    </div>
-</div>
-{% endif %}
-
-<!-- footer incl. binder logos -->
-{% include footer.html %}
 </html>
-
-<!-- onclick expand tab for Handlungsfelder -->
-<script>
-    function openTab(evt, hf_id) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(hf_id).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-</script>

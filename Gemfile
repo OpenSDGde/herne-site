@@ -7,3 +7,5 @@ gem "deep_merge"
 gem "jekyll-open-sdg-plugins", "2.3.0"
 gem "kramdown-parser-gfm"
 gem "webrick"
+
+gem "jekyll-tailwindcss", "~> 0.5.1"

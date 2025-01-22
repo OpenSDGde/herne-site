@@ -14,3 +14,4 @@ deploy_key*.pub
 .bundle
 vendor/
 _data/handlungsfelder.yml
+node_modules/

@@ -93,7 +93,7 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
-  z-index: 100;
+  z-index: 49;
 }
 .header-container {
   padding-right: 32px;
@@ -355,100 +355,6 @@ h1.header {
   text-align: justify;
 }
 
-/*1-2. Handlungsfelder*/
-
-// initialize without hf contents
-#frontpage-handlungsfelder-klimaschutz-und-energie,
-#frontpage-handlungsfelder-ressourcenschutz-klimafolgenanpassung,
-#frontpage-handlungsfelder-nachhaltige-mobilitaet,
-#frontpage-handlungsfelder-wohnen-nachhaltige-quartiere,
-#frontpage-handlungsfelder-gute-arbeit-nachhaltiges-wirtschaften,
-#frontpage-handlungsfelder-nachhaltiger-konsum-gesundes-leben,
-#frontpage-handlungsfelder-globale-verantwortung-eine-welt,
-#frontpage-handlungsfelder-soziale-gerechtigkeit-zukunftsfahige-gesellschaft,
-#frontpage-handlungsfelder-lebenslanges-lernen-kultur {
-  display: none;
-}
-
-// change tab color with colors of hf
-@for $i from 1 through length($herne-hf-tab-colors) {
-  $hf-bg-color: nth($herne-hf-tab-colors, $i);
-
-  /* goal-navigation-top */
-  #tabbtn-#{$i} {
-    min-height: 200px;
-    width: 18%;
-    padding: 0.75rem 0rem;
-    margin-right: 1px;
-    margin-top: 1px;
-    font-size: calc(5px + 0.75vw);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: $hf-bg-color;
-
-    border-radius: 10px 10px 0 0;
-    background-color: #fcfcfc;
-    border: none;
-    box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2);
-  }
-
-  #tabbtn-#{$i}:hover {
-    color: white !important;
-    background-color: $hf-bg-color !important;
-    box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important;
-  }
-  #tabbtn-#{$i}:focus,
-  #tabbtn-#{$i}.active {
-    color: white !important;
-    background-color: $hf-bg-color !important;
-    box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important;
-  }
-}
-
-.tablinks {
-  margin-top: 0px;
-}
-
-.tabs-text {
-  display: block;
-  @media screen and (max-width: 576px) {
-    display: none;
-  }
-}
-
-.hf-title {
-  margin-top: 10vh;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-}
-.hf-description {
-  margin-bottom: 1vh;
-  color: white;
-  font-size: 1.5em;
-  border-bottom: 1px solid white;
-  padding-bottom: 1em;
-}
-.hf-subtitle {
-  margin-top: 10vh;
-  margin-bottom: 3vh;
-  color: white;
-  font-weight: bold;
-  font-size: 2.5rem;
-}
-.hf-thema-title {
-  margin-bottom: 0.1em;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-style: italic;
-}
-.hf-thema-text {
-  margin-bottom: 1rem;
-  color: white;
-  font-size: 1em;
-}
 .flex-grid {
   width: 100%;
   display: flex;
