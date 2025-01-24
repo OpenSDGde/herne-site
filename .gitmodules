@@ -1,3 +1,6 @@
 [submodule "data-repo"]
 	path = data-repo
 	url = https://gitlab.opencode.de/open-sdg-germany/herne-data.git
+[submodule "theme-repo"]
+	path = theme-repo
+	url = https://gitlab.opencode.de/open-sdg-germany/opensdg-theme.git

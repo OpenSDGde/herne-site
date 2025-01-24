@@ -70,6 +70,7 @@ exclude:
   - .editorconfig
   - .gitmodules
   - data-repo/*
+  - theme-repo/*
   - gitlab-ci.yml
   - .prettierrc
   - copy_handlungsfelder.sh
