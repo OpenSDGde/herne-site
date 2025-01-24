@@ -32,20 +32,8 @@
     {% endif %}
   </div>
 
-  <div style="background-color: #efeeeb">
-    <div class="container" style="margin-top: 3rem; padding-top: 3rem; padding-bottom: 1rem">
-      <!-- <hr style="border: 1px solid black; margin-top: 5rem;"> -->
-      <h2 class="frontpage-goals-grid-title" style="font-size: 32px; font-weight: 700">
-        {{ site.data.handlungsfelder.frontpage_handlungsfelder_title.hf-title | t }}
-      </h2>
-      <div class="frontpage-goals-grid-description" style="font-size: 22px">
-        {{ site.data.handlungsfelder.frontpage_handlungsfelder_title.hf-subtitle | t }}
-      </div>
-    </div>
 
-    {% if site.data.handlungsfelder.use_tab == true %} {% include components/handlungsfelder-tabs.html %} {% else %} {%
-    include components/handlungsfelder-tile.html %}  {% endif %}
-  </div>
+  {% include handlungsfelder.html %}
 
   <!-- Publications  --->
   {% if site.frontpage_cards %}
@@ -53,15 +41,6 @@
     <div class="row g-0 frontpage-card">{% include components/card.html card=card %}</div>
   </div>
   {% endif %}
-
-
-  <div>
-{% assign colors = "" %}
-{% for field in site.data.handlungsfelder.frontpage_handlungsfelder %}
-  {% assign colors = colors | append: field.hf-color | append: " " %}
-{% endfor %}
-<!-- Output: Farben anzeigen -->
-<div> {{ colors }} </div>
 
   <!-- footer incl. binder logos -->
   {% include footer.html %}
