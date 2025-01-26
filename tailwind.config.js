@@ -14,6 +14,7 @@ module.exports = {
     "./theme-repo/_posts/*.md",
     "./theme-repo/*.{html,md}",
   ],
+  safelist: ['bg-red-500'],
   corePlugins: {
     preflight: false,
   },

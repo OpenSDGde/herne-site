@@ -7,6 +7,7 @@ before_script:
   - bundle config path vendor/bundle
   - bundle install
   - git submodule update --init --remote
+  - ls -R theme-repo/
   - chmod +x copy_handlungsfelder.sh
   - ./copy_handlungsfelder.sh   
 
