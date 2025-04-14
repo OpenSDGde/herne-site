@@ -1,4 +1,5 @@
-// --- klaro-no-css.js
-import 'klaro/dist/klaro-no-css'
+import klaro from 'klaro/dist/klaro-no-css';
 
-console.log('klaro-no-css.js loaded');
+window.klaro = klaro;
+
+console.log('klaro.js loaded');

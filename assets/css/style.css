@@ -1,6 +1,122 @@
 @charset "UTF-8";
-/* open-sans-regular - latin */
+/* goal-navigation-top */
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+#tabbtn-1 {
+  width: 18%;
+  padding: 0.75rem 0rem;
+  margin-right: 1px;
+  margin-top: 1px;
+  font-size: calc(5px + 0.75vw);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: red;
+  border-radius: 10px 10px 0 0;
+  background-color: #fcfcfc;
+  border: none;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
+
+#tabbtn-1:hover {
+  color: white !important;
+  background-color: red !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
+
+#tabbtn-1:focus,
+#tabbtn-1.active {
+  color: white !important;
+  background-color: red !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
+
+/* goal-navigation-top */
+#tabbtn-2 {
+  width: 18%;
+  padding: 0.75rem 0rem;
+  margin-right: 1px;
+  margin-top: 1px;
+  font-size: calc(5px + 0.75vw);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: green;
+  border-radius: 10px 10px 0 0;
+  background-color: #fcfcfc;
+  border: none;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
+
+#tabbtn-2:hover {
+  color: white !important;
+  background-color: green !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
+
+#tabbtn-2:focus,
+#tabbtn-2.active {
+  color: white !important;
+  background-color: green !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
+
+/* goal-navigation-top */
+#tabbtn-3 {
+  width: 18%;
+  padding: 0.75rem 0rem;
+  margin-right: 1px;
+  margin-top: 1px;
+  font-size: calc(5px + 0.75vw);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: blue;
+  border-radius: 10px 10px 0 0;
+  background-color: #fcfcfc;
+  border: none;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
+
+#tabbtn-3:hover {
+  color: white !important;
+  background-color: blue !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
+
+#tabbtn-3:focus,
+#tabbtn-3.active {
+  color: white !important;
+  background-color: blue !important;
+  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
+
+.tablinks {
+  margin-top: 0px; }
+
+.hf-title {
+  margin-top: 10vh;
+  color: white;
+  font-weight: bold;
+  font-size: 3em; }
+
+.hf-description {
+  margin-bottom: 1vh;
+  color: white;
+  font-size: 1.5em;
+  border-bottom: 1px solid white;
+  padding-bottom: 1em; }
+
+.hf-subtitle {
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem; }
+
+.hf-thema-title {
+  margin-bottom: 0.1em;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic; }
+
+.hf-thema-text {
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1em; }
+
+/* open-sans-regular - latin */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -28,6 +144,13 @@
   font-weight: 700;
   src: local(""), url("../fonts/open-sans-v20-latin-700italic.woff2") format("woff2"), url("../fonts/open-sans-v20-latin-700italic.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+/**
+ * variables.scss
+ *
+ * This file left blank intentionally. Implementations of Open SDG can use
+ * a similarly named file to override any "default" variables in the "variables"
+ * folder.
+ */
 .js #headlineTable {
   display: none; }
 .js .no-js-language-toggle {
@@ -95,7 +218,7 @@ body.contrast-high {
   body.contrast-high a {
     color: #FFDD00; }
 
-button:focus {
+button:focus:not(.no-focus) {
   color: #0b0c0c !important;
   outline: 3px solid transparent !important;
   background-color: transparent !important;
@@ -2896,7 +3019,7 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
-  z-index: 100; }
+  z-index: 49; }
 
 .header-container {
   padding-right: 32px;
@@ -3089,339 +3212,6 @@ h1.header {
   background: none !important;
   padding-right: 0px !important;
   text-align: justify; }
-
-/*1-2. Handlungsfelder*/
-#frontpage-handlungsfelder-klimaschutz-und-energie,
-#frontpage-handlungsfelder-ressourcenschutz-klimafolgenanpassung,
-#frontpage-handlungsfelder-nachhaltige-mobilitaet,
-#frontpage-handlungsfelder-wohnen-nachhaltige-quartiere,
-#frontpage-handlungsfelder-gute-arbeit-nachhaltiges-wirtschaften,
-#frontpage-handlungsfelder-nachhaltiger-konsum-gesundes-leben,
-#frontpage-handlungsfelder-globale-verantwortung-eine-welt,
-#frontpage-handlungsfelder-soziale-gerechtigkeit-zukunftsfahige-gesellschaft,
-#frontpage-handlungsfelder-lebenslanges-lernen-kultur {
-  display: none; }
-
-/* goal-navigation-top */
-#tabbtn-1 {
-  min-height: 200px;
-  width: 18%;
-  padding: 0.75rem 0rem;
-  margin-right: 1px;
-  margin-top: 1px;
-  font-size: calc(5px + 0.75vw);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #00689D;
-  border-radius: 10px 10px 0 0;
-  background-color: #fcfcfc;
-  border: none;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
-
-#tabbtn-1:hover {
-  color: white !important;
-  background-color: #00689D !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
-
-#tabbtn-1:focus,
-#tabbtn-1.active {
-  color: white !important;
-  background-color: #00689D !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
-
-/* goal-navigation-top */
-#tabbtn-2 {
-  min-height: 200px;
-  width: 18%;
-  padding: 0.75rem 0rem;
-  margin-right: 1px;
-  margin-top: 1px;
-  font-size: calc(5px + 0.75vw);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #FCC30B;
-  border-radius: 10px 10px 0 0;
-  background-color: #fcfcfc;
-  border: none;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
-
-#tabbtn-2:hover {
-  color: white !important;
-  background-color: #FCC30B !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
-
-#tabbtn-2:focus,
-#tabbtn-2.active {
-  color: white !important;
-  background-color: #FCC30B !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
-
-/* goal-navigation-top */
-#tabbtn-3 {
-  min-height: 200px;
-  width: 18%;
-  padding: 0.75rem 0rem;
-  margin-right: 1px;
-  margin-top: 1px;
-  font-size: calc(5px + 0.75vw);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #56C02B;
-  border-radius: 10px 10px 0 0;
-  background-color: #fcfcfc;
-  border: none;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
-
-#tabbtn-3:hover {
-  color: white !important;
-  background-color: #56C02B !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
-
-#tabbtn-3:focus,
-#tabbtn-3.active {
-  color: white !important;
-  background-color: #56C02B !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
-
-/* goal-navigation-top */
-#tabbtn-4 {
-  min-height: 200px;
-  width: 18%;
-  padding: 0.75rem 0rem;
-  margin-right: 1px;
-  margin-top: 1px;
-  font-size: calc(5px + 0.75vw);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #FD6925;
-  border-radius: 10px 10px 0 0;
-  background-color: #fcfcfc;
-  border: none;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
-
-#tabbtn-4:hover {
-  color: white !important;
-  background-color: #FD6925 !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
-
-#tabbtn-4:focus,
-#tabbtn-4.active {
-  color: white !important;
-  background-color: #FD6925 !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
-
-/* goal-navigation-top */
-#tabbtn-5 {
-  min-height: 200px;
-  width: 18%;
-  padding: 0.75rem 0rem;
-  margin-right: 1px;
-  margin-top: 1px;
-  font-size: calc(5px + 0.75vw);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #C5192D;
-  border-radius: 10px 10px 0 0;
-  background-color: #fcfcfc;
-  border: none;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
-
-#tabbtn-5:hover {
-  color: white !important;
-  background-color: #C5192D !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
-
-#tabbtn-5:focus,
-#tabbtn-5.active {
-  color: white !important;
-  background-color: #C5192D !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
-
-/* goal-navigation-top */
-#tabbtn-6 {
-  min-height: 200px;
-  width: 18%;
-  padding: 0.75rem 0rem;
-  margin-right: 1px;
-  margin-top: 1px;
-  font-size: calc(5px + 0.75vw);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #DD1367;
-  border-radius: 10px 10px 0 0;
-  background-color: #fcfcfc;
-  border: none;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
-
-#tabbtn-6:hover {
-  color: white !important;
-  background-color: #DD1367 !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
-
-#tabbtn-6:focus,
-#tabbtn-6.active {
-  color: white !important;
-  background-color: #DD1367 !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
-
-/* goal-navigation-top */
-#tabbtn-7 {
-  min-height: 200px;
-  width: 18%;
-  padding: 0.75rem 0rem;
-  margin-right: 1px;
-  margin-top: 1px;
-  font-size: calc(5px + 0.75vw);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #FD9D24;
-  border-radius: 10px 10px 0 0;
-  background-color: #fcfcfc;
-  border: none;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
-
-#tabbtn-7:hover {
-  color: white !important;
-  background-color: #FD9D24 !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
-
-#tabbtn-7:focus,
-#tabbtn-7.active {
-  color: white !important;
-  background-color: #FD9D24 !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
-
-/* goal-navigation-top */
-#tabbtn-8 {
-  min-height: 200px;
-  width: 18%;
-  padding: 0.75rem 0rem;
-  margin-right: 1px;
-  margin-top: 1px;
-  font-size: calc(5px + 0.75vw);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #A21942;
-  border-radius: 10px 10px 0 0;
-  background-color: #fcfcfc;
-  border: none;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
-
-#tabbtn-8:hover {
-  color: white !important;
-  background-color: #A21942 !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
-
-#tabbtn-8:focus,
-#tabbtn-8.active {
-  color: white !important;
-  background-color: #A21942 !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
-
-/* goal-navigation-top */
-#tabbtn-9 {
-  min-height: 200px;
-  width: 18%;
-  padding: 0.75rem 0rem;
-  margin-right: 1px;
-  margin-top: 1px;
-  font-size: calc(5px + 0.75vw);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #BF8B2E;
-  border-radius: 10px 10px 0 0;
-  background-color: #fcfcfc;
-  border: none;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
-
-#tabbtn-9:hover {
-  color: white !important;
-  background-color: #BF8B2E !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
-
-#tabbtn-9:focus,
-#tabbtn-9.active {
-  color: white !important;
-  background-color: #BF8B2E !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
-
-/* goal-navigation-top */
-#tabbtn-10 {
-  min-height: 200px;
-  width: 18%;
-  padding: 0.75rem 0rem;
-  margin-right: 1px;
-  margin-top: 1px;
-  font-size: calc(5px + 0.75vw);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #19486A;
-  border-radius: 10px 10px 0 0;
-  background-color: #fcfcfc;
-  border: none;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2); }
-
-#tabbtn-10:hover {
-  color: white !important;
-  background-color: #19486A !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.2) !important; }
-
-#tabbtn-10:focus,
-#tabbtn-10.active {
-  color: white !important;
-  background-color: #19486A !important;
-  box-shadow: 5px 5px 5px 0px rgba(5, 5, 5, 0.05) !important; }
-
-.tablinks {
-  margin-top: 0px; }
-
-.tabs-text {
-  display: block; }
-  @media screen and (max-width: 576px) {
-    .tabs-text {
-      display: none; } }
-
-.hf-title {
-  margin-top: 10vh;
-  color: white;
-  font-weight: bold;
-  font-size: 3em; }
-
-.hf-description {
-  margin-bottom: 1vh;
-  color: white;
-  font-size: 1.5em;
-  border-bottom: 1px solid white;
-  padding-bottom: 1em; }
-
-.hf-subtitle {
-  margin-top: 10vh;
-  margin-bottom: 3vh;
-  color: white;
-  font-weight: bold;
-  font-size: 2.5rem; }
-
-.hf-thema-title {
-  margin-bottom: 0.1em;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  font-style: italic; }
-
-.hf-thema-text {
-  margin-bottom: 1rem;
-  color: white;
-  font-size: 1em; }
 
 .flex-grid {
   width: 100%;
@@ -4396,3 +4186,10 @@ h5 {
 [href]:focus {
   box-shadow: 0px 0px 0px 0px transparent !important;
   background-color: transparent !important; }
+
+/**
+ * custom.scss
+ *
+ * This file left blank intentionally. Implementations of Open SDG can use
+ * a similarly named file for custom styles.
+ */
